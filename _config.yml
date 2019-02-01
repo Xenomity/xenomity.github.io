@@ -293,3 +293,9 @@ defaults:
       comments: true
       share: true
       related: true
+
+# Multilanguage
+languages: ['ko', 'en']
+default_lang: 'ko'
+exclude_from_localization: ['javascript', 'images', 'css']
+parallel_localization: false
