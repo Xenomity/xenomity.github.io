@@ -6,8 +6,8 @@ main:
     url: /year-archive/
   - title: "Tags"
     url: /tags/
-  - title: "Categories"
-    url: /categories/
+  # - title: "Categories"
+  #   url: /categories/
   # - title: "Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
