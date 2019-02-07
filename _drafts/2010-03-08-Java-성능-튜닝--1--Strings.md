@@ -7,7 +7,7 @@ Date: 2010-03-08T17:20:00+09:00
 #### **1. String Class**
 
 ---
-| |  Synchronized |
+| Class |  Synchronized |
 |  String |  O |
 |  StringBuffer |  O |
 |  StringBuilder |  X |
@@ -29,23 +29,33 @@ String str = (new StringBuffer()).append("가").append("나").append("다").toSt
 여러 문자열의 조합은 불필요한 객체 생성을 초래하므로 StringBuffer를 사용하는 편이 훨씬 이득이며, 다중 쓰레드 환경에서의 문자열 공유가 아니라면 동기화되지 않은 StringBuilder를 이용하는 것도 고려할 수 있다. StringBuffer와 StringBuilder는 동기화/비동기화의 차이뿐이다.  
   
 테스트 결과 1)  
+```
+// 1877ms
+String str = "abc";
+for(int i = 0; i < 10000; i++) {
+  str += "z";
+}
 
-    // 1877ms String str = "abc"; for(int i = 0; i \< 10000; i++) { str += "z"; } // 6ms StringBuffer str = new StringBuffer(); for (int i = 0; i \< 10000; i++) { str.append("z"); }
-
+// 6ms
+StringBuffer str = new StringBuffer();
+for (int i = 0; i < 10000; i++) {
+  str.append("z");
+}
+```
   
 테스트 결과 2)  
 ```
 // 문자열 연산 : 1,232ms
-for (int i = 0; i \< 10000; i++) {
+for (int i = 0; i < 10000; i++) {
   System.out.println("abc" + str);
 }
 
 // 문자열 비연산 : 992ms
-for (int i = 0; i \< 10000; i++) {
+for (int i = 0; i < 10000; i++) {
   System.out.println("abc");
   System.out.println(str);
 }
-  
+```
 
 #### **2. StringBuffer/StringBuilder Capacity**
 StringBuffer의 기본 생성자를 통해 객체를 생성한 경우, 16개의 문자 배열을 가진 객체가 생성된다. Default Capacity는 16이며, 이 크기보다 큰 문자열 연산이 이루어지면 기존 문자 배열은 버려지고 새로운 크기를 가지는 문자 배열이 새롭게 생성된다. 그러므로 초기 StringBuffer 생성시에 충분한 Capacity를 주어 불필요하게 크기가 확장되는 것을 방지할 수 있다.  
