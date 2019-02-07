@@ -11,8 +11,7 @@ Eclipse Launcher는 "java.vm.vendor"가 "Sun Microsystems"이라는 문자열을
   
 
 [eclipse.ini]  
-
+```
 -vmargs
-
 -XX:MaxPermSize=512m
-
+```
