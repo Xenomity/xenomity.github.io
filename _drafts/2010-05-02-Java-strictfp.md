@@ -11,7 +11,7 @@ JVM은 부동소수점 연산에 엄격하지 않아, 플랫폼이 JVM의 지수
 
 `strictfp`는 클래스, 인터페이스, 비-추상 메서드에 사용될 수 있다.
 
-```
+```java
 strictfp interface Fooable {}
 
 public strictfp class Foo {}
