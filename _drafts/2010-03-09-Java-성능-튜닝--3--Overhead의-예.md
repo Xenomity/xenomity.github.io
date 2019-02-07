@@ -8,7 +8,7 @@ date: 2010-03-09T10:18:00+09:00
 다음은 간단한 Echo의 예이다.  
   
 예 1)
-```
+```java
 public class Echo1 {
  
     ...
