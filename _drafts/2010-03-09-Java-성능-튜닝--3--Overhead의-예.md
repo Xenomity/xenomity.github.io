@@ -35,7 +35,7 @@ public class Echo1 {
 ```
   
 예 2)  
-```
+```java
 public class Echo2 {
  
     ...
