@@ -54,7 +54,7 @@ public class Monitor {
 }
 ```
 
-- Application.java -  
+- Application.java
 ```java
 // 모니터링 시작
 ...
