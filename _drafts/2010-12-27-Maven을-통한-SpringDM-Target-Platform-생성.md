@@ -22,15 +22,13 @@ Eclipse IAM (Q4E Plug-in)
 #### **1. Target Platform을 위한 project를 하나 생성한다.**
   New -\> Plug-in Project  
 
-[##\_1C|cfile28.uf.214EC73C53018F7D2F5DCB.jpg|width="525" height="642" filename="201011231335.jpg" filemime="image/jpeg"|\_##]
-
+![Step 1](/assets/image/2010-12-27-201011231335.jpg)
   
 Target Platform =\> an OSGi framework =\> Equinox 
 
 Next  
 
-[##\_1C|cfile5.uf.2713AB3453018F8C269683.jpg|width="525" height="642" filename="201011231337.jpg" filemime="image/jpeg"|\_##]
-
+![Step 2](/assets/image/2010-12-27-201011231337.jpg)
   
 
 Target Platform을 위한 Project이므로, OSGi Bundle Activator가 불필요하다. 
@@ -39,8 +37,7 @@ Target Platform을 위한 Project이므로, OSGi Bundle Activator가 불필요�
 
 Finish  
 
-[##\_1C|cfile8.uf.2517B33A53018F9D0120E1.jpg|width="590" height="259" filename="201011231340.jpg" filemime="image/jpeg"|\_##]
-
+![Step 3](/assets/image/2010-12-27-201011231340.jpg)
   
 
 #### **2. 생성된 프로젝트에 'target' directory 생성.**
@@ -56,15 +53,14 @@ Finish
 
 * * *
 
-[##\_1C|cfile21.uf.2451B83353018FB10E0702.jpg|width="590" height="287" filename="201011231358.jpg" filemime="image/jpeg"|\_##]
-
+![Step 4](/assets/image/2010-12-27-201011231358.jpg)
   
 
 #### **4. Maven Project로 변환.**
 
 Project 선택 후, 우클릭 =\> Maven 2 =\> Use Maven Dependency Management  
 
-[##\_1C|cfile2.uf.246EA23753018FBF0364ED.jpg|width="315" height="242" filename="201011231416.jpg" filemime="image/jpeg"|\_##]
+![Step 5](/assets/image/2010-12-27-201011231416.jpg)
 
 Maven Project로 변환된 프로젝트 구조
   
@@ -73,7 +69,7 @@ Maven Project로 변환된 프로젝트 구조
 
 Project 선택 후, 우클릭 =\> Maven 2 =\> Locally Install Artifact  
 
-[##\_1C|cfile6.uf.2317AF3453018FCF21F6EB.jpg|width="299" height="379" filename="201011231418.jpg" filemime="image/jpeg"|\_##]
+![Step 6](/assets/image/2010-12-27-201011231418.jpg)
 
 정상적으로 target directory로 install된 libraries  
   
@@ -81,22 +77,20 @@ Project 선택 후, 우클릭 =\> Maven 2 =\> Locally Install Artifact
 #### **6. Target Definition**
 Project 선택 후, 우클릭 =\> New =\> Other =\> Plug-in Development =\> Target Definition  
 
-[##\_1C|cfile25.uf.252A723953018FDC163934.jpg|width="525" height="695" filename="201011231420.jpg" filemime="image/jpeg"|\_##]
-
+![Step 7](/assets/image/2010-12-27-201011231420.jpg)
   
 springDM.target이라는 파일이 target directory에 생성되며, 편집창이 자동으로 열리게 된다.  
 
-[##\_1C|cfile21.uf.2726DD3453018FEF1A6E22.jpg|width="590" height="386" filename="201011231422.jpg" filemime="image/jpeg"|\_##]
-
+![Step 8](/assets/image/2010-12-27-201011231422.jpg)
   
 Add =\> Directory =\> Next  
 
-[##\_1C|cfile28.uf.262C163C53018FFF07F3EB.jpg|width="525" height="433" filename="201011231423.jpg" filemime="image/jpeg"|\_##]
+![Step 9](/assets/image/2010-12-27-201011231423.jpg)
 
 Browse =\> 현재 프로젝트의 target 전체경로를 선택
   
 
-[##\_1C|cfile4.uf.252232375301900E313A8D.jpg|width="590" height="386" filename="201011231426.jpg" filemime="image/jpeg"|\_##]
+![Step 10](/assets/image/2010-12-27-201011231426.jpg)
 
 정상적으로 bundle이 추가된 화면
   
@@ -104,7 +98,7 @@ Browse =\> 현재 프로젝트의 target 전체경로를 선택
 #### **7. Target Platform 설정.**
 마지막으로 저장(Save)을 하고, Windows 메뉴 =\> Preference =\> Plug-in Development =\> Target Platform을 선택한다.  
 
-[##\_1C|cfile24.uf.2233EC3753019024250188.jpg|width="590" height="641" filename="201011231427.jpg" filemime="image/jpeg"|\_##]
+![Step 11](/assets/image/2010-12-27-201011231427.jpg)
 
 위에서 생성한 product를 선택하고 Apply(적용)
 
