@@ -20,4 +20,4 @@ cmd \> `android list avd`
 
 cmd \> android move avd -n {이동시킬 avd 명} -p {이동시킬 경로}
   
-예) `android move -n Android\_2.2\_Emulator -p c:\avd2.2  `
+예) `android move -n Android\_2.2\_Emulator -p c:\avd2.2`
