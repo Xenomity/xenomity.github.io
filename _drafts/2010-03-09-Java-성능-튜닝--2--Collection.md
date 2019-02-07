@@ -13,7 +13,7 @@ Java에서는 Map, List, Set의 자료구조를 구현한 다양한 Collection F
 |           | TreeMap    | X | 
 | List      | ArrayList  | X |  
 |           | Vector     | O |
-|           | Stack      | X |  
+|           | Stack      | O |  
 |           | LinkedList | X | 
   
 기본적으로 단일 쓰레드의 경우, 자료구조가 동일한 경우에는 `Hashtable`보다는 `HashMap`을 사용하는것이 훨씬 빠르며, 역시 `Vector`보다는 `ArrayList`를 사용하는 것이 좋다.  
