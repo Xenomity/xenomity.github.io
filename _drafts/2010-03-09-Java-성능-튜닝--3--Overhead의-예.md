@@ -8,20 +8,75 @@ date: 2010-03-09T10:18:00+09:00
 다음은 간단한 Echo의 예이다.  
   
 예 1)
-
-    /\*\* \* Echo 1 \* \* @author Xenomity™ a.k.a P-slinc' (이승한) \*/ public class Echo1 { ... // Get Server Status private boolean isRunning() { ... } // Write Echo private void echo(Client client, String echoMeesage) { if (isRunning()) { client.write(echoMessage); } } /\*\* \* Run \*/ public void run() { for (int i = 0; i \< clientPool.getClientSize(); i++) { echo(clientPool.getClient(i), "echo " + i); } } }
-
+```
+/**
+ * Echo 1
+ *
+ * @author Xenomity™ a.k.a P-slinc' (이승한)
+ */
+public class Echo1 {
+ 
+    ...
+ 
+    // Get Server Status
+    private boolean isRunning() { ... }
+ 
+    // Write Echo
+    private void echo(Client client, String echoMeesage) {
+        if (isRunning()) {
+            client.write(echoMessage);
+        }
+    }
+ 
+    /**
+     * Run
+     */
+    public void run() {
+        for (int i = 0; i < clientPool.getClientSize(); i++) {
+            echo(clientPool.getClient(i), "echo " + i);
+        }
+    }
+}
+```
   
 예 2)  
-
-    /\*\* \* Echo 2 \* \* @author Xenomity™ a.k.a P-slinc' (이승한) \*/ public class Echo2 { ... public static final boolean isRunning = ...; // Write Echo private void echo(Client client, String echoMeesage) { client.write(echoMessage); } /\*\* \* Run \*/ public void run() { int clientSize = clientPool.getClientSize(); for (int i = 0; i \< clientSize; i++) { if (isRunning) { echo(clientPool.getClient(i), "echo " + i); } } } }
-
+```
+/**
+ * Echo 2
+ *
+ * @author Xenomity™ a.k.a P-slinc' (이승한)
+ */
+public class Echo2 {
+ 
+    ...
+ 
+    public static final boolean isRunning = ...;
+ 
+    // Write Echo
+    private void echo(Client client, String echoMeesage) {
+        client.write(echoMessage);
+    }
+ 
+    /**
+     * Run
+     */
+    public void run() {
+        int clientSize = clientPool.getClientSize();
+ 
+        for (int i = 0; i < clientSize; i++) {
+            if (isRunning) {           
+                echo(clientPool.getClient(i), "echo " + i);
+            }
+        }
+    }
+}
+```
   
 결과)  
-
+```
 Echo 1 : 9,145ms  
 Echo 2 : 224ms  
-
+```
   
 두 예제 모두 클라이언트들에게 단순한 메세지를 보내는 동일한 로직이지만, 상당히 큰 수행시간의 차이가 난다. 하나씩 짚어보면,  
   
