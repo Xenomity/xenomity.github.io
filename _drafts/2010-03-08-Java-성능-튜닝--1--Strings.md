@@ -5,13 +5,11 @@ Date: 2010-03-08T17:20:00+09:00
 ---
 
 #### **1. String Class**
-
----
-| Class |  Synchronized |
-|  String |  O |
-|  StringBuffer |  O |
-|  StringBuilder |  X |
----
+| Class          | Synchronized |
+|----------------|:------------:|
+| String         | O |
+| StringBuffer   | O |
+| StringBuilder  | X |
 
 3가지 클래스 모두 내부적으로 private char[]를 가지고 있으며, 이 문자 배열을 통해 문자열을 보관한다. 단, String Class는 Immutable(불변)객체이므로 문자열 가공이 원천적으로 불가능하며, Java에서는 사용편의성을 위해 연산자 오버라이딩을 통한 문법으로서의 방법을 제시한다.   
   
@@ -72,5 +70,5 @@ StringBuffer sb = new StringBuffer(512);
 String 객체를 항상 생성하지 않고, Java Syntax 차원에서 제공하는 방법으로 문자열을 초기화한다.  
 같은 문자열의 중복 생성을 방지할 수 있다.  
   
-String Pool 포스팅편을 참고 : [http://www.xenomity.com/Java-String-Pool](http://www.xenomity.com/Java-String-Pool)
+String Pool 포스팅편을 참고 : [http://blog.xenomity.com/Java-String-Pool](http://blog.xenomity.com/Java-String-Pool)
 
