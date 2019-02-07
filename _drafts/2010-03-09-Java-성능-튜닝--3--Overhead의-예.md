@@ -9,11 +9,6 @@ date: 2010-03-09T10:18:00+09:00
   
 예 1)
 ```
-/**
- * Echo 1
- *
- * @author Xenomity™ a.k.a P-slinc' (이승한)
- */
 public class Echo1 {
  
     ...
@@ -41,11 +36,6 @@ public class Echo1 {
   
 예 2)  
 ```
-/**
- * Echo 2
- *
- * @author Xenomity™ a.k.a P-slinc' (이승한)
- */
 public class Echo2 {
  
     ...
