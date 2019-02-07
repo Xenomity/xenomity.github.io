@@ -4,7 +4,7 @@ tags: [database, oracle]
 date: 2011-01-03T21:58:00+09:00
 ---
 
-오라클 DB의 USER\_SOURCE 테이블을 통해 간단히 Function 및 Procedure, Package의 코드를 확인할 수 있다. 본인처럼 귀차니즘(;;)으로 전용 DB툴을 설치하지 않고 JDBC로 직접 붙어 개발하는 경우에 편리하다. -0-ㅋ
+오라클 DB의 USER\_SOURCE 테이블을 통해 간단히 Function 및 Procedure, Package의 코드를 확인할 수 있다.
 
 | Column | Data   |
 |--------|--------|
