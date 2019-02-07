@@ -1,7 +1,7 @@
 ---
 title: "EDA 개념과 Event Processing"
 date: 2015-05-08 08:26:28
-tags: [eda, "event processing"]
+tags: [eda, event-processing]
 ---
 
 # EDA 개념과 Event Processing

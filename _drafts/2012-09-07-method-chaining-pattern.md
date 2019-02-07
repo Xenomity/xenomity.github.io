@@ -1,7 +1,7 @@
 ---
 title: "Method Chaining Pattern"
 date: 2012-09-07 08:26:28
-tags: [java, "design pattern"]
+tags: [java, design-pattern]
 ---
 
 # Method Chaining Pattern
