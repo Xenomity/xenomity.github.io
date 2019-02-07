@@ -10,7 +10,7 @@ Java는 오직 pass-by-value(_값을 통한 전달_)을 한다. 이전부터 오
 ## Variable Types
 Java는 원시형(_primitive type_) 변수와 객체형(_object type_) 인스턴스 변수의 선언에 따라 할당되는 값이 달라지게 된다. 원시형 선언의 경우 해당하는 값이 직접 변수에 할당되지만, 객체형 선언의 경우 객체가 생성된 메모리의 참조 주소가 할당되게 된다.
 
-```
+```java
 // primitive type: 상수 20 할당. (4 bytes)
 int a = 20;
 
@@ -24,7 +24,7 @@ Object b = new Object();
 ## Pass-by-value Test
 다음은 단순히 원시형과 참조형 변수를 인자로 취하는 메서드에서 인자를 통한 가공과 재-할당이 발생하는 경우, 원-호출자(caller)의 원본 값과 상태가 어떻게 달라지는지 확인할 수 있는 간략한 코드이다.
 
-```
+```java
 /**
  * Dummy Class
  */
