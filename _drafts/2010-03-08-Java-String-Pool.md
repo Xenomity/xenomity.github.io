@@ -7,7 +7,9 @@ date: 2010-03-08T17:07:00+09:00
 Java는 8가지 Primitive Type을 제외하고는 전부 Object Type이다. 그러나, 자주 사용하는 문자열의 사용 편의성을 위해, 문법차원에서의 방법도 제공한다.
 
 ```
-String str1 = "abc"; String str2 = "abc"; String str3 = new String("abc");
+String str1 = "abc";
+String str2 = "abc";
+String str3 = new String("abc");
 ```
 
 객체를 생성하는 방법(new)이 아닌 변수 대입 방법이 이것인데,  
