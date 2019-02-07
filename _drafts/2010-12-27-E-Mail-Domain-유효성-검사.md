@@ -12,7 +12,87 @@ date: 2010-12-27T16:30:14+09:00
   
 nslookup mx record 조회로 mail exchanger를 통하는지 여부로 검사하는 방식.  
 **\> nslookup -type=MX {domain명}**
-
-    import java.io.BufferedReader; import java.io.IOException; import java.io.InputStreamReader; /\*\* \* Mail Server Validation \* \* @author Xenomity™ a.k.a P-slinc' (이승한) \* \*/ public class ValidateMailServer { /\*\* NSLOOKUP Command \*/ public static final String LOOKUP\_COMMAND = "nslookup -type=MX "; /\*\* Valid Prefix \*/ public static final String VALID\_PREFIX = "mail exchanger"; /\*\* Mail Address Delimiter \*/ public static final String MAIL\_DELIMITER = "@"; /\*\* \* Get Output Data \* \* @param command Native Command \* @return Output Data \* @throws IOException \*/ public String getOutputData(String command) throws IOException { Process process = null; BufferedReader reader = null; StringBuffer buffer = new StringBuffer(); try { // Execute Native Command process = Runtime.getRuntime().exec(command); reader = new BufferedReader(new InputStreamReader(process.getInputStream())); String temp = null; while ((temp = reader.readLine()) != null) { buffer.append(temp); buffer.append("\n"); } } finally { if (reader != null) { try { reader.close(); } catch (IOException e) { e.printStackTrace(); } } if (process != null) { process.destroy(); } } return buffer.toString(); } /\*\* \* Validate E-Mail Server \* \* @param emailAddress E-Mail Address \* @return is-valid \* @throws IOException \*/ public boolean isValid(String emailAddress) throws IOException { boolean result = false; if (emailAddress != null && emailAddress.indexOf(MAIL\_DELIMITER) \> -1) { String domain = emailAddress.substring(emailAddress.indexOf(MAIL\_DELIMITER) + 1); String outputData = getOutputData(LOOKUP\_COMMAND + domain); if (outputData.contains(VALID\_PREFIX)) { result = true; } } return result; } public static void main(String[] args) throws IOException { ValidateMailServer vms = new ValidateMailServer(); System.out.println(vms.isValid(MyMailAddress)); } }
-
-  
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+ 
+public class ValidateMailServer {
+ 
+    /** NSLOOKUP Command */
+    public static final String LOOKUP_COMMAND = "nslookup -type=MX ";
+ 
+    /** Valid Prefix */
+    public static final String VALID_PREFIX = "mail exchanger";
+ 
+    /** Mail Address Delimiter */
+    public static final String MAIL_DELIMITER = "@";
+ 
+    /**
+     * Get Output Data
+     *
+     * @param command Native Command
+     * @return Output Data
+     * @throws IOException
+     */
+    public String getOutputData(String command) throws IOException {
+        Process process = null;
+        BufferedReader reader = null;
+        StringBuffer buffer = new StringBuffer();
+ 
+        try {
+            // Execute Native Command
+            process = Runtime.getRuntime().exec(command);
+            reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String temp = null;
+ 
+            while ((temp = reader.readLine()) != null) {
+                buffer.append(temp);
+                buffer.append("\n");
+            }
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+ 
+            if (process != null) {
+                process.destroy();
+            }
+        }
+ 
+        return buffer.toString();
+    }
+ 
+    /**
+     * Validate E-Mail Server
+     *
+     * @param emailAddress E-Mail Address
+     * @return is-valid
+     * @throws IOException
+     */
+    public boolean isValid(String emailAddress) throws IOException {
+        boolean result = false;
+ 
+        if (emailAddress != null && emailAddress.indexOf(MAIL_DELIMITER) > -1) {
+            String domain = emailAddress.substring(emailAddress.indexOf(MAIL_DELIMITER) + 1);
+            String outputData = getOutputData(LOOKUP_COMMAND + domain);
+ 
+            if (outputData.contains(VALID_PREFIX)) {
+                result = true;
+            }
+        }
+ 
+        return result;
+    }
+ 
+    public static void main(String[] args) throws IOException {
+        ValidateMailServer vms = new ValidateMailServer();
+ 
+        System.out.println(vms.isValid(MyMailAddress));
+    }
+}
+```
