@@ -124,11 +124,11 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
 </tr>
 </tbody>
 </table>
-<br>
-**4. Hudson CI**
-Hudson 2.1.0 기준으로 PMD/CPD의 결과를 보려면 우선 다음과 같은 plug-in들이 설치되어 있어야 한다.<br>
 
-![maven plugins](/assets/image/2011-03-20-201108201745.jpg)
+**4. Hudson CI**
+Hudson 2.1.0 기준으로 PMD/CPD의 결과를 보려면 우선 다음과 같은 plug-in들이 설치되어 있어야 한다.
+
+![hudson plugins](/assets/image/2011-03-20-201108201745.jpg)
 
 그리고 원하는 Job의 Configure -> Post-Build Action에 다음 사항을을 확인한다.  
 
@@ -138,9 +138,9 @@ Hudson의 해당 Job workspace가 PMD Reporting의 디폴트 경로가 되며, �
   
 성공적으로 빌드가 끝나면 hudson의 좌측 메뉴에 'PMD Warnings'과 'Duplicate Code'라는 메뉴가 추가된 것을 확인할 수 있다.  
 
-![PMD Result 1](/attachments/2011-03-20-201108201923.jpg)
+![PMD Result 1](/assets/image/2011-03-20-201108201923.jpg)
 
-![PMD Result 2](/attachments/2011-03-20-201108201920.jpg)
+![PMD Result 2](/assets/image/2011-03-20-201108201920.jpg)
   
 
  
