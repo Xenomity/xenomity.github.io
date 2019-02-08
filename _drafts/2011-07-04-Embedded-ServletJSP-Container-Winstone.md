@@ -11,7 +11,7 @@ Java DB나 이전 Derby, HSQL처럼 Embeded형 DB는 여럿 종류를 보았지�
   
   
 예 1) Command-Line Options
-
+```
 Syntax:  
   java -jar winstone-0.9.10.jar [--option=value] [--option=value] etc  
   
@@ -84,12 +84,12 @@ Access logging:
    --accessLoggerClassName        = Set the access logger class to use for user authentication. Defaults to disabled  
    --simpleAccessLogger.format    = The log format to use. Supports combined/common/resin/custom (SimpleAccessLogger only)  
    --simpleAccessLogger.file      = The location pattern for the log file(SimpleAccessLogger only)  
-
+```
   
-위에서 보듯, 패키징된 war는 별개 파라메터로 정의할 수 있지만, embedded.war라는 파일명으로 winstone.jar 내부에 통합시킬 수도 있다. winstone은 jar 내부의 embedded.war라는 파일이 존재하면 자동으로 디플로이하고 어플리케이션을 런칭시킨다. 이때는 MANIFEST.MF에 Main-Class가 'winstone.Launcher'로만 정의되어 있으면 된다.  
+위에서 보듯, 패키징된 war는 별개 파라메터로 정의할 수 있지만, `embedded.war`라는 파일명으로 `winstone.jar` 내부에 통합시킬 수도 있다. winstone은 jar 내부의 `embedded.war`라는 파일이 존재하면 자동으로 디플로이하고 어플리케이션을 런칭시킨다. 이때는 MANIFEST.MF에 Main-Class가 `winstone.Launcher`로만 정의되어 있으면 된다.  
   
 예 2) META-INF/MANIFEST.MF  
-
+```
 Manifest-Version: 1.0  
 Ant-Version: Apache Ant 1.5.3   
 Created-By: Apache Maven  
@@ -103,10 +103,9 @@ Implementation-Title: winstone
 Implementation-Vendor:   
 Implementation-Version: 0.9.9  
 Main-Class: winstone.Launcher  
-
+```
   
 예 3) 다양한 지원 사항들  
-
 Session persistence across reboots  
 Embedding Winstone  
 Access Logging  
