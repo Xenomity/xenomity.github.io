@@ -31,13 +31,13 @@ RAP의 기본 Template으로 제공되는 Hello RAP를 생성해보면,
   
 New -> Plug-in Project  
 
-![step 1](/assets/image/2011-04-08-201104081229.jpg)
+![step 3](/assets/image/2011-04-08-201104081229.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081230.jpg)
+![step 4](/assets/image/2011-04-08-201104081230.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081231.jpg)
+![step 5](/assets/image/2011-04-08-201104081231.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081233.jpg)
+![step 6](/assets/image/2011-04-08-201104081233.jpg)
 - 정상적으로 hello.rap 프로젝트가 생성된 화면 -  
   
   
@@ -45,13 +45,13 @@ New -> Plug-in Project
 ## 3. RAP Application 실행
 RAP는 별도의 설정을 하지 않은 경우, 기본적으로 번들되어있는 Jetty Servlet/JSP Container에 의해 구동된다. 53547번의 포트를 점유하게 되며, -Dorg.osgi.service.http.port VM 인자로 원하는 서비스 포트를 변경할 수도 있다.  
   
-![step 1](/assets/image/2011-04-08-201104081249.jpg)
+![step 7](/assets/image/2011-04-08-201104081249.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081238.jpg)
+![step 8](/assets/image/2011-04-08-201104081238.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081241.jpg)
+![step 9](/assets/image/2011-04-08-201104081241.jpg)
   
-![step 1](/assets/image/2011-04-08-201104081244.jpg)
+![step 10](/assets/image/2011-04-08-201104081244.jpg)
   
   
 
