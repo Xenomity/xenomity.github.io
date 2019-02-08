@@ -95,7 +95,7 @@ Ant-Version: Apache Ant 1.5.3
 Created-By: Apache Maven  
 Built-By: rickk  
 Package: winstone  
-Build-Jdk: 1.5.0\_11  
+Build-Jdk: 1.5.0_11  
 Extension-Name: winstone  
 Specification-Title:   
 Specification-Vendor:   
