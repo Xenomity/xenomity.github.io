@@ -6,7 +6,7 @@ tags: [http]
 
 # Summary of HTTP/2
 
-### Problem
+## Problem
 `HTTP/1.x`의 -*단일 요청과 응답*-은 불필요한 RTT 증가와 네트워크 지연을 초래한다. 기본적으로 HTTP는 단일 연결에서 단일 요청만을 처리할 수 있으므로 모든 메세지 교환은 순차적이며 latency는 증가할 수밖에 없다. 이는 몇 가지 사이트들의 성능 통계만 보아도 알 수 있는 부분이다. HTTP는 대표적으로 다음과 같은 문제점을 지닌다.
 
 * 제한적인 병렬성.
@@ -30,7 +30,7 @@ tags: [http]
 대충 훑어보아도 multiplexed stream, server push 등 SPDY와 상당히 닮았다. 하지만 SPDY처럼 TLS 기반(*정확히 말하면 TLS 확장, '[NPN](https://tools.ietf.org/html/draft-agl-tls-nextprotoneg-04)'*)에서만 동작하는 것은 아니고 공개 표준 프로토콜이기에 여러모로 가능성을 넓힌다.
 
 
-### HTTP/2 Features
+## HTTP/2 Features
 태초의 HTTP가 TCP 프로토콜 기반의 메세지 교환 고수준화, 비연결성 등을 목표로 설계되었다면, `HTTP/2`는 -*Low Latency*-에 촛점을 맞춰 설계되었다. 하나의 연결로 다수의 메세지 교환을 가능하게 디자인 하는 것이 주요 핵심이다.  
 다음은 `HTTP/2`의 대표적인 특징을 나열한 것이다.
 
@@ -44,20 +44,20 @@ tags: [http]
 * TLS 확장 '[ALPN](https://tools.ietf.org/html/rfc7301)' 지원.
 
 
-### HTTP/2 Design & Advantages
+## HTTP/2 Design & Advantages
 ![HTTP/2 Design](/assets/image/http_2_design.png)
 그림 1. HTTP/2 Layout (이미지 출처: Google)
 
-#### One TCP Connection
+### One TCP Connection
 * 단일 연결을 통한 메세지 교환은 불필요한 네트워크 리소스 사용량을 줄인다. 연결 개수만큼 증가하는 connection alive check나 handshake 등의 절차가 전체 latency에 크게 영향을 미치는 것은 두 말할 여지가 없다.
 * 단일 연결이 권장되므로 -*Domain Sharding*-이 불필요해진다.
 * 웹 서버의 worker thread를 감소시킬 수 있다. 결론은 시스템 자원을 훨씬 능률적으로 사용할 수 있게 된다.
 
-#### Stream
+### Stream
 * 복수개의 자원 요청을 한꺼번에 순서를 가지는 스트림으로 전송한다. 요청 자원의 개수에 따라 급증하던 RTT를 현저히 줄일 수 있다.  
 * 기존 HTTP에서 나타나는 대표적인 -*Head of Line Blocking*- 문제를 회피할 수 있다.
 
-#### Binary Framing Layer
+### Binary Framing Layer
 이름에서도 볼 수 있듯이 `HTTP/2`는 -*Binary Protocol*-이다. Binary framing layer는 다음과 같은 기능을 수행하는 정보를 포함한다.
 
 * Prioritization
@@ -74,16 +74,16 @@ tags: [http]
 	* HPACK은 헤더 필드를 인덱싱하기 위한 테이블로 'Static/Dynamic Table'을 사용하여 추가적으로 헤더 크기를 감소시킨다. (*See [Indexing Tables](http://http2.github.io/http2-spec/compression.html)*)
 
 
-### Performance
+## Performance
 Firefox 35(draft 14 based)로 벤치마킹된 자료이긴 하지만 페이지 로딩 속도가 HTTPS나 SPDY보다 확실히 빠른 것을 볼 수 있다. 참고 삼아 보길 바란다.  
 [A Simple Performance Comparison of HTTPS, SPDY and HTTP/2](https://blog.httpwatch.com/2015/01/16/a-simple-performance-comparison-of-https-spdy-and-http2/)
 
 
-### Conclusion
+## Conclusion
 현재 일자 기준으로 `HTTP/2` 명세는 이미 확정되어 RFC로 출판중이다. 그리고 대부분의 SPDY 핵심 개념들이 `HTTP/2`에 포함되므로, 구글은 더 이상 SPDY를 지원하지 않기로 했다. 뿐만아니라 Chrome에서도 앞으로 NPN 지원을 중단하고 ALPN 확장으로 대체한다고 하니, 미리미리 대비가 필요할 듯 하다.
 
 
-### References
+## References
 * Hypertext Transfer Protocol version 2. [draft-ietf-httpbis-http2-latest](http://http2.github.io/http2-spec/)
 * Header Compression for HTTP/2. [draft-ietf-httpbis-header-compression-latest](http://http2.github.io/http2-spec/compression.html)
 * ALPN. [Transport Layer Security (TLS)
