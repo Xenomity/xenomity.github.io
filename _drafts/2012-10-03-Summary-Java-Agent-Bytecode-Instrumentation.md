@@ -14,7 +14,7 @@ JVM은 전통적으로 특정 작업을 가로채기 할 목적으로 JVM Agent�
 -agentpath:<pathname>[=<options>] 전체 경로명을 사용하여 고유 에이전트 라이브러리를 로드합니다.
 -javaagent:<jarpath>[=<options>] Java 프로그래밍 언어 에이전트를 로드합니다. java.lang.instrument를 참조하십시오.
 ```
-- 예 1. 'java -help' commands 중...
+- 예 1. `java -help` commands 중...
 
 - `agentlib/agentpath` 옵션은 Java 1.5 이전 버전에서 제공되는 JVM Profiler Interface (이하 JVM PI)로 구현된 native agent 또는 Java 1.5에서 추가된 JVM Tool Interface(이하 JVM TI)로 구현된 native agent를 등록한다.
 - 여기서 javaagent 옵션은 Java 언어로 구현된 agent를 등록한다.
