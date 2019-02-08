@@ -125,7 +125,7 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
 </tbody>
 </table>
 <br>
-**>4. Hudson CI**
+**4. Hudson CI**
 Hudson 2.1.0 기준으로 PMD/CPD의 결과를 보려면 우선 다음과 같은 plug-in들이 설치되어 있어야 한다.<br>
 
 ![maven plugins](/assets/image/2011-03-20-201108201745.jpg)
