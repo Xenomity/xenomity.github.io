@@ -11,19 +11,22 @@ JNA는 기존 JNI(Java Native Interface)의 복잡한 구현 방식을 단축하
 JNA를 이용하면 JNI의 native library와의 연결을 위한 javah header파일 생성, native source 파일 생성, 컴파일 등의 과정이 불필요하며, 이미 만들어진 native library의 재사용이 가능하게 된다. 말 그대로 native access임..!  
   
 **예 1) JNI 개발 과정**
+```
 1) Native Method 선언된 Java Class 코딩  
 2) Java Class 컴파일  
 3) javah를 통한 C Header파일 생성  
 4) C 소스 코딩  
 5) C 소스 컴파일  
 6) Execute Java Class  
-
+```
   
 **예 2) JNA 개발 과정**  
+```
 1) Native Method 선언된 Java Class 코딩  
 2) Java Class 컴파일  
 3) Execute Java Class
-  
+```
+
 참고로 최근에 많은 OpenSource들이 JNA를 이용하여 성능을 향상시키는 방식를 적용하고 있으며, 무엇보다도 지저분한 h,c 파일들이 프로젝트 내에서 사라지게 되어 매우 깔끔해지고 관리도 수월하다. ;)  
   
 다음은 JNA를 통해 test.so의 foo라는 함수를 호출하는 간단한 예제를 만들어 보았다.  
@@ -32,7 +35,22 @@ JNA를 이용하면 JNI의 native library와의 연결을 위한 javah header파
 
 ## 1. TestLibrary Interface
 ```java
-    import com.sun.jna.Library; import com.sun.jna.Native; /\*\* \* Test Library Interface \* \* @Author Xenomity™ a.k.a P-slinc' (이승한) \*/ public interface TestLibrary extends Library { TestLibrary LIBRARY = (TestLibrary) Native.loadLibrary(("test.so"), TestLibrary.class); /\*\* \* foo method \*/ void foo(); // native method }
+import com.sun.jna.Library;
+import com.sun.jna.Native;
+ 
+/**
+ * Test Library Interface
+ *
+ * @Author Xenomity™ a.k.a P-slinc' (이승한)
+ */
+public interface TestLibrary extends Library {
+    TestLibrary LIBRARY = (TestLibrary) Native.loadLibrary(("test.so"), TestLibrary.class);
+ 
+    /**
+     * foo method
+     */
+    void foo();  // native method
+}
 ```
 
 ## 2. Test Result
