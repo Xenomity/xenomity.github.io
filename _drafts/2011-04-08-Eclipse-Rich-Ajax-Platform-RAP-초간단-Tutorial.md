@@ -59,6 +59,7 @@ RAP는 별도의 설정을 하지 않은 경우, 기본적으로 번들되어있
 1) Base  
 
 | **RCP** | **RAP** |
+|---------|---------|
 | OSGi | OSGi |
 | SWT - Standard Widget Toolkit | RWT - RAP Widget Toolkit |
 | JFace | JFace |
@@ -68,6 +69,7 @@ RAP는 별도의 설정을 하지 않은 경우, 기본적으로 번들되어있
 2) MANIFEST.MF의 **require-bundle**.  
 
 | **RCP** | **RAP** |
+|---------|---------|
 | org.eclipse.ui | org.eclipse.rap.ui |
 
 `org.eclipse.rap.ui`는 RCP와 동일한 코드로 구축 가능하도록 한 `org.eclipse.ui` 플러그인의 RAP버전이다.  
@@ -75,6 +77,7 @@ RAP는 별도의 설정을 하지 않은 경우, 기본적으로 번들되어있
 3) Entry Point  
 
 | **RCP** | **RAP** |
+|---------|---------|
 | org.eclipse.core.runtime.applications | IApplication |
 | org.eclipse.rap.ui.entrypoint | IEntryPoint |
 
