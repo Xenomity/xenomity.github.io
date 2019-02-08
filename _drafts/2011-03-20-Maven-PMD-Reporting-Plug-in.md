@@ -138,9 +138,7 @@ Hudson의 해당 Job workspace가 PMD Reporting의 디폴트 경로가 되며, �
   
 성공적으로 빌드가 끝나면 hudson의 좌측 메뉴에 'PMD Warnings'과 'Duplicate Code'라는 메뉴가 추가된 것을 확인할 수 있다.  
 
-![PMD Result 1](/assets/image/2011-03-20-201108201923.jpg)
-
-![PMD Result 2](/assets/image/2011-03-20-201108201920.jpg)
+![PMD Result 1](/assets/image/2011-03-20-201108201920.jpg)
   
 
  
