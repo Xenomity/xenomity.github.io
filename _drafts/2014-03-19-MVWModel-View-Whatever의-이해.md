@@ -28,9 +28,9 @@ MVP 패턴은 View와 Model간의 coupling을 완화하기 위해 일련의 work
 (* 보통 Observer 패턴을 통해 설계되며, Model은 Presenter로 변경 내역을 통지-notify-한다)
 
 그러므로 View가 Model의 참조를 통해 갱신되는 MVC와는 다르게, MVP는 Presenter라는 중계자(Mediator)를 통해 View와 Model간의 느슨한 결합을 가능하게 한다.
-
 (* Presenter가 View를 갱신하므로, 둘은 1:1 관계가 된다.)
-| | |
+
+| MVC | MVVM |
 |-|-|
 | ![MVC](/assets/image/2014-03-19-mvcweb2.jpg) | ![MVP](/assets/image/2014-03-19-mvpsequence.jpg) |
 
@@ -44,7 +44,7 @@ MVVM 패턴은 Microsoft WPF(Windows Presentation Framework)에서 대표적으�
 (* MVVM 패턴은 MVB(Model-View-Binder) 패턴으로 호칭되기도 한다.) 
 
 ![MVP](/assets/image/2014-03-19-mvvm.png)
-- e.g, MVVM Class Diagram
+- MVVM Class Diagram
 
 ## References
 - MVP: Model-View-Presenter: The Taligent Programming Model for C++ and Java (1996) by Mike Potel: [http://www.wildcrest.com/Potel/Portfolio/mvp.pdf](http://www.wildcrest.com/Potel/Portfolio/mvp.pdf)
