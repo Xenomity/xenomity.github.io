@@ -6,7 +6,7 @@ date: 2014-02-04T17:58:49+09:00
 
 Spring MVC 3.1에 추가된 Flash Attribute Scope는, Redirect View Handling 전에 HTTP 요청 데이터를 임시 보관하였다가 재전송하기 위한 Attribute Scope이다. 이런 상황에서, 보통 개발자들은 다른 방법을 강구하거나 HTTP Session을 통해 전송 데이터를 임시 보관하는 등의 방법을 사용하지만, redirect 후에 임시 데이터 수거 코드가 적절히 구현되지 않으면, 불필요한 Session store 낭비 현상이 발생되기도 한다. 이 문제를 편하게 해결하기 위해, Spring MVC는 'RedirectAttributes' 클래스의 flash attributes 또는 FlashMap 클래스를 통해 간편하게 세션에 데이터를 저장하고 redirect 후 데이터를 제거하는 일련의 과정들을 단순하게 제공한다.
 
-| ** Class** | ** Operation** |
+| Class | Operation |
 |-|-|
 | RedirectAttributes | addFlashAttribute(...) |
 | FlashMap | RequestContextUtils.getOutputFlashMap(request) |
