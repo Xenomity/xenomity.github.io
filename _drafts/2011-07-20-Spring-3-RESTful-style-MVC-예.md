@@ -56,11 +56,6 @@ Spring 3 @MVC를 통하여 RESTful한 스타일의 서비스를 쉽게 구현할
   
 예2) Controller 
 ```java
-/**
- * Employee Controller
- *
- * @author Xenomity™ a.k.a P-slinc' (이승한)
- */
 @Controller
 public class EmployeeController {
   
