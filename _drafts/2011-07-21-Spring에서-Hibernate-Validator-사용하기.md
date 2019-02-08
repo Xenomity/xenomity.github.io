@@ -39,7 +39,7 @@ Hibernate Validator는 JSR-303 Spec의 구현체로서 도메인 모델에서 @A
   
 Hibernate Validator에서 사용 가능한 JSR-303 @Annotation 목록은 다음과 같다.  
   
-- javax.validation.constraints.\*  
+`javax.validation.constraints.*`
 | Annotation | Type | Validation |
 |------------|------|------------|
 | **@AssertFalse** | 모두 | 거짓여부 체크 |
@@ -93,7 +93,7 @@ Min.employee.age={0} 이상만 가능합니다.
 
 메세지의 사용 범위에 따라 프로퍼티의 키를 다양하게 정의할 수 있다. 기본적으로는 메세지 키는 <u>'어노테이션명.모델명.필드명</u>'이 된다. 이 룰을 따르기 싫다면 각각 어노테이션에서 직접 메세지 키를 정의하여 매핑할 수도 있다. 예를 들어 `@Email(message="{aaa.bbb}")`라면, `aaa.bbb`라는 프로퍼티 키의 메세지와 매핑된다.  
   
-![hibernate validation](/assets/iamge/2011-07-21-201107210824.jpg)
+![hibernate validation](/assets/image/2011-07-21-201107210824.jpg)
 
 - 테스트 화면 -  
 
