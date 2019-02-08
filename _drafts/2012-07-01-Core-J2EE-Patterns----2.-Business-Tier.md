@@ -11,12 +11,10 @@ date: 2012-07-01T18:51:00+09:00
 
 실제 비지니스 서비스의 proxy 역할을 하며, 서비스 lookup을 위해 Service Locator를 사용한다.
 
-[##\_1C|cfile23.uf.01076D4851D14B531C6378.gif|width="566" height="245" filename="BDMainClass.gif" filemime="image/gif"|\_##]
 ![BDMainClass](/assets/image/2012-07-01-BDMainClass.gif)
 
 - Class Diagram
 
-[##\_1C|cfile4.uf.2476774851D14B54294F1A.gif|width="590" height="525" filename="BDMainSeq.gif" filemime="image/gif"|\_##]
 ![BDMainSeq](/assets/image/2012-07-01-BDMainSeq.gif)
 
 - Sequence Diagram
