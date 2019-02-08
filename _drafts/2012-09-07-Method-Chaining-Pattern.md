@@ -7,14 +7,14 @@ tags: [java, design-pattern]
 # Method Chaining Pattern
 **Method Chaining Pattern**(이하 MCP)은 함수형 언어에서 많이 볼 수 있는 디자인 패턴으로서 행위의 연속을 단순하게 표현할 수 있도록 돕는다. 각 행위를 담당하는 메서드 혹은 함수는 다시 자신의 레퍼런스를 응답함으로서 여러 줄에 걸쳐서 표현된 코드를 단순하고 직관적으로 표현할 수 있다. 다음은 자바에서 흔히 사용되는 `StringBuilder` 클래스의 예를 보여준다.
 
-```
+```java
 String text = new StringBuilder().append(1).append(2).append(3)
 				.append(4).reverse().toString();
 ```
 
 위의 예에서 보듯이 `StringBuilder` 클래스의 `append()`, `reverse()` 메서드는 자기 역할을 수행한 후 리턴 타입으로 자신의 레퍼런스를 다시 응답하고 있기에 차후 행위에 대한 호출이 '**Chaining**' 되고 있다. 만약 `StringBuilder` 클래스의 메서드가 MCP로 설계되어 있지 않았다면 아래와 같은 코드가 되었을 것이다.
 
-```
+```java
 StringBuilder stringBuilder = new StringBuilder();
 stringBuilder.append(1);
 stringBuilder.append(2);
@@ -27,7 +27,7 @@ String text = stringBuilder.toString();
 
 MCP 디자인을 잘 적용하면 표현력이 높은 코드를 작성할 수 있도록 활력을 제공한다. 예를 들면 행위 기반이 아닌 구조적 데이터 관점 -*들여쓰기만 잘 한다면(^^;)*-과 비슷하게 코드를 작성할 수도 있다. 아래에 몇 가지 추가적인 예를 보여준다. MCP로 설계된 API를 사용하는 클라이언트 코드의 간결함과 직관성이 드러남을 볼 수 있다.
 
-```
+```java
 TreeAccessor.addNode("ID_1")
 				.setName("Xenomity")
 				.setSex("M")
@@ -39,7 +39,7 @@ TreeAccessor.addNode("ID_1")
 				...
 ```
 
-```
+```java
 CriteriaQuery<Person> query = cb.createQuery(...)
 				.select(...)
 				.from(...)
