@@ -21,7 +21,17 @@ Java Standard Edition 8 버전의 변동사항으로는 다음과 같은 JSR(Jav
 ## Lambda Expressions
 Closure와 함수 프로그래밍을 가능하게 하는 람다 표현식이 추가되었다. 람다 표현식은 익명 함수 형식의 프로그래밍 모델을 제공한다.
 ```java
-    public interface DoStuff { boolean isGood(int x); } void doSomething(DoStuff d) { if (d.isGood(myVariable)) { ... } } doSomething(answer -\> answer == 42);
+public interface DoStuff {
+    boolean isGood(int x);
+}
+  
+void doSomething(DoStuff d) {
+    if (d.isGood(myVariable)) {
+        ...
+    }
+}
+ 
+doSomething(answer -> answer == 42);
 ```
 - 예 1.1. Inner Class의 람다 표현식화
 
@@ -31,14 +41,21 @@ Closure와 함수 프로그래밍을 가능하게 하는 람다 표현식이 추
 ## Annotations on Types
 Annotation을 class나 method, variable이 아닌, method의 parameter와 같은 type에 적용 가능하도록 한다.
 ```java
-    public void process(@NotNull List data) { … } 
+public void process(@NotNull List data) { … }
 ```
 - 예 3.1. @NotNull Annotation Processing
 
 ## Generalized Target-Type Inference
 Generic의 사용성이 개선되었다.
 ```java
-    class List\<E\> { static \<Z\> List\<Z\> nil() { ... }; static \<Z\> List\<Z\> cons(Z head, List\<Z\> tail) { ... }; E head() { ... } } List\<String\> ls = List.nil(); // Inferred correctly List.cons(42, List.nil()); // Error: expected List\<Integer\>, found List\<Object\>
+class List<E> {
+    static <Z> List<Z> nil() { ... };
+    static <Z> List<Z> cons(Z head, List<Z> tail) { ... };
+    E head() { ... }
+}
+  
+List<String> ls = List.nil(); // Inferred correctly
+List.cons(42, List.nil()); // Error: expected List<Integer>, found List<Object>
 ```
 - 예 4.1. 개선된 Generic
 
