@@ -15,12 +15,38 @@ Spring MVC 3.1에 추가된 Flash Attribute Scope는, Redirect View Handling 전
 
 다음은 flash scope을 통한 redirect시, 데이터 전달과 획득에 대한 간략한 예제이다.
 ```java
-    @Controller public class FlashScopeTestController { @RequestMapping(value = "/test") public String getResult(RedirectAttributes redirectAttributes) { // Generate Temporary Data UserDetails userDetails = new UserDetails(); userDetails.setUserName("Xenomity"); // Add Data to Flash Scope redirectAttributes.addFlashAttribute(userDetails); // FlashMap flashMap = RequestContextUtils.getOutputFlashMap(request); // Redirect return "redirect:/redirected"; } @RequestMapping(value = "/redirected") public String getResultRedirect(@ModelAttribute UserDetails userDetails) { return "testPage"; } }
+@Controller
+public class FlashScopeTestController {
+ 
+    @RequestMapping(value = "/test")
+    public String getResult(RedirectAttributes redirectAttributes) {
+        // Generate Temporary Data
+        UserDetails userDetails = new UserDetails();
+        userDetails.setUserName("Xenomity");
+ 
+        // Add Data to Flash Scope
+        redirectAttributes.addFlashAttribute(userDetails);
+        // FlashMap flashMap = RequestContextUtils.getOutputFlashMap(request); 
+ 
+        // Redirect
+        return "redirect:/redirected";
+    }
+ 
+    @RequestMapping(value = "/redirected")
+    public String getResultRedirect(@ModelAttribute UserDetails userDetails) {
+        return "testPage";
+    }
+ 
+}
 ```
 - 예 1. TestController.java
 
 ```jsp
-    \<html\> \<body\>     \<h1\>Hi~! ${userDetails.userName}.\</h1\> \</body\> \</html\>
+<html>
+<body>
+    <h1>Hi~! ${userDetails.userName}.</h1>
+</body>
+</html>
 ```
 - 예 2. testPage.jsp
 
