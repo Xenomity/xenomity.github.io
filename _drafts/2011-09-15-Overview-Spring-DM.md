@@ -56,7 +56,7 @@ Spring Framework의 모든 추상적 기능을 그대로 사용할 수 있음.
 ## 9. Spring OSGi Model
 ![spring osgi model](/assets/image/2011-09-15-201109151738.jpg)
 
-- gerd-wuetherich.de에서 발췌 -  
+- gerd-wuetherich.de에서 발췌
   
   
 ## 10. Spring DM Bundle
@@ -80,10 +80,9 @@ Spring Bean들은 OSGi의 Service로 내보낼 수 있다.
 WAR를 Bundle화하여 OSGi Framework으로 Bundle Install.  
 WAR Bundle 시작시 Web Extender를 통해 Web Container에 Web Application 설치.  
 
-[##\_1C|cfile8.uf.147905434E72A23B2125D0.jpg|width="494" height="261" filename="201109161011.jpg" filemime="image/jpeg"|\_##]
 ![bundle install](/assets/image/2011-09-15-201109161011.jpg)
 
-- gerd-wuetherich.de에서 발췌 -  
+- gerd-wuetherich.de에서 발췌
   
 
 OsgiBundleXmlWebApplicationContext와 Spring의 ContextLoaderListener를 통한 연동.  
