@@ -9,8 +9,9 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
   
   
 **1. Maven POM**
-
-    <!-- Reporting --><reporting>
+```xml
+    <!-- Reporting -->
+    <reporting>
         <plugins>
         ...
             <plugin>
@@ -40,14 +41,13 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
             </plugin>
             ...
         </plugins>
-    
     </reporting>
-
+```
   
   
 **2. Rulesets**  
-<font face="Courier New"><span style="FONT-FAMILY: Gulim">maven-pmd-plugin.jar 내부에는 /rulesets 경로에 각 카테고리에 해당하는 ruleset XML 파일들이 정의되어 있다. 제공 룰셋들이 너무 stric하거나 loose하다면, 커스터마이징도 물론 가능하다.<br>
-<br>자세한 내용은 <a href="http://pmd.sourceforge.net/">http://pmd.sourceforge.net/</a>을 참고한다.<br>
+`maven-pmd-plugin.jar` 내부에는 `/rulesets` 경로에 각 카테고리에 해당하는 ruleset XML 파일들이 정의되어 있다. 제공 룰셋들이 너무 엄격하거나 loose하다면, 커스터마이징도 물론 가능하다.
+자세한 내용은 [http://pmd.sourceforge.net/"](http://pmd.sourceforge.net/)을 참고한다.
 
 <div style="BORDER-BOTTOM: #c1c1c1 1px solid; BORDER-LEFT: #c1c1c1 1px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #eeeeee; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 1px solid; PADDING-TOP: 10px" class="txc-textbox">
 <li>
@@ -110,9 +110,8 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
 <a href="http://pmd.sourceforge.net/rules/index.html#Unused_Code_Rules">Unused Code Rules</a>: The Unused Code Ruleset contains a collection of rules that find unused code. <br>
 </li>
 </div>
-<br>
-<br><strong>3. Maven Goal List</strong><br>
 
+**3. Maven Goal List**
 <table style="BORDER-COLLAPSE: collapse" cellspacing="1" cellpadding="1" width="580" bgcolor="#ffffff">
 <tbody>
 <tr>
@@ -126,29 +125,22 @@ Maven을 통한 빌드시 PMD Code Inspection의 결과물을 내보낼 수 있�
 </tbody>
 </table>
 <br>
-<br><strong>4. Hudson CI</strong><br>
+**>4. Hudson CI**
 Hudson 2.1.0 기준으로 PMD/CPD의 결과를 보려면 우선 다음과 같은 plug-in들이 설치되어 있어야 한다.<br>
 
-<p style="MARGIN: 0px"></p>
-<p style="text-align: center;">[##_1C|cfile1.uf.224754365301969D0524BF.jpg|width="426" height="485" filename="201108201745.jpg" filemime="image/jpeg"|_##]</p>
-<p></p></span></font>  
-그리고 원하는 Job의 Configure -\> Post-Build Action에 다음 사항을을 확인한다.  
+![maven plugins](/assets/image/2011-03-20-201108201745.jpg)
 
- 
+그리고 원하는 Job의 Configure -> Post-Build Action에 다음 사항을을 확인한다.  
 
-[##\_1C|cfile10.uf.22296F38530196AB0DCB48.jpg|width="438" height="303" filename="201108201908.jpg" filemime="image/jpeg"|\_##]
-
+![pom.xml](/assets/image/2011-03-20-201108201908.jpg)
   
 Hudson의 해당 Job workspace가 PMD Reporting의 디폴트 경로가 되며, 별다른 설정을 하지 않으면 plug-in에서는 workspace/reports 경로에 결과물을 생성시킨다. 디폴트 경로르 사용하는 경우, 위 설정에서 별다른 result XML을 설정해줄 필요는 없다.  
   
 성공적으로 빌드가 끝나면 hudson의 좌측 메뉴에 'PMD Warnings'과 'Duplicate Code'라는 메뉴가 추가된 것을 확인할 수 있다.  
 
-![](/attachments/2011-03-20-201108201923.jpg)
+![PMD Result 1](/attachments/2011-03-20-201108201923.jpg)
 
-  
-
-[##\_1C|cfile26.uf.22146635530196BA2F4466.jpg|width="590" height="302" filename="201108201920.jpg" filemime="image/jpeg"|\_##]
-
+![PMD Result 2](/attachments/2011-03-20-201108201920.jpg)
   
 
  
