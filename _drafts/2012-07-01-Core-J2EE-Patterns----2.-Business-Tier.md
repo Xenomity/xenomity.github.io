@@ -47,7 +47,6 @@ GoF의 Facade 패턴과 동일한 디자인이지만, EJB 환경에 특화된 �
 
 - Class Diagram
 
-[##\_1C|cfile29.uf.2436EF4A51D14CE3015EA2.gif|width="590" height="448" filename="SFMainSeq.gif" filemime="image/gif"|\_##]
 ![BDMainClass](/assets/image/2012-07-01-SFMainSeq.gif)
 
 - Sequence Diagram
@@ -64,7 +63,6 @@ GoF의 Facade 패턴과 동일한 디자인이지만, EJB 환경에 특화된 �
 
 - Class Diagram
 
-[##\_1C|cfile23.uf.24166F3F51D14D900BBA9B.gif|width="590" height="402" filename="ASMainSeq.gif" filemime="image/gif"|\_##]
 ![ASMainSeq](/assets/image/2012-07-01-ASMainSeq.gif)
 
 - Sequence Diagram
@@ -81,7 +79,6 @@ Business Object는 환경에 따라 POJO, Session Bean, Entity Bean 등으로 �
 
 - Class Diagram
 
-[##\_1C|cfile9.uf.0206AB4051D14E5B307CC3.gif|width="590" height="691" filename="BOMainSeq.gif" filemime="image/gif"|\_##]
 ![BOMainSeq](/assets/image/2012-07-01-BOMainSeq.gif)
 
 - Sequence Diagram
