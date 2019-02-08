@@ -19,7 +19,7 @@ JVM은 전통적으로 특정 작업을 가로채기 할 목적으로 JVM Agent�
 - `agentlib/agentpath` 옵션은 Java 1.5 이전 버전에서 제공되는 JVM Profiler Interface (이하 JVM PI)로 구현된 native agent 또는 Java 1.5에서 추가된 JVM Tool Interface(이하 JVM TI)로 구현된 native agent를 등록한다.
 - 여기서 javaagent 옵션은 Java 언어로 구현된 agent를 등록한다.
 
-'Java Agent'는 Java로 구현하기에 저수준의 프로파일링은 어려울 수 있다. 따라서 Java 5는 위에서 언급한 JVM TI/JVM PI로 구현된 에이전트와 Java Agent를 병행 지원한다. 이는 JVM 프로파일링과 같은 저수준 hook을 활용하기에 JVM TI를 C/C++로 구현한 native agent가 알맞고, JVM 위에서 통제 가능한 부문(e.g. redefine bytecode, class/object profiling, etc...)을 통한 에이전트 개발은 Java Agent가 적합하다는 의미이기도 하다. 다음은 Java Agent에 대하여 간략히 정리한 내용이다.
+-Java Agent-는 Java로 구현하기에 저수준의 프로파일링은 어려울 수 있다. 따라서 Java 5는 위에서 언급한 JVM TI/JVM PI로 구현된 에이전트와 Java Agent를 병행 지원한다. 이는 JVM 프로파일링과 같은 저수준 hook을 활용하기에 JVM TI를 C/C++로 구현한 native agent가 알맞고, JVM 위에서 통제 가능한 부문(e.g. redefine bytecode, class/object profiling, etc...)을 통한 에이전트 개발은 Java Agent가 적합하다는 의미이기도 하다. 다음은 Java Agent에 대하여 간략히 정리한 내용이다.
 
 ## What are Java(JVM) Agent?
 1. JVM Agent는 JVM에서 동작하는 Java 어플리케이션으로 JVM의 다양한 이벤트를 전달받거나 정보 질의, 바이트 코드 제어 등을 특정 API(_Instrumentation API -java.lang.instrument-_)를 통하여 수행할 수 있다.
@@ -39,7 +39,7 @@ public static void premain(String agentArgs, Instrumentation inst);
 public static void premain(String agentArgs);
 ```
 
-- 예 2. 'premain' Method Signature
+- 예 2. `premain` Method Signature
 
 Agent의 단일 진입점은 위와 같이 'premain' 메서드를 구현하면 되며 바이트 코드를 포함한 추가적인 정보 수집 도구로 Instrumentation 인터페이스를 제공받을 수 있다. Instrumentation 패키지에 대한 자세한 내용은 [javadoc](http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/instrument/package-summary.html)을 참고한다.
 
