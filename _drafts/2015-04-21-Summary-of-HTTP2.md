@@ -46,7 +46,7 @@ tags: [http]
 
 ## HTTP/2 Design & Advantages
 ![HTTP/2 Design](/assets/image/http_2_design.png)
-그림 1. HTTP/2 Layout (이미지 출처: Google)
+- 그림 1. HTTP/2 Layout (이미지 출처: Google)
 
 ### One TCP Connection
 * 단일 연결을 통한 메세지 교환은 불필요한 네트워크 리소스 사용량을 줄인다. 연결 개수만큼 증가하는 connection alive check나 handshake 등의 절차가 전체 latency에 크게 영향을 미치는 것은 두 말할 여지가 없다.
