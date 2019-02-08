@@ -35,7 +35,6 @@ New -> Project -> Maven -> Maven Project
   
 Artifact Id: maven-archetype-webapp 선택  
 
-[##\_1C|cfile6.uf.232B3642530198862BD789.jpg|width="590" height="525" filename="201107162317.jpg" filemime="image/jpeg"|\_##]
 ![step 5](/assets/image/2011-07-01-201107162317.jpg)
   
 생성할 Maven 프로젝트의 Group Id와 Artifact Id를 원하는 값으로 입력한다.  
