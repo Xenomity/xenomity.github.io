@@ -15,6 +15,7 @@ ZooKeeper는 분산 코디네이터로 application level의 고가용성(H/A) �
 
 ## 1. Scenario
 다음과 같은 환경이 구성되어 있다고 가정한다.
+
 ![scenario](/assets/image/2012-11-06-201211071412.jpg)
 
 앙상블 구성은 ZooKeeper Client의 Fail-over를 위한 최소 조건으로 3대를 구성하고, 각각의 운영 서버에는 ZooKeeper Client가 구현되어 있다.
@@ -30,6 +31,7 @@ ZooKeeper Client는 최초에 자신의 서버 정보를 ZooKeeper Server의 특
 ![ephemeral node](/assets/image/2012-11-06-201211071415.jpg)
 
 그리고 장애 서버가 정상화되면, 장애 복구에 대한 후처리도 생각해 볼 수 있다.
+
 ![ephemeral node](/assets/image/2012-11-06-201211071416.jpg)
 
 이 시나리오를 토대로 진행한다.
@@ -63,7 +65,6 @@ server.3=192.168.0.3:2888:3888
 ## 3. ZooKeeper Server 시작
 각 서버의 ZooKeeper Server가 설치된 경로의 bin에서 다음 스크립트를 실행한다.
 
-예 3) ZooKeeper Server 시작
 `./zkServer.sh start`
 
 서버가 시작되면 해당 경로에 zookeeper.out이라는 로그 파일이 생성된다.
@@ -116,7 +117,7 @@ zooKeeper.exists("/servers", new Watcher() {
 });
 ```
 
-ps. 다음에는 분산 서버 환경에서의 Lock Service, Queuing에 대해 포스팅 해 볼 생각이다. ZooKeeper는 분산 환경에서의 락 서비스를 직접적으로 지원하지 않기에... 동시성 보장을 위해서는 적절한 락 서비스를 구현해야 한다. 구글링해보면, 락 서비스를 구현한 Wrapper들도 많이 돌더라...^^;
+ps. 다음에는 분산 서버 환경에서의 Lock Service, Queuing에 대해 포스팅 해 볼 생각이다. ZooKeeper는 분산 환경에서의 락 서비스를 직접적으로 지원하지 않기에 동시성 보장을 위해서는 적절한 락 서비스를 구현해야 한다.
 
  
 
