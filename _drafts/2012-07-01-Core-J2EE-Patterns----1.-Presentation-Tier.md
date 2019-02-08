@@ -26,7 +26,6 @@ Java EE Spec의 Standard Filter나 Spring Framework의 Interceptor가 이 패턴
 
 - Class Diagram
 
-[##\_1C|cfile21.uf.272F3F4C51D142581F7A50.gif|width="590" height="481" filename="IFMainSeq.gif" filemime="image/gif"|\_##]
 ![IFMainSeq](/assets/image/2012-07-01-IFMainSeq.gif)
 
 - Sequence Diagram
@@ -77,12 +76,10 @@ Java EE 환경에서는 일반적으로 Servlet이나 Filter로 개발되며, Sp
 
 Application Controller는 Front Controller에서 커맨드 핸들러 전략에 의해 결정되어지므로, 보통 단독으로는 사용하지 않는다. (Client에서 AC를 결정하는 코드가 생길 위험이 있기에...)
 
-[##\_1C|cfile29.uf.034BFE4951D145B219D00A.gif|width="590" height="277" filename="ACMainClass.gif" filemime="image/gif"|\_##]
 ![ACMainClass](/assets/image/2012-07-01-ACMainClass.gif)
 
 - Class Diagram
 
-[##\_1C|cfile24.uf.0127894951D145B234C87F.gif|width="590" height="384" filename="ACMainSeq.gif" filemime="image/gif"|\_##]
 ![ACMainSeq](/assets/image/2012-07-01-ACMainSeq.gif)
 
 - Sequence Diagram
@@ -113,12 +110,10 @@ Template layout을 정의할 때 대표적으로 사용된다. 여러 View에서
 
 (* 대표적인 Composite View로 디자인된 UI framework로는 Apache Tiles가 있음)
 
-[##\_1C|cfile29.uf.24517C4051D147C032CFBE.gif|width="513" height="222" filename="CVMainClass.gif" filemime="image/gif"|\_##]
 ![CVMainClass](/assets/image/2012-07-01-CVMainClass.gif)
 
 - Class Diagram
 
-[##\_1C|cfile1.uf.2265874051D147C027F12B.gif|width="590" height="312" filename="CVMainSeq.gif" filemime="image/gif"|\_##]
 ![CVMainSeq](/assets/image/2012-07-01-CVMainSeq.gif)
 
 - Sequence Diagram
