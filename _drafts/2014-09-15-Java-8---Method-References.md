@@ -7,6 +7,7 @@ date: 2014-09-15T17:45:10+09:00
 지난 포스팅에서 Lambda Expression을 통한 익명 메서드(anonymous method)를 생성하는 예를 간단히 살펴보았다. 이번에 살펴볼 'Method References'는 이미 존재하는 메서드를 함수형 인터페이스의 구현 내용으로 전달할 수 있는데, 조금 더 쉽고 가볍게 쓸 수 있는 syntax로 제공된다.
 
 ## Kind of Method References
+| Kind | Syntax |
 |-|-|
 | Reference to a static method | ContainingClass::staticMethodName |
 | Reference to an instance method of a particular object | containingObject::instanceMethodName |
