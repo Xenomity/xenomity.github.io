@@ -20,36 +20,18 @@ add: Option 메뉴/화면
 add: 국제화(영어/한글)
   
 
-[##\_1C|cfile26.uf.2154C8395301952B27CF0F.jpg|width="489" height="352" filename="201101270220.jpg" filemime="image/jpeg"|\_##]
-
+![cw_1](/assets/image/2011-01-27-201101270220.jpg)
   
-
-[##\_1C|cfile21.uf.216C843B53019540014D99.jpg|width="485" height="751" filename="201101271630.jpg" filemime="image/jpeg"|\_##]
-
+![cw_2](/assets/image/2011-01-27-201101271630.jpg)
   
-
-[##\_1C|cfile28.uf.27408F3C5301956124F6F0.jpg|width="590" height="358" filename="201101271631.jpg" filemime="image/jpeg"|\_##]
-
+![cw_3](/assets/image/2011-01-27-201101271631.jpg)
   
-
-[##\_1C|cfile1.uf.236F6234530195721C70CE.jpg|width="590" height="193" filename="201101271632.jpg" filemime="image/jpeg"|\_##]
-
+![cw_4](/assets/image/2011-01-27-201101271632.jpg)
   
-
-[##\_1C|cfile30.uf.2367B5375301957F310F3B.jpg|width="492" height="750" filename="201101060930.jpg" filemime="image/jpeg"|\_##]
-
+![cw_5](/assets/image/2011-01-27-201101060930.jpg)
   
-
-[##\_1C|cfile5.uf.216CC8345301958F1FE3CF.jpg|width="487" height="747" filename="201101060931.jpg" filemime="image/jpeg"|\_##]
-
+![cw_6](/assets/image/2011-01-27-201101060931.jpg)
   
+![cw_7](/assets/image/2011-01-27-201101060935.jpg)
   
-
-[##\_1C|cfile25.uf.23544B3A5301959F0BAD05.jpg|width="488" height="746" filename="201101060935.jpg" filemime="image/jpeg"|\_##]
-
-  
-
-[##\_1C|cfile9.uf.2543D03B530195B71EDD82.jpg|width="487" height="805" filename="201012131621.jpg" filemime="image/jpeg"|\_##]
-
-  
-달려보장~~!
+![cw_8](/assets/image/2011-01-27-201012131621.jpg)
