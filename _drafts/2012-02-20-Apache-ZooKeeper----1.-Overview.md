@@ -45,9 +45,9 @@ READ 연산인 exists, getChildren, getData에 Watch가 설정되고, WRITE 연�
 
 | Event | Handling |
 |-------|----------|
-| ** NodeCreated, NodeDeleted** |  변경된 znode의 경로를 전달받아 후처리 |
-| ** NodeChildrenChanged** |  getChildren을 다시 호출하여 갱신된 노드리스트를 획득하고 후처리 |
-| ** NodeDataChanged** |  getData를 다시 호출하여 갱신된 데이터를 획득하고 후처리 |
+| **NodeCreated, NodeDeleted** |  변경된 znode의 경로를 전달받아 후처리 |
+| **NodeChildrenChanged** |  getChildren을 다시 호출하여 갱신된 노드리스트를 획득하고 후처리 |
+| **NodeDataChanged** |  getData를 다시 호출하여 갱신된 데이터를 획득하고 후처리 |
   
   
 
