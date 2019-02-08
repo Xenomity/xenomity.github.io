@@ -12,7 +12,7 @@ MVW란, 기존의 Presentation Pattern들 중 MVx에 해당하는 패턴을 포�
 > AngularJS - Superheroic JavaScript MVW Framework.
 > AngularJS is what HTML would have been, had it been designed for building web-apps. Declarative templates with data-binding, MVW, MVVM, MVC, ...
 
-- http://angularjs.org -
+- http://angularjs.org
 
 그럼, MVW에 해당하는 MVC/MVP/MVVM 패턴에 대해 간단히 알아본다.
 
