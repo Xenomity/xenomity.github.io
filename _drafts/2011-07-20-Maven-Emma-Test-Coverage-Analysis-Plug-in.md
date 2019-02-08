@@ -8,11 +8,49 @@ Emma는 TestCase를 품질지표로 설정하기 위한 Test Coverage Reporting 
 
 ## 1. Maven POM
 ```xml
-    \<build\>     \<plugins\>         ...         \<plugin\>             \<groupId\>org.apache.maven.plugins\</groupId\>             \<artifactId\>maven-surefire-plugin\</artifactId\>             \<inherited\>true\</inherited\>             \<configuration\>                 \<forkMode\>always\</forkMode\>                 \<reportFormat\>xml\</reportFormat\>             \</configuration\>         \</plugin\>         \<!-- EMMA --\>         \<plugin\>             \<groupId\>org.codehaus.mojo\</groupId\>             \<artifactId\>emma-maven-plugin\</artifactId\>             \<version\>1.0-alpha-1\</version\>             \<configuration\>                 \<filters\>                     \<filter\>-\*.Test\*\</filter\>                 \</filters\>             \</configuration\>         \</plugin\>     \</plugins\> \</build\> ... \<!-- Reporting --\> \<reporting\>     \<plugins\>         ...         \<plugin\>             \<groupId\>org.codehaus.mojo\</groupId\>             \<artifactId\>emma-maven-plugin\</artifactId\>             \<inherited\>true\</inherited\>         \</plugin\>     \</plugins\> \</reporting\>
+<build>
+    <plugins>
+        ...
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <inherited>true</inherited>
+            <configuration>
+                <forkMode>always</forkMode>
+                <reportFormat>xml</reportFormat>
+            </configuration>
+        </plugin>
+        <!-- EMMA -->
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>emma-maven-plugin</artifactId>
+            <version>1.0-alpha-1</version>
+            <configuration>
+                <filters>
+                    <filter>-*.Test*</filter>
+                </filters>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+ 
+...
+ 
+<!-- Reporting -->
+<reporting>
+    <plugins>
+        ...
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>emma-maven-plugin</artifactId>
+            <inherited>true</inherited>
+        </plugin>
+    </plugins>
+</reporting>
 ```
   
 참고로 Emma Maven Plug-in을 적용하기 위해서는 반드시 maven-surefire-plugin의 reportFormat을 xml로 설정해줘야 한다.  
-위를 보면, \<build\>는 build시의 test coverage 분석 및 xml 결과를 생성하기 위한 Emma 설정이며, `<reporting>` 부분은 결과셋을 토대로 HTML을 생성하기 위한 설정에 해당한다.  
+위를 보면, `<build>`는 build시의 test coverage 분석 및 xml 결과를 생성하기 위한 Emma 설정이며, `<reporting>` 부분은 결과셋을 토대로 HTML을 생성하기 위한 설정에 해당한다.  
   
   
 
