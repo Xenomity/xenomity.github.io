@@ -136,7 +136,8 @@ public class AsyncWebService implements Runnable {
   
 
 ## 5. Security
-Spring Security처럼 디테일한 수준은 아니지만, Security Annotations로 요청별 권한 인증을 어느정도 제어할 수 있다.  
+Spring Security처럼 디테일한 수준은 아니지만, Security Annotations로 요청별 권한 인증을 어느정도 제어할 수 있다.
+
 | Annotation | Role |
 |------------|------|
 | **@RolesAllowed** | auth-constraint with roles |
