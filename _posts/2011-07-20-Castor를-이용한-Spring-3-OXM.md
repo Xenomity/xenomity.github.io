@@ -9,7 +9,8 @@ Spring OXM을 이용하면 거의 대다수의 OXM 프레임워크들의 일관�
 ## 1. Castor 추가
 현재일자 기준으로 최신버전은 1.2이다.  
   
-- Maven pom.xml.  
+- Maven pom.xml
+
 ```xml
 <!-- Castor -->
 <dependency>
@@ -28,7 +29,8 @@ Spring OXM을 이용하면 거의 대다수의 OXM 프레임워크들의 일관�
 ## 2. MarshallingView 등록
 Spring Context에 `MarshallingView`를 등록할 때, 디폴트 marshaller로 `CastorMarshaller`를 적용시켜 준다. 아래는 `ContentNegotiatingViewResolver`를 통한 `MarshallingView` 등록의 예이다.  
   
-- applicationContext.xml  
+- applicationContext.xml
+
 ```xml
 ...
  
@@ -74,7 +76,7 @@ Spring Context에 `MarshallingView`를 등록할 때, 디폴트 marshaller로 `C
 ## 3. 테스트
 `ContentNegotiatingViewResolver`를 적용하므로 @Controller에서는 어떠한 뷰를 리턴하도록 작성해도 전혀 상관이 없다. curl로 테스트한 결과는 아래와 같다.  
   
-결과) curl http://xxx/person/2 (xml)  
+결과) curl http://xxx/person/2 (xml)
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <employee-vO age="10" man="true" id="2"><name>aaa</name></employee-vO>
