@@ -33,6 +33,7 @@ JDK 7은 Java 프로그래밍 언어에 코딩을 편하게 하는 기능들을 
   
 ### Strings in switch  
 - 현재
+
 ```java
 String str = ...  
   
@@ -43,6 +44,7 @@ if (str.equals("name")) {
 ```
 
 - JDK 7
+
 ```java
 String str = ...  
   
@@ -57,7 +59,8 @@ switch (str) {
 ```
   
 ### Map for-each
-- 현재  
+- 현재
+
 ```java
 Map<String, Integer> map = new HashMap<String, Integer>();  
   
@@ -67,6 +70,7 @@ for (Entry<String, Integer> entry : map.entrySet()) {
 ```
 
 - JDK 7
+
 ```java
 Map<String, Integer> map = new HashMap<String, Integer>();  
 
@@ -76,7 +80,8 @@ for (String key, Integer value : map) {
 ```
  
 ### For-each iteration control
-- 현재  
+- 현재
+
 ```java
 List<String> list = new ArrayList<String>();
 
@@ -87,7 +92,8 @@ for (String str : list) {
 }
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 List<String> list = new ArrayList<String>();
 
@@ -100,6 +106,7 @@ for (String str : list : it) {
   
 ### List/map access
 - 현재
+
 ```java
 List<String> list = ...  
 Map<String, Integer> map = ...  
@@ -114,7 +121,8 @@ map.put("Hi", 56);
 Task task = combined.get("Test").get("Monitor");
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 List<String> list = ...
 Map<String, Job> map = ...
@@ -131,13 +139,15 @@ Task task = combined["Test"]["Monitor"];
   
 ### Infer generics in declarations
 - 현재
+
 ```java
 List<String> list = new ArrayList<String>();  
 Map<String, Job> map = new HashMap<String, Job>();  
 Map<String, Map<Channel, Job>> map = new HashMap<String, <Channel, Job>>();
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 List<String> list = new ArrayList<>();  
 Map<String, Job> map = new HashMap<>();  
@@ -146,13 +156,15 @@ Map<String, Map<Channel, Job>> map = new HashMap<>();
   
 ### String interpolation
 - 현재
+
 ```java
 String name = ...  
 int value = ...  
 String out = "The value of "+ name + " is " + value;
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 String name = ...  
 int value = ...  
@@ -161,6 +173,7 @@ String out = $"The value of ${name} is ${value}";
   
 ### Multi-catch of Exceptions
 - 현재
+
 ```java
 try {  
     doWork(file);  
@@ -173,7 +186,8 @@ try {
 }
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 try {  
     doWork(file);  
@@ -184,20 +198,23 @@ try {
 ```
   
 ### Multi-line Strings
-- 현재  
+- 현재
+
 ```java
 String sql = "SELECT surname, forename, title " +  
         "FROM person";
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 String sql = """SELECT surname, forename, title   
         FROM person""";
 ```
   
 ### Resource management
-- 현재  
+- 현재
+
 ```java
 File file = ...  
 FileReader in = null;  
@@ -214,7 +231,8 @@ try {
 }
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 File file = ...  
   
@@ -224,7 +242,8 @@ try (FileReader in = new FileReader(file)) {
 ```
   
 ### Null-handling
-- 현재  
+- 현재
+
 ```java
 Session sess = ...  
 String code = null;  
@@ -238,7 +257,8 @@ if (sess != null) {
 }
 ```
 
-- JDK 7  
+- JDK 7
+
 ```java
 Session sess = ...  
 String code = sess?.person()?.address()?.postcode(); |
@@ -248,7 +268,8 @@ String code = sess?.person()?.address()?.postcode(); |
 ## Lambda (Closure) 지원  
 요즘 사용하는 대부분의 desktop, laptop 컴퓨터는 이미 멀티코어 CPU가 기본으로 사용되고 있다. 앞으로는 모바일 장치에서도 멀티코어 CPU가 사용될 수도 있을 것이다. Java 개발자들이 손쉽게 멀티 코어 CPU의 이점을 활용할 수 있도록 JDK 7에서는 Closure를 지원할 예정이다.
 
-- For loop – External Iteration  
+- For loop – External Iteration
+
 ```java
 double highestScore = 0.0;  
   
@@ -261,7 +282,8 @@ for (Student s : students) {
 }
 ```
 
-- Hypothetical Internal Iteration  
+- Hypothetical Internal Iteration
+
 ```java
 double highestScore = students.filter (new Predicate<Student>() {  
     public boolean isTrue(Student s) {  
@@ -274,7 +296,8 @@ double highestScore = students.filter (new Predicate<Student>() {
 }).max();  
 ```
 
-- Introducing Lambda Expressions  
+- Introducing Lambda Expressions
+
 ```java
 double highestScore = students  
         .filter(#{ Student s -> s.gradYear == 2010 } )  
