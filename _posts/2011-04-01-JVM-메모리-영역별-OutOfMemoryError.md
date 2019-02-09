@@ -9,7 +9,8 @@ date: 2011-04-01T14:50:14+09:00
   
 JVM 메모리 구조에 대한 간략한 설명은 [이전 포스팅](http://blog.xenomity.com/JVM-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0) 참고.
 
-#### **1. Heap 영역**
+## Heap 영역
+
 | OOME | Description |
 |------|-------------|
 | java.lang.OutOfMemoryError: java heap space | Heap 영역의 크기 부족으로 Object를 생성하지 못하는 경우 |
@@ -37,7 +38,8 @@ rank   self   accum   bytes   objs   bytes   objs   trace   name
   
   
 
-#### **2. Permanent 영역**
+## Permanent 영역
+
 | OOME | Description |
 |------|-------------|
 | java.lang.OutOfMemoryError: Perm Gen space | 많은 Class들이 로드되는 경우 |
@@ -51,12 +53,12 @@ JConsole을 통해 클래스 로드 상황을 모니터링할 수도 있다.
   
   
 
-#### **3. Native 영역**
+## Native 영역
 | OOME | Description |
 |------|-------------|
 | java.lang.OutOfMemoryError: request bytes for . Out of swap space? | VM code-level에서 메모리 부족이 발생한 경우, Swap 크기가 부족한 경우 |
 | java.lang.OutOfMemoryError: (Native Method) | JNI/Natvie Method에서 메모리 부족이 발생한 경우 |
-| java.lang.OutOfMemoryError: <font face="Courier New"> unable to create new native thread</font> |  Thread 생성 공간이 부족한 경우 |
+| java.lang.OutOfMemoryError: unable to create new native thread | Thread 생성 공간이 부족한 경우 |
 
 Native 영역에서 발생한 OOME의 경우에는 친절(?)하게도 JVM은 FatalError Log를 날려준다.ㅋ  
   
