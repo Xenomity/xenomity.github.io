@@ -4,7 +4,7 @@ tags: [java]
 Date: 2010-03-08T17:20:00+09:00
 ---
 
-#### **1. String Class**
+## String Families
 | Class          | Synchronized |
 |----------------|:------------:|
 | String         | O |
@@ -55,7 +55,7 @@ for (int i = 0; i < 10000; i++) {
 }
 ```
 
-#### **2. StringBuffer/StringBuilder Capacity**
+## StringBuffer/StringBuilder Capacity
 StringBuffer의 기본 생성자를 통해 객체를 생성한 경우, 16개의 문자 배열을 가진 객체가 생성된다. Default Capacity는 16이며, 이 크기보다 큰 문자열 연산이 이루어지면 기존 문자 배열은 버려지고 새로운 크기를 가지는 문자 배열이 새롭게 생성된다. 그러므로 초기 StringBuffer 생성시에 충분한 Capacity를 주어 불필요하게 크기가 확장되는 것을 방지할 수 있다.  
   
 ```java
@@ -65,8 +65,7 @@ StringBuffer sb = new StringBuffer(512);
 단, 너무 크게 잡아도 메모리 낭비 및 초기화 타임이 소요되므로 주의한다.  
   
 
-#### **3. String Pool을 이용**
-
+## String Pool을 이용
 String 객체를 항상 생성하지 않고, Java Syntax 차원에서 제공하는 방법으로 문자열을 초기화한다.  
 같은 문자열의 중복 생성을 방지할 수 있다.  
   
