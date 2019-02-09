@@ -53,7 +53,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 #### Note
 - Diagram Comment.
 
-![class diagram](/assets/image/2012-08-06-class diagram 3.png)
+![class diagram 3](/assets/image/2012-08-06-class diagram 3.png)
 
   - 그림 2.1.2. Note의 예
 
@@ -61,7 +61,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - 두 객체 사이의 의존성을 명시한다.
 - keywords: <<call>>, <<create>>, <<derive>>, <<instantiate>>, <<permit>>, <<realize>>, <<refine>>, <<substitute>>, <<trace>>, <<use>>, etc...
 
-![class diagram](/assets/image/2012-08-06-class diagram 4.png)
+![class diagram 4](/assets/image/2012-08-06-class diagram 4.png)
 
   - 그림 2.1.3. Dependency 예
 
@@ -70,11 +70,11 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 #### Abstract Class
 - {abstract} label.
-![class diagram](/assets/image/2012-08-06-class diagram 7.png)
+![class diagram 7](/assets/image/2012-08-06-class diagram 7.png)
 
   - 그림 2.1.4. Interface and Abstract Class 예
 
-![class diagram](/assets/image/2012-08-06-class diagram 8.png)
+![class diagram 8](/assets/image/2012-08-06-class diagram 8.png)
 
   - 그림 2.1.5. Ball-and-Socket 표기법을 통한 Interface 간략화 예
 
@@ -84,7 +84,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 #### Parameterized Class (Generic)
 - Template Parameter and Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
 
-![class diagram](/assets/image/2012-08-06-class diagram 6.png)
+![class diagram 6](/assets/image/2012-08-06-class diagram 6.png)
 
   - 그림 2.1.6. Generic and Bound Element 예
 
@@ -93,13 +93,14 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - Synchronous Message: ![sync_arrow](/assets/image/2012-08-06-sync_arrow.png)
 - Asynchronous Message: ![async_arrow](/assets/image/2012-08-06-async_arrow.png)
 
-![sequence diagram](/assets/image/2012-08-06-sequence diagram 1.png)
+![sequence diagram 1](/assets/image/2012-08-06-sequence diagram 1.png)
 
   - 그림 2.2.1. Sequence Diagram 예
 
 #### Interaction Frame
 - 반복 또는 조건문을 나타내기 위한 표기법. (e.g. alt, opt, par, loop, region, neg, ref, sd, etc...)
-![sequence diagram](/assets/image/2012-08-06-sequence diagram 2.png)
+
+![sequence diagram 2](/assets/image/2012-08-06-sequence diagram 2.png)
 
   - 그림 2.2.2. Interaction Frame을 사용한 Sequence Diagram 예
 
@@ -108,7 +109,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 - syntax: _{depth_1}::{depth_2} ... {depth_#}_. (e.g. **_java/util/concurrent -> java::util::concurrent_** )
 
-![package diagram](/assets/image/2012-08-06-package diagram 1.png)
+![package diagram 1](/assets/image/2012-08-06-package diagram 1.png) ![package diagram 2](/assets/image/2012-08-06-package diagram 2.png)
 
   - 그림 2.3. Package Diagram 예
 
@@ -156,34 +157,34 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 - **Token** : 다이어그램이 복잡해질 경우, 토큰을 발행하여 흐름을 시각화하는데 도움이 된다.
 - **Flow/Edge** : 두 액션의 연결을 표현.
 
-![activity diagram](/assets/image/2012-08-06-activity diagram 2.png)
+![activity diagram 1](/assets/image/2012-08-06-activity diagram 1.png) ![activity diagram 2](/assets/image/2012-08-06-activity diagram 2.png)
 
   - 그림 2.7.1. Activity Diagram과 Partitioning-Activity Diagram 예
 
-![activity diagram](/assets/image/2012-08-06-activity diagram 5.png)
+![activity diagram 5](/assets/image/2012-08-06-activity diagram 5.png)
 
   - 그림 2.7.2. Flow/Edge를 표현하는 네 가지 방법
 
 - **Signal** : time-signal에 따른 event 발생과 event handling.
 
-![activity diagram](/assets/image/2012-08-06-activity diagram 4.png)
+![activity diagram 3](/assets/image/2012-08-06-activity diagram 3.png) ![activity diagram 4](/assets/image/2012-08-06-activity diagram 4.png)
 
   - 그림 2.7.3. Signal-Activity Diagram 예
 
 - **Pin** : Action에 input-parameters 정보가 필요할 경우 표시.
 - **Transformation** : pre-action의 출력과 post-action의 입력이 일치하지 않는 경우, transformation expression 표기.
 
-![activity diagram](/assets/image/2012-08-06-activity diagram 6.png)
+![activity diagram 6](/assets/image/2012-08-06-activity diagram 6.png)
 
   - 그림 2.7.4. Pin과 Transformation 예
 
 - **Expansion Region** : 컬렉션의 모든 아이템에 대하여 Action이 한 번씩 일어나는 영역.
-![activity diagram](/assets/image/2012-08-06-activity diagram 7.png)
+![activity diagram 7](/assets/image/2012-08-06-activity diagram 7.png) ![activity diagram 8](/assets/image/2012-08-06-activity diagram 8.png)
 
   - 그림 2.7.5. Expansion Region과 줄여서 표현한 예
 
 - **Flow Final** : 특정한 Flow를 종료하기 위한 표기 방법.
-![activity diagram](/assets/image/2012-08-06-activity diagram 9.png)
+![activity diagram 9](/assets/image/2012-08-06-activity diagram 9.png)
 
   - 그림 2.7.6. Flow Final 예
 
