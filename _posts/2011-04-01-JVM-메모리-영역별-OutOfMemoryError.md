@@ -7,7 +7,7 @@ date: 2011-04-01T14:50:14+09:00
 프로젝트를 하다보면 다양한 환경에서 OutOfMemoryError가 발생하고 이에 대한 대처를 단순히 JVM의 Heap 크기를 늘린다던가, 주기적인 시스템 재시작으로 운영하는 경우를 많이 보았다..-0-  
 특히나 웹 프로젝트에서 Instance Pooling, Auto Re-loading 등의 기능을 지원하는 프레임워크를 이용한다거나 기타 등등의 경우도 해당 환경이 요구하는 정확한 메모리 가용량을 계산하는것이 가장 좋지만, 불안전하거나 잘못된 소스 코드에 의한 메모리 누수가 아니라는 가정 하에 JVM 메모리 튜닝을 위한 내용을 간단히 정리해 보았다.  
   
-JVM 메모리 구조에 대한 간략한 설명은 [이전 포스팅](http://blog.xenomity.com/JVM-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0) 참고.
+JVM 메모리 구조에 대한 간략한 설명은 [이전 포스팅](https://blog.xenomity.com/JVM-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0) 참고.
 
 ## Heap 영역
 
@@ -54,6 +54,7 @@ JConsole을 통해 클래스 로드 상황을 모니터링할 수도 있다.
   
 
 ## Native 영역
+
 | OOME | Description |
 |------|-------------|
 | java.lang.OutOfMemoryError: request bytes for . Out of swap space? | VM code-level에서 메모리 부족이 발생한 경우, Swap 크기가 부족한 경우 |
