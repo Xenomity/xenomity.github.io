@@ -4,7 +4,6 @@ date: 2013-06-24 08:26:28
 tags: [redis, redis-sentinel]
 ---
 
-## Overview
 Redis Sentinel은 Redis 서버군을 관리하기 위한 목적으로 개발된 도구이다.
 
 이전에는 Sentinel이라는 이름으로 비공식 배포되었다가, Redis 2.6 버전부터 정식 패키지에 포함되어 배포되기 시작했다. 아직은 beta release이지만, 실서비스에 도입해본 결과 failover나 master server election 등의 기능은 모두 무리없이 동작함을 확인하였다.
