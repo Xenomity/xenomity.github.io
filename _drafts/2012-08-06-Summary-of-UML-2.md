@@ -85,7 +85,7 @@ Class Diagram 1 | Class Diagram 2
 - `<<enumeration>>` keyword.
 
 #### Parameterized Class (Generic)
-- Template Parameter and Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
+- Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
 
 ![class diagram 6](/assets/image/2012-08-06-class_diagram_6.png)
 
