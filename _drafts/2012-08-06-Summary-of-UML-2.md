@@ -36,7 +36,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - visibility: +(public), -(private), ~(package), #(protected) - UML meta-model.
 - Association: 클래스간의 연관 관계를 화살표로 표시. (unidirectional/bidirectional)
 
-![class diagram 1](/assets/image/2012-08-06-sync_arrow.png) ![class diagram 2](/assets/image/2012-08-06-class diagram 2.png)
+![class diagram 1](/assets/image/2012-08-06-class_diagram_1.png) ![class diagram 2](/assets/image/2012-08-06-class_diagram_2.png)
 
   - 그림 2.1.1. Attribute, Association으로 표현한 Class Diagram 예
 
@@ -53,7 +53,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 #### Note
 - Diagram Comment.
 
-![class diagram 3](/assets/image/2012-08-06-class diagram 3.png)
+![class diagram 3](/assets/image/2012-08-06-class_diagram_3.png)
 
   - 그림 2.1.2. Note의 예
 
@@ -61,7 +61,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - 두 객체 사이의 의존성을 명시한다.
 - keywords: `<<call>>`, `<<create>>`, `<<derive>>`, `<<instantiate>>`, `<<permit>>`, `<<realize>>`, `<<refine>>`, `<<substitute>>`, `<<trace>>`, `<<use>>`, etc...
 
-![class diagram 4](/assets/image/2012-08-06-class diagram 4.png)
+![class diagram 4](/assets/image/2012-08-06-class_diagram_4.png)
 
   - 그림 2.1.3. Dependency 예
 
@@ -71,11 +71,11 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 #### Abstract Class
 - {abstract} label.
 
-![class diagram 7](/assets/image/2012-08-06-class diagram 7.png)
+![class diagram 7](/assets/image/2012-08-06-class_diagram_7.png)
 
   - 그림 2.1.4. Interface and Abstract Class 예
 
-![class diagram 8](/assets/image/2012-08-06-class diagram 8.png)
+![class diagram 8](/assets/image/2012-08-06-class_diagram_8.png)
 
   - 그림 2.1.5. Ball-and-Socket 표기법을 통한 Interface 간략화 예
 
@@ -85,7 +85,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 #### Parameterized Class (Generic)
 - Template Parameter and Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
 
-![class diagram 6](/assets/image/2012-08-06-class diagram 6.png)
+![class diagram 6](/assets/image/2012-08-06-class_diagram_6.png)
 
   - 그림 2.1.6. Generic and Bound Element 예
 
@@ -94,14 +94,14 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - Synchronous Message: ![sync_arrow](/assets/image/2012-08-06-sync_arrow.png)
 - Asynchronous Message: ![async_arrow](/assets/image/2012-08-06-async_arrow.png)
 
-![sequence diagram 1](/assets/image/2012-08-06-sequence diagram 1.png)
+![sequence diagram 1](/assets/image/2012-08-06-sequence_diagram_1.png)
 
   - 그림 2.2.1. Sequence Diagram 예
 
 #### Interaction Frame
 - 반복 또는 조건문을 나타내기 위한 표기법. (e.g. alt, opt, par, loop, region, neg, ref, sd, etc...)
 
-![sequence diagram 2](/assets/image/2012-08-06-sequence diagram 2.png)
+![sequence diagram 2](/assets/image/2012-08-06-sequence_diagram_2.png)
 
   - 그림 2.2.2. Interaction Frame을 사용한 Sequence Diagram 예
 
@@ -110,7 +110,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 - syntax: _{depth_1}::{depth_2} ... {depth_#}_. (e.g. **_java/util/concurrent -> java::util::concurrent_** )
 
-![package diagram 1](/assets/image/2012-08-06-package diagram 1.png) ![package diagram 2](/assets/image/2012-08-06-package diagram 2.png)
+![package diagram 1](/assets/image/2012-08-06-package_diagram_1.png) ![package diagram 2](/assets/image/2012-08-06-package_diagram_2.png)
 
   - 그림 2.3. Package Diagram 예
 
@@ -123,14 +123,14 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 Artifact는 문서 아이콘 또는 `<<artifact>>` 키워드로 표시할 수 있으며, node에 포함되는 개념이다. 그리고 Node와 Artifact는 태그(brace `{...}`)를 통해 부가 정보를 기술할 수 있다.
   
-![deployment diagram](/assets/image/2012-08-06-deployment diagram 1.png)
+![deployment diagram](/assets/image/2012-08-06-deployment_diagram_1.png)
 
   - 그림 2.4. Deployment Diagram 예
 
 ### 2.5. Use Case Diagrams
 Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 따라 상당히 복잡해질 수 있다.
 
-![use case diagram](/assets/image/2012-08-06-use case diagram 1.png)
+![use case diagram](/assets/image/2012-08-06-use_case_diagram_1.png)
 
   - 그림 2.5. Use Case Diagram 예
 
@@ -140,7 +140,7 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 - **Transition** : 한 상태에서 다른 상태로는 이동을 나타낸다.
 - **Label** : 각 Transition이 만족하는 조건을 나타내며, `{trigger-signature} [guard] / {activity}`로 기술한다. (_trigger-signature: 상태 변화 유발 이벤트, guard: transition 만족 조건, activity: transition 과정에서 수행되는 행동_)
 
-![state machine diagram](/assets/image/2012-08-06-state machine diagram 1.png)
+![state machine diagram](/assets/image/2012-08-06-state_machine_diagram_1.png)
 
   - 그림 2.6. State Machine Diagram 예
 
@@ -158,34 +158,34 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 - **Token** : 다이어그램이 복잡해질 경우, 토큰을 발행하여 흐름을 시각화하는데 도움이 된다.
 - **Flow/Edge** : 두 액션의 연결을 표현.
 
-![activity diagram 1](/assets/image/2012-08-06-activity diagram 1.png) ![activity diagram 2](/assets/image/2012-08-06-activity diagram 2.png)
+![activity diagram 1](/assets/image/2012-08-06-activity_diagram_1.png) ![activity diagram 2](/assets/image/2012-08-06-activity_diagram_2.png)
 
   - 그림 2.7.1. Activity Diagram과 Partitioning-Activity Diagram 예
 
-![activity diagram 5](/assets/image/2012-08-06-activity diagram 5.png)
+![activity diagram 5](/assets/image/2012-08-06-activity_diagram_5.png)
 
   - 그림 2.7.2. Flow/Edge를 표현하는 네 가지 방법
 
 - **Signal** : time-signal에 따른 event 발생과 event handling.
 
-![activity diagram 3](/assets/image/2012-08-06-activity diagram 3.png) ![activity diagram 4](/assets/image/2012-08-06-activity diagram 4.png)
+![activity diagram 3](/assets/image/2012-08-06-activity_diagram_3.png) ![activity diagram 4](/assets/image/2012-08-06-activity_diagram_4.png)
 
   - 그림 2.7.3. Signal-Activity Diagram 예
 
 - **Pin** : Action에 input-parameters 정보가 필요할 경우 표시.
 - **Transformation** : pre-action의 출력과 post-action의 입력이 일치하지 않는 경우, transformation expression 표기.
 
-![activity diagram 6](/assets/image/2012-08-06-activity diagram 6.png)
+![activity diagram 6](/assets/image/2012-08-06-activity_diagram_6.png)
 
   - 그림 2.7.4. Pin과 Transformation 예
 
 - **Expansion Region** : 컬렉션의 모든 아이템에 대하여 Action이 한 번씩 일어나는 영역.
-![activity diagram 7](/assets/image/2012-08-06-activity diagram 7.png) ![activity diagram 8](/assets/image/2012-08-06-activity diagram 8.png)
+![activity diagram 7](/assets/image/2012-08-06-activity_diagram_7.png) ![activity diagram 8](/assets/image/2012-08-06-activity_diagram_8.png)
 
   - 그림 2.7.5. Expansion Region과 줄여서 표현한 예
 
 - **Flow Final** : 특정한 Flow를 종료하기 위한 표기 방법.
-![activity diagram 9](/assets/image/2012-08-06-activity diagram 9.png)
+![activity diagram 9](/assets/image/2012-08-06-activity_diagram_9.png)
 
   - 그림 2.7.6. Flow Final 예
 
@@ -193,38 +193,38 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 ### 2.8. Communication Diagrams
 참여 요소들에 대한 연결 흐름을 강조하여 표현한다. 보통 순차적인 번호를 부여하여 메세지를 표기한다.
 
-![communication diagram](/assets/image/2012-08-06-communication diagram 1.png)
+![communication diagram](/assets/image/2012-08-06-communication_diagram_1.png)
 
   - 그림 2.8. Communication Diagram 예
 
 ### 2.9. Composite Structure Diagrams
 복잡한 클래스의 내부 구조를 분해하여 표현한다.
 
-![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 1.png) ![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 2.png)
+![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_1.png) ![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_2.png)
 
   - 그림 2.9. Composite Structure Diagram 예
 
 
 ### 2.10. Component Diagrams
 컴포넌트간의 연관 관계를 표현한다.
-- 컴포넌트 표기법: ![component diagram](/assets/image/2012-08-06-component diagram 1.png) or `<<component>>` keyword.
+- 컴포넌트 표기법: ![component diagram](/assets/image/2012-08-06-component_diagram_1.png) or `<<component>>` keyword.
 - 인터페이스 연결 관계 표기법: ![component diagram](/assets/image/2012-08-06-ball_and_socket_notation.png).
 
-![component diagram](/assets/image/2012-08-06-component diagram 3.png)
+![component diagram](/assets/image/2012-08-06-component_diagram_3.png)
 
   - 그림 2.10. Component Diagram 예
 
 ### 2.11. Interaction Overview Diagrams
 단순히 Activity 다이어그램과 Sequence 다이어그램을 접목시킨 것으로서, 표현이 어지러워 실제 많이 사용되지는 않는다.
 
-![interaction overview diagram](/assets/image/2012-08-06-interaction overview diagram.png)
+![interaction overview diagram](/assets/image/2012-08-06-interaction_overview_diagram.png)
 
   - 그림 2.11. Interaction Overview Diagram 예
 
 ### 2.12. Timing Diagrams
 여러 객체들에 대한 타이밍 제약 조건을 표현하며, 객체의 상태 변화 복잡도에 따라 선 또는 영역으로 나타낸다.
 
-![timing diagram 1](/assets/image/2012-08-06-timing diagram 1.png) ![timing diagram 2](/assets/image/2012-08-06-timing diagram 2.png)
+![timing diagram 1](/assets/image/2012-08-06-timing_diagram_1.png) ![timing diagram 2](/assets/image/2012-08-06-timing_diagram_2.png)
 
   - 그림 2.12. Timing Diagram 예
 
