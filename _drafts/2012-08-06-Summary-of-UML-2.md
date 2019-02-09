@@ -36,7 +36,6 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - visibility: +(public), -(private), ~(package), #(protected) - UML meta-model.
 - Association: 클래스간의 연관 관계를 화살표로 표시. (unidirectional/bidirectional)
 
-
 ![class diagram 1](/assets/image/2012-08-06-class diagram 1.png) ![class diagram 2](/assets/image/2012-08-06-class diagram 2.png)
 
   - 그림 2.1.1. Attribute, Association으로 표현한 Class Diagram 예
