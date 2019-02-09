@@ -70,6 +70,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 #### Abstract Class
 - {abstract} label.
+
 ![class diagram 7](/assets/image/2012-08-06-class diagram 7.png)
 
   - 그림 2.1.4. Interface and Abstract Class 예
@@ -79,7 +80,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
   - 그림 2.1.5. Ball-and-Socket 표기법을 통한 Interface 간략화 예
 
 #### Enumeration
-- <<enumeration>> keyword.
+- `<<enumeration>>` keyword.
 
 #### Parameterized Class (Generic)
 - Template Parameter and Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
