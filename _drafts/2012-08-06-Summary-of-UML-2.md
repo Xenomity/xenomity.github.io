@@ -80,7 +80,6 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 ### 2.2. Sequence Diagrams
 한 가지 시나리오에 대한 행동을 순차적으로 묘사한다.
-
 - Synchronous Message: ![sync_arrow](/assets/image/2012-08-06-sync_arrow.png)
 - Asynchronous Message: ![async_arrow](/assets/image/2012-08-06-async_arrow.png)
 
@@ -89,7 +88,6 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - 그림 2.2.1. Sequence Diagram 예
 
 - **Interaction Frame** : 반복 또는 조건문을 나타내기 위한 표기법. (e.g. alt, opt, par, loop, region, neg, ref, sd, etc...)
-
 ![sequence diagram](/assets/image/2012-08-06-sequence diagram 2.png)
 
 - 그림 2.2.2. Interaction Frame을 사용한 Sequence Diagram 예
@@ -111,14 +109,12 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - **Artifact** : 소프트웨어의 물리적인 형태(e.g. exe, jar, dll, etc...).
 
 Artifact는 문서 아이콘 또는 `<<artifact>>` 키워드로 표시할 수 있으며, node에 포함되는 개념이다. 그리고 Node와 Artifact는 태그(brace `{...}`)를 통해 부가 정보를 기술할 수 있다.
-
 ![deployment diagram](/assets/image/2012-08-06-deployment diagram 1.png)
 
 - 그림 2.4. Deployment Diagram 예
 
 ### 2.5. Use Case Diagrams
 Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 따라 상당히 복잡해질 수 있다.
-
 ![use case diagram](/assets/image/2012-08-06-use case diagram 1.png)
 
 - 그림 2.5. Use Case Diagram 예
@@ -128,7 +124,6 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 
 - **Transition** : 한 상태에서 다른 상태로는 이동을 나타낸다.
 - **Label** : 각 Transition이 만족하는 조건을 나타내며, `{trigger-signature} [guard] / {activity}`로 기술한다. (trigger-signature: 상태 변화 유발 이벤트, guard: transition 만족 조건, activity: transition 과정에서 수행되는 행동)
-
 ![state machine diagram](/assets/image/2012-08-06-state machine diagram 1.png)
 
 - 그림 2.6. State Machine Diagram 예
@@ -150,7 +145,6 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 ![activity diagram](/assets/image/2012-08-06-activity diagram 2.png)
 
 - 그림 2.7.1. Activity Diagram과 Partitioning-Activity Diagram 예
-
 ![activity diagram](/assets/image/2012-08-06-activity diagram 5.png)
 
 - 그림 2.7.2. Flow/Edge를 표현하는 네 가지 방법
@@ -180,16 +174,13 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 
 ### 2.8. Communication Diagrams
 참여 요소들에 대한 연결 흐름을 강조하여 표현한다. 보통 순차적인 번호를 부여하여 메세지를 표기한다.
-
 ![communication diagram](/assets/image/2012-08-06-communication diagram 1.png)
 
 - 그림 2.8. Communication Diagram 예
 
 ### 2.9. Composite Structure Diagrams
 복잡한 클래스의 내부 구조를 분해하여 표현한다.
-
-[##\_1C|cfile25.uf.225CB54C540D68D51B9775.png|width="281" height="300" filename="composite structure diagram 1.png" filemime="image/jpeg" style="width: 281px; height: 300px;"|\_##][##\_1C|cfile1.uf.2271C54C540D68D6058EA7.png|width="218" height="140" filename="composite structure diagram 2.png" filemime="image/jpeg" style="font-size: 9pt; line-height: 1.5; width: 218px; height: 140px; background-color: transparent;"|\_##]
-![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 2.png)
+![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 1.png) ![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 2.png)
 
 - 그림 2.9. Composite Structure Diagram 예
 
@@ -197,33 +188,25 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 ### 2.10. Component Diagrams
 컴포넌트간의 연관 관계를 표현한다.
 
-- 컴포넌트 표기법: [##\_1C|cfile1.uf.2276BE42540CA35A1E5D1A.png|width="40" height="20" filename="component diagram 1.png" filemime="image/jpeg" style="text-align: center; font-size: 9pt; line-height: 1.5; width: 40px; height: 20px; background-color: transparent;"|\_##]![composite structure diagram](/assets/image/2012-08-06-composite structure diagram 2.png) or '\<\<component\>\>' keyword.
+- 컴포넌트 표기법: ![component diagram](/assets/image/2012-08-06-component diagram 1.png) or '<<component>>' keyword.
+- 인터페이스 연결 관계 표기법: ![component diagram](/assets/image/2012-08-06-ball_and_socket_notation.png).
+![component diagram](/assets/image/2012-08-06-component diagram 3.png)
 
-- 인터페이스 연결 관계 표기법:[##\_1C|cfile24.uf.2641D241540CA507115294.png|width="13" height="12" filename="ball\_and\_socket\_notation.png" filemime="image/jpeg" style="font-size: 9pt; line-height: 1.5; width: 13px; height: 12px; background-color: transparent;"|\_##](ball-and-socket).
+- 그림 2.10. Component Diagram 예
 
-[##\_1C|cfile22.uf.237DBD39540CA5471C0DE4.png|width="350" height="200" filename="component diagram 3.png" filemime="image/jpeg" style="width: 350px; height: 200px;"|\_##]
-
-- 그림 2.10. Component Diagram 예 -
-
-##### **2.11. Interaction Overview Diagrams**
-
+### 2.11. Interaction Overview Diagrams
 단순히 Activity 다이어그램과 Sequence 다이어그램을 접목시킨 것으로서, 표현이 어지러워 실제 많이 사용되지는 않는다.
+![interaction overview diagram](/assets/image/2012-08-06-interaction overview diagram.png)
 
-[##\_1C|cfile10.uf.24601F3F540C9E400F7F06.png|width="340" height="400" filename="interaction overview diagram.png" filemime="image/jpeg" style="width: 340px; height: 400px;"|\_##]
+- 그림 2.11. Interaction Overview Diagram 예
 
-- 그림 2.11. Interaction Overview Diagram 예 -
-
-##### **2.12. Timing Diagrams**
-
+### 2.12. Timing Diagrams
 여러 객체들에 대한 타이밍 제약 조건을 표현하며, 객체의 상태 변화 복잡도에 따라 선 또는 영역으로 나타낸다.
+![timing diagram 1](/assets/image/2012-08-06-timing diagram 1.png) ![timing diagram 2](/assets/image/2012-08-06-timing diagram 2.png)
 
-[##\_1C|cfile29.uf.257C8C40540C9FFF0E2388.png|width="343" height="200" filename="timing diagram 1.png" filemime="image/jpeg" style="width: 343px; height: 200px;"|\_##] [##\_1C|cfile29.uf.247CC240540CA0000E2FBB.png|width="262" height="200" filename="timing diagram 2.png" filemime="image/jpeg" style="font-size: 9pt; line-height: 1.5; width: 262px; height: 200px; background-color: transparent;"|\_##]
+- 그림 2.12. Timing Diagram 예
 
-- 그림 2.12. Timing Diagram 예 -
-
-#### **3. References**
-
-UML: [www.uml.org](http://www.uml.org)
-
-SEWO UML Tutorial: [http://www.sewo.biz/](http://www.sewo.biz/)
+## 3. References
+- UML: [www.uml.org](http://www.uml.org)
+- SEWO UML Tutorial: [http://www.sewo.biz/](http://www.sewo.biz/)
 
