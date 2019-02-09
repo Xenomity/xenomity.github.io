@@ -20,6 +20,7 @@ date: 2011-07-13T04:42:00+09:00
 ```
   
 ### Propagation 종류
+
 | Propagation | Description |
 |-------------|-------------|
 | **REQUIRED** (default) | 이미 시작된 트랜잭션이 있는 경우 함께 묶이며, 없는 경우 새로 시작. |
