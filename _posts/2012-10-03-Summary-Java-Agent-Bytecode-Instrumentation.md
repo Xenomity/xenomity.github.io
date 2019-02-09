@@ -65,6 +65,7 @@ Created-By: Xenomity
 
 -예 4-에서 보듯이 `Premain-Class`, `Boot-Class-Path`, `Can-Redefine-Classes`는 Agent 전용 속성으로 각 의미하는 바를 아래 표에 나타내었다.
 
+
 | Property | Value |
 |-|-|
 | **Premain-Class** | 'premain' 메서드가 존재하는 에이전트 클래스 명시. |
