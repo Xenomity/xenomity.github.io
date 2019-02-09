@@ -6,7 +6,7 @@ date: 2011-03-21T20:07:47+09:00
   
 JWS 엔진은 최초에 클라이언트의 jre 버전을 확인하고, 없거나 충족되지 못하면 Descriptor에 기술된 정보대로 jre 환경의 자동설치, 모듈의 버전변경에 따른 자동 업데이트, 캐싱 등등 다양한 기술을 제공한다.  
 
-#### **1. Application을 Runnable-Jar로 패키징**
+## 1. Application을 Runnable-Jar로 패키징
 배포될 어플리케이션을 실행 가능한 단일 Jar로 패키징한다.  
 Eclipse Platform의 `JarInJar` ClassLoader를 이용하면 JRE 구 버전에서도 Jar 내부의 Jar를 쉽게 참조할 수 있다. 아님 직접 ClassLoader를 구현하여도 되지만, 그게 아니라면 필수 Jar들을 전부 풀어서 다시 Re-packaging해야 하는 번거로움이 생길수도 있다.  
   
@@ -27,12 +27,12 @@ Main method가 존재하는 실행 가능한 클래스와 해당 프로젝트 �
 * 참고로 SWT Application의 경우, Eclipse 3.5 이상 버전에 번들되어 있는 버전으로 교체함으로써 native library들을 별도로 배포하고 path를 잡아줘야 하는 번거로운 문제들을 해결할 수 있다.
  
 
-#### **2. Signed-Jar 생성**
+## 2. Signed-Jar 생성
 VeriSign 등의 인증 업체를 통해 생성된 Runnable-Jar를 서명한다. 서명을 하지 않으면 당근 브라우저의 보안 정책에 따라 설치 가부가 결정된다.  
 (테스트로 local key-store를 생성하고 jarsigner로 서명할수도 있다.)
   
 
-#### **3. JNLP Descriptor 작성**
+## 3. JNLP Descriptor 작성
 JWS 구성을 위한 jnlp 기술자를 작성한다.  
   
 예) jnlp 1.5 Spec  
@@ -145,7 +145,7 @@ nativelib href="lib/windows/corelibs.jar" />
 ```
 
 
-#### **4. 테스트**
+## 4. 테스트
 작성한 jnlp 기술자와 서명된 jar를 원하는 경로로 배포하고 jnlp를 직접 실행하여본다.  
 ```html  
 ...
