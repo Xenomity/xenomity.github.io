@@ -8,7 +8,7 @@ date: 2014-09-15T17:45:10+09:00
 
 ## Kind of Method References
 | Kind | Syntax |
-|-|-|
+|------|--------|
 | Reference to a static method | ContainingClass::staticMethodName |
 | Reference to an instance method of a particular object | containingObject::instanceMethodName |
 | Reference to an instance method of an arbitrary object of a particular type | ContainingType::methodName |
@@ -17,7 +17,7 @@ date: 2014-09-15T17:45:10+09:00
 - 표 1. Kind of Method References
 
 ## Examples
-람다 표현식의 경우 함수형 인터페이스의 내용을 직접 구현하지만, '<u>메서드 참조(Method References)</u>'를 사용하면 기존에 구현된 메서드를 직접 참조할 수 있다. 다음은 '표 1'에서 나열한 메서드 참조의 4가지 종류에 대한 예제이다.
+람다 표현식의 경우 함수형 인터페이스의 내용을 직접 구현하지만, *'메서드 참조(Method References)'*를 사용하면 기존에 구현된 메서드를 직접 참조할 수 있다. 다음은 '표 1'에서 나열한 메서드 참조의 4가지 종류에 대한 예제이다.
 ```java
 class ComparisonProvider {
     public int compareByName(Person a, Person b) {
@@ -45,7 +45,7 @@ Runnable runnable = System.out::println; // eq () -> System.out.println()
 ```
 - 예 1. Instance/Static Method 참조
 
-람다 표현식은 인터페이스의 파라메터 리스트가 일치(e.g. (String a, String b) == (a, b))해야 하지만, 메서드 참조는 상세 타입(particular type)에 따라 어느정도 객체의 임의적 표현이 가능하다. 예를 들어 'String.compareTo(String another)' 메서드의 경우, 메서드 참조를 통해 'String::compareTo'로 표현될 수 있으며 내부적으로는 'a.compareTo(b)'와 같은 내용으로 재정의된다.
+람다 표현식은 인터페이스의 파라메터 리스트가 일치(e.g. (String a, String b) == (a, b))해야 하지만, 메서드 참조는 상세 타입(particular type)에 따라 어느정도 객체의 임의적 표현이 가능하다. 예를 들어 `String.compareTo(String another)` 메서드의 경우, 메서드 참조를 통해 `String::compareTo`로 표현될 수 있으며 내부적으로는 'a.compareTo(b)'와 같은 내용으로 재정의된다.
 ```java
 String[] names = { "Barbara", "James", "Mary", "John", "Patricia", "Robert", "Michael", "Linda" };
  
@@ -53,7 +53,7 @@ Arrays.sort(names, String::compareTo); // eq Arrays.sort(names, (a, b) -> a.comp
 ```
 - 예 2. 상세 형식을 따르는 임의 객체의 Instance Method 참조
 
-Java에서는 생성자(Constructor)도 메서드처럼 다루므로 메서드 참조를 활용할 수 있다. 단, 인자 없는 기본 생성자(default constructor)만 가능하며 다른 예와 마찬가지로 컴파일 차원에서 타입 추론(type inference)은 그대로 적용된다. 아래 내용은 함수형 인터페이스 중 하나인 Supplier 인터페이스의 함수 전달에 대한 예이다. Supplier 인터페이스는 단순히 'T get()' 추상 메서드를 정의하고 있다.
+Java에서는 생성자(Constructor)도 메서드처럼 다루므로 메서드 참조를 활용할 수 있다. 단, 인자 없는 기본 생성자(default constructor)만 가능하며 다른 예와 마찬가지로 컴파일 차원에서 타입 추론(type inference)은 그대로 적용된다. 아래 내용은 함수형 인터페이스 중 하나인 `Supplier` 인터페이스의 함수 전달에 대한 예이다. `Supplier` 인터페이스는 단순히 `T get()` 추상 메서드를 정의하고 있다.
 ```java
 @FunctionalInterface
 public interface Supplier<T> {
@@ -69,6 +69,5 @@ Supplier<Object> supplier = Object::new;
 - 예 3. 생성자 참조
 
 ## Conclusion
-
 메서드 참조와 람다 표현식의 병행이 익숙해지면, 상당한 양의 부수 코드를 줄이고 간결한 코드를 유지할 수 있다.
 

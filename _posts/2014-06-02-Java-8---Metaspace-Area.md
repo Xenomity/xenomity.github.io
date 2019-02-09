@@ -4,8 +4,6 @@ date: 2014-06-02 08:26:28
 tags: [java, jvm]
 ---
 
-# Java 8 - Metaspace Area
-
 ## PermGen 영역이 사라지다
 **Permanent Generation(이하 PermGen)** 영역은 JVM Heap 영역의 일부로 클래스의 메타데이터를 저장하는 공간이었다. Oracle HotSpot JVM은 Java 7부터 이미 PermGen 영역을 제거하기 위한 사전 작업으로 일부 정보들(*e.g. Symbols, Interned String, Static class variables*)을 Heap 영역으로 이전시킨 바 있다. 그리고 Java 8에 이르러 Heap 영역의 PermGen은 완전히 제거되고, native 메모리를 할당하는 새로운 **Metaspace** 영역이 추가되었고 클래스 메타데이터는 전부 이곳으로 이동하게 되었다. 따라서 PermGen과 관련된 기존 JVM 비표준 System Properties(*e.g. PermSize, MaxPermSize*)는 더 이상 유효하지 않으며, `java.lang.OutOfMemoryError: PermGen Space`와 같은 오류를 볼 수 없게 되었다.
 
