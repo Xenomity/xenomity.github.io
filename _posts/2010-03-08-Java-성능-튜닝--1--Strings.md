@@ -69,5 +69,5 @@ StringBuffer sb = new StringBuffer(512);
 String 객체를 항상 생성하지 않고, Java Syntax 차원에서 제공하는 방법으로 문자열을 초기화한다.  
 같은 문자열의 중복 생성을 방지할 수 있다.  
   
-String Pool 포스팅편을 참고 : [http://blog.xenomity.com/Java-String-Pool](http://blog.xenomity.com/Java-String-Pool)
+String Pool 포스팅편을 참고 : [https://blog.xenomity.com/Java-String-Pool](https://blog.xenomity.com/Java-String-Pool)
 
