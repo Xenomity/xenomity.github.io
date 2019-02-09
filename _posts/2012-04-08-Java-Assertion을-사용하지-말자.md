@@ -14,7 +14,7 @@ Java 1.4에서 추가된 `assert` 식은 다양한 사전 조건이나 제약 �
 
 - `assert` 문을 통한 사전 조건 검사의 예.
 
-  ```
+  ```java
   public void foo(int number) {
     assert number >= 0;
   }
@@ -25,7 +25,7 @@ Java 1.4에서 추가된 `assert` 식은 다양한 사전 조건이나 제약 �
 
 - 예외를 통한 사전 조건 검사의 예.
 
-  ```
+  ```java
   public void foo(int number) {
     if (number < 0) {
       throw new IllegalArgumentException("invalid number size.");
