@@ -114,7 +114,7 @@ Class Diagram 1 | Class Diagram 2
 
 Package Diagram 1 | Package Diagram 2
 ------------------|------------------
-![package diagram 1](/assets/image/2012-08-06-package_diagram_1.png) ![package diagram 2](/assets/image/2012-08-06-package_diagram_2.png)
+![package diagram 1](/assets/image/2012-08-06-package_diagram_1.png) | ![package diagram 2](/assets/image/2012-08-06-package_diagram_2.png)
 
   - 그림 2.3. Package Diagram 예
 
@@ -176,7 +176,7 @@ Activity Diagram 1 | Activity Diagram 2
 
 Activity Diagram 3 | Activity Diagram 4
 -------------------|-------------------
-![activity diagram 3](/assets/image/2012-08-06-activity_diagram_3.png) ![activity diagram 4](/assets/image/2012-08-06-activity_diagram_4.png)
+![activity diagram 3](/assets/image/2012-08-06-activity_diagram_3.png) | ![activity diagram 4](/assets/image/2012-08-06-activity_diagram_4.png)
 
   - 그림 2.7.3. Signal-Activity Diagram 예
 
@@ -191,7 +191,7 @@ Activity Diagram 3 | Activity Diagram 4
 
 Activity Diagram 7 | Activity Diagram 8
 -------------------|-------------------
-![activity diagram 7](/assets/image/2012-08-06-activity_diagram_7.png) ![activity diagram 8](/assets/image/2012-08-06-activity_diagram_8.png)
+![activity diagram 7](/assets/image/2012-08-06-activity_diagram_7.png) | ![activity diagram 8](/assets/image/2012-08-06-activity_diagram_8.png)
 
   - 그림 2.7.5. Expansion Region과 줄여서 표현한 예
 
@@ -213,7 +213,7 @@ Activity Diagram 7 | Activity Diagram 8
 
 Composite Structure Diagram 1 | Composite Structure Diagram 2
 ------------------------------|------------------------------
-![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_1.png) ![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_2.png)
+![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_1.png) | ![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_2.png)
 
   - 그림 2.9. Composite Structure Diagram 예
 
@@ -239,7 +239,7 @@ Composite Structure Diagram 1 | Composite Structure Diagram 2
 
 Timing Diagram 1 | Timing Diagram 2
 -----------------|-----------------
-![timing diagram 1](/assets/image/2012-08-06-timing_diagram_1.png) ![timing diagram 2](/assets/image/2012-08-06-timing_diagram_2.png)
+![timing diagram 1](/assets/image/2012-08-06-timing_diagram_1.png) | ![timing diagram 2](/assets/image/2012-08-06-timing_diagram_2.png)
 
   - 그림 2.12. Timing Diagram 예
 
