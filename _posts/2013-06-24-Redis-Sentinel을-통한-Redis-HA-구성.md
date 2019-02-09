@@ -1,3 +1,8 @@
+---
+title: "Redis Sentinel을 통한 Redis H/A 구성"
+date: 2013-06-24 08:26:28
+tags: [redis, redis-sentinel]
+---
 
 ## Overview
 Redis Sentinel은 Redis 서버군을 관리하기 위한 목적으로 개발된 도구이다.
