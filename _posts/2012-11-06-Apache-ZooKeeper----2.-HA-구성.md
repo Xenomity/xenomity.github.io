@@ -8,7 +8,7 @@ ZooKeeper는 분산 코디네이터로 application level의 고가용성(H/A) �
 
 예로 ephemeral znode를 적절히 응용하면 load balancing, fail-over도 이벤트 핸들링 방식으로 손쉽게 구현할 수 있다. 실제로 Hadoop의 분산 서버 관리 프로세스도 ZooKeeper의 ephemeral znode로 서버 상태를 관찰(watch)한다.
 
-- Apache ZooKeeper에 대한 개념은 [이전 포스팅](https://blog.xenomity.com/Apache-ZooKeeper-1-Overview)을 참고.
+- Apache ZooKeeper에 대한 개념은 [이전 포스팅](https://blog.xenomity.com/Apache-ZooKeeper-1.-Overview)을 참고.
 
 이번에는 ZooKeeper를 통한 간단한 장애 통지 프로세스의 예를 작성해 보았다.
  
