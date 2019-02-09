@@ -112,6 +112,8 @@ Class Diagram 1 | Class Diagram 2
 
 - syntax: _{depth_1}::{depth_2} ... {depth_#}_. (e.g. **_java/util/concurrent -> java::util::concurrent_** )
 
+Package Diagram 1 | Package Diagram 2
+------------------|------------------
 ![package diagram 1](/assets/image/2012-08-06-package_diagram_1.png) ![package diagram 2](/assets/image/2012-08-06-package_diagram_2.png)
 
   - 그림 2.3. Package Diagram 예
@@ -160,6 +162,8 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 - **Token** : 다이어그램이 복잡해질 경우, 토큰을 발행하여 흐름을 시각화하는데 도움이 된다.
 - **Flow/Edge** : 두 액션의 연결을 표현.
 
+Activity Diagram 1 | Activity Diagram 2
+-------------------|-------------------
 ![activity diagram 1](/assets/image/2012-08-06-activity_diagram_1.png) ![activity diagram 2](/assets/image/2012-08-06-activity_diagram_2.png)
 
   - 그림 2.7.1. Activity Diagram과 Partitioning-Activity Diagram 예
@@ -170,6 +174,8 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 
 - **Signal** : time-signal에 따른 event 발생과 event handling.
 
+Activity Diagram 3 | Activity Diagram 4
+-------------------|-------------------
 ![activity diagram 3](/assets/image/2012-08-06-activity_diagram_3.png) ![activity diagram 4](/assets/image/2012-08-06-activity_diagram_4.png)
 
   - 그림 2.7.3. Signal-Activity Diagram 예
@@ -182,6 +188,9 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
   - 그림 2.7.4. Pin과 Transformation 예
 
 - **Expansion Region** : 컬렉션의 모든 아이템에 대하여 Action이 한 번씩 일어나는 영역.
+
+Activity Diagram 7 | Activity Diagram 8
+-------------------|-------------------
 ![activity diagram 7](/assets/image/2012-08-06-activity_diagram_7.png) ![activity diagram 8](/assets/image/2012-08-06-activity_diagram_8.png)
 
   - 그림 2.7.5. Expansion Region과 줄여서 표현한 예
@@ -202,6 +211,8 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 ### 2.9. Composite Structure Diagrams
 복잡한 클래스의 내부 구조를 분해하여 표현한다.
 
+Composite Structure Diagram 1 | Composite Structure Diagram 2
+------------------------------|------------------------------
 ![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_1.png) ![composite structure diagram](/assets/image/2012-08-06-composite_structure_diagram_2.png)
 
   - 그림 2.9. Composite Structure Diagram 예
@@ -226,6 +237,8 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 ### 2.12. Timing Diagrams
 여러 객체들에 대한 타이밍 제약 조건을 표현하며, 객체의 상태 변화 복잡도에 따라 선 또는 영역으로 나타낸다.
 
+Timing Diagram 1 | Timing Diagram 2
+-----------------|-----------------
 ![timing diagram 1](/assets/image/2012-08-06-timing_diagram_1.png) ![timing diagram 2](/assets/image/2012-08-06-timing_diagram_2.png)
 
   - 그림 2.12. Timing Diagram 예
