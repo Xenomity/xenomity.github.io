@@ -30,10 +30,10 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 객체의 타입과 객체간의 다양한 정적 관계에 대한 모습을 기술한다.
 
 - **Property** : Property는 Attribute과 Association으로 표현할 수 있다.
- i) Attribute: syntax - <u><i>{visibility} {name}:{type} {multiplicity}={default} {property-string}</i></u> (e.g. _**-name:String [1] = "Unnamed" {readOnly}**_)
- i-1) 정적(static) 속성의 경우 <u>밑줄(underline)</u>, final의 경우 _Italic_ 으로 표기하며, 상수의 경우(e.g. Java: static final) _밑줄+이탤릭_ 형식으로 표기한다.
- i-2) visibility: +(public), -(private), ~(package), #(protected) - UML meta-model.
- ii) Association: 클래스간의 연관 관계를 화살표로 표시. (unidirectional/bidirectional)
+  i) Attribute: syntax - <u><i>{visibility} {name}:{type} {multiplicity}={default} {property-string}</i></u> (e.g. _**-name:String [1] = "Unnamed" {readOnly}**_)
+  i-1) 정적(static) 속성의 경우 <u>밑줄(underline)</u>, final의 경우 _Italic_ 으로 표기하며, 상수의 경우(e.g. Java: static final) _밑줄+이탤릭_ 형식으로 표기한다.
+  i-2) visibility: +(public), -(private), ~(package), #(protected) - UML meta-model.
+  ii) Association: 클래스간의 연관 관계를 화살표로 표시. (unidirectional/bidirectional)
 
 ![class diagram](/assets/image/2012-08-06-class diagram 1.png)
 
