@@ -9,10 +9,10 @@ date: 2014-09-15T17:45:10+09:00
 ## Kind of Method References
 Kind | Syntax
 -----|-------
-Reference to a static method | ContainingClass::staticMethodName
-Reference to an instance method of a particular object | containingObject::instanceMethodName
-Reference to an instance method of an arbitrary object of a particular type | ContainingType::methodName
-Reference to a constructor | ClassName::new
+Reference to a static method | `ContainingClass::staticMethodName`
+Reference to an instance method of a particular object | `containingObject::instanceMethodName`
+Reference to an instance method of an arbitrary object of a particular type | `ContainingType::methodName`
+Reference to a constructor | `ClassName::new`
 
 - 표 1. Kind of Method References
 
