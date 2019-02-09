@@ -110,7 +110,7 @@ Class Diagram 1 | Class Diagram 2
 ### 2.3. Package Diagrams
 클래스의 묶음 단위를 표현하는 다이어그램으로, UML에서는 '**namespace**'로 표현한다.
 
-- syntax: _{depth_1}::{depth_2} ... {depth_#}_. (e.g. **_java/util/concurrent -> java::util::concurrent_** )
+- syntax: _`{depth_1}::{depth_2}::{depth_#}`_. (e.g. **_java/util/concurrent -> java::util::concurrent_** )
 
 Package Diagram 1 | Package Diagram 2
 ------------------|------------------
