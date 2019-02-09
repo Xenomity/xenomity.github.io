@@ -4,12 +4,12 @@ tags: [hibernate-validator, jsr-303, spring]
 date: 2011-07-21T08:31:04+09:00
 ---
 
-<font color="#d18e0a">* 작업환경 : Spring 3.0.5, Hibernate Validator 4.2<br>
-</font>  
+* 작업환경 : Spring 3.0.5, Hibernate Validator 4.2
   
 Hibernate Validator는 JSR-303 Spec의 구현체로서 도메인 모델에서 @Annotation을 통한 필드값 검증을 가능하게 해준다. Controller에서의 Validation으로 지저분해지던 코드를 쉽게 도메인 오브젝트로 분리할 수 있으며, Spring의 MessageSource를 공유하여 손쉬운 에러메세지 관리도 가능하게 한다.  
   
-- Maven pom.xml -
+- Maven pom.xml
+
 ```xml
 <!-- Hibernate Validator -->
 <dependency>
@@ -29,7 +29,8 @@ Hibernate Validator는 JSR-303 Spec의 구현체로서 도메인 모델에서 @A
 </dependency>
 ```
   
-- Spring applicationContext.xml -  
+- Spring applicationContext.xml
+
 ```xml
 <bean id="validator"
   class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
@@ -40,6 +41,7 @@ Hibernate Validator는 JSR-303 Spec의 구현체로서 도메인 모델에서 @A
 Hibernate Validator에서 사용 가능한 JSR-303 @Annotation 목록은 다음과 같다.  
   
 #### `javax.validation.constraints.*`
+
 | Annotation | Type | Validation |
 |------------|------|------------|
 | **@AssertFalse** | 모두 | 거짓여부 체크 |
@@ -91,7 +93,7 @@ NotEmpty.employee.name=공백은 안되요~!
 Min.employee.age={0} 이상만 가능합니다.
 ```
 
-메세지의 사용 범위에 따라 프로퍼티의 키를 다양하게 정의할 수 있다. 기본적으로는 메세지 키는 <u>'어노테이션명.모델명.필드명</u>'이 된다. 이 룰을 따르기 싫다면 각각 어노테이션에서 직접 메세지 키를 정의하여 매핑할 수도 있다. 예를 들어 `@Email(message="{aaa.bbb}")`라면, `aaa.bbb`라는 프로퍼티 키의 메세지와 매핑된다.  
+메세지의 사용 범위에 따라 프로퍼티의 키를 다양하게 정의할 수 있다. 기본적으로는 메세지 키는 _'어노테이션명.모델명.필드명'_이 된다. 이 룰을 따르기 싫다면 각각 어노테이션에서 직접 메세지 키를 정의하여 매핑할 수도 있다. 예를 들어 `@Email(message="{aaa.bbb}")`라면, `aaa.bbb`라는 프로퍼티 키의 메세지와 매핑된다.  
   
 ![hibernate validation](../assets/image/2011-07-21-201107210824.jpg)
 
