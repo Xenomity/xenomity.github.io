@@ -6,7 +6,7 @@ date: 2010-12-27T15:08:32+09:00
 
 GoF(Gang of Four)에서는 23가지 객체지향 설계 패턴을 3가지 유형으로 분류한다.
 
-#### **1. Creational Pattern (생성패턴)**
+## Creational Pattern (생성패턴)
 - 객체 생성에 관련한 패턴들.  
 - 최대한 느슨한 연결로 객체생성의 유연성을 높힌다.  
 - 코드의 유지보수가 용이.  
@@ -19,7 +19,7 @@ GoF(Gang of Four)에서는 23가지 객체지향 설계 패턴을 3가지 유형
   5) Builder : 객체 생성부와 표현부를 분리하여 서로 다른 표현 객체들이 동일한 객체 생성부를 이용할 수 있도록 정의.  
   
 
-#### **2. Structural Pattern (구조패턴)**
+## Structural Pattern (구조패턴)
 - 객체간의 구조에 관련한 패턴들.  
   
   1) Adapter(Wrapper) : 기존 인터페이스를 다른 인터페이스로 변환. 상호 호환성 제공.  
@@ -31,7 +31,7 @@ GoF(Gang of Four)에서는 23가지 객체지향 설계 패턴을 3가지 유형
   7) Proxy : 가벼운 선처리 혹은 위임처리를 위한 대리자(surrogate) 구현을 정의.  
   
 
-#### **3. Behavioral Pattern (행동패턴)**
+## Behavioral Pattern (행동패턴)
 - 반복적으로 사용되는 객체들의 상호작용에 관련한 패턴들.  
   
   1) Chain of Responsibility : 서비스의 체인화로 서비스 요청자와 제공자간의 결합도를 줄임. (De-coupling)  
