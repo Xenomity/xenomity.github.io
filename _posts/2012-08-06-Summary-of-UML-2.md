@@ -9,6 +9,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
   
   
 ## 2. UML Diagrams
+
 | Category | Diagram | Description |
 |----------|---------|-------------|
 | Structure based | Class Diagrams | 클래스의 특성과 관계에 대한 묘사. |
