@@ -47,11 +47,11 @@ GoF(Gang of Four)에서는 23가지 객체지향 설계 패턴을 3가지 유형
   11) Visitor : 자료구조 내의 객체들에게 특정 연산을 수행하는 방법을 정의.  
   
 
-![Design Pattern Relationship](/assets/image/design-pattern-relationship.jpg)
+![Design Pattern Relationship](../assets/image/design-pattern-relationship.jpg)
  
 
-![Design Pattern Reference 1](/assets/image/design-pattern-reference-1.gif)
+![Design Pattern Reference 1](../assets/image/design-pattern-reference-1.gif)
 
 
-![Design Pattern Reference 2](/assets/image/design-pattern-reference-2.gif)
+![Design Pattern Reference 2](../assets/image/design-pattern-reference-2.gif)
 

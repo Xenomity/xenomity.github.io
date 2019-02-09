@@ -11,11 +11,11 @@ date: 2012-07-01T20:35:00+09:00
 
 (* 대표적인 SQL Mapper로는 MyBatis나 Oracle SQLJ 등이 있음)
 
-![DAOMainClass](/assets/image/2012-07-01-DAOMainClass.gif)
+![DAOMainClass](../assets/image/2012-07-01-DAOMainClass.gif)
 
 - Class Diagram
 
-![DAOMainSeq](/assets/image/2012-07-01-DAOMainSeq.gif)
+![DAOMainSeq](../assets/image/2012-07-01-DAOMainSeq.gif)
 
 - Sequence Diagram
 
@@ -27,11 +27,11 @@ MOM을 통해 요청 메세지를 전달하면, Service Activator는 전달받�
 
 (* MOM: 'Message Oriented Middleware')
 
-![SAMainClass](/assets/image/2012-07-01-SAMainClass.gif)
+![SAMainClass](../assets/image/2012-07-01-SAMainClass.gif)
 
 - Class Diagram
 
-![SAMainSeq](/assets/image/2012-07-01-SAMainSeq.gif)
+![SAMainSeq](../assets/image/2012-07-01-SAMainSeq.gif)
 
 - Sequence Diagram
 
@@ -43,11 +43,11 @@ Businee Object에서 데이터 영속화 로직을 분리함으로서 재사용�
 
 (* Data Access Object는 SQL Mapper와 같이 데이터 스토리지에 대한 오퍼레이션을 수행하는 adapter 역할을 하지만, Domain Store는 Entity Bean처럼 'Persistence Object' 역할을 함)
 
-![DSMainClass1](/assets/image/2012-07-01-DSMainClass1.gif)
+![DSMainClass1](../assets/image/2012-07-01-DSMainClass1.gif)
 
 - Class Diagram
 
-![DSMainSeq3](/assets/image/2012-07-01-DSMainSeq3.gif)
+![DSMainSeq3](../assets/image/2012-07-01-DSMainSeq3.gif)
 
 - Sequence Diagram
 
@@ -60,11 +60,11 @@ Web Service Broker는 다양한 프로토콜에 의존적인 요청 처리 로�
 (* API Service에 많이 사용되는 패턴)
 (* Spring Web Services에 이 패턴이 잘 드러나 있음)
 
-![WSBMainClass1](/assets/image/2012-07-01-WSBMainClass1.gif)
+![WSBMainClass1](../assets/image/2012-07-01-WSBMainClass1.gif)
 
 - Class Diagram
 
-![WSBMainSeq3](/assets/image/2012-07-01-WSBMainSeq3.gif)
+![WSBMainSeq3](../assets/image/2012-07-01-WSBMainSeq3.gif)
 
 - Sequence Diagram
 

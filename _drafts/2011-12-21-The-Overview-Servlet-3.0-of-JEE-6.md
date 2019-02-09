@@ -93,7 +93,7 @@ Annotation을 통한 서블릿, 필터 등의 정의 또는 web-fragment.xml을 
   
 
 ## 4. Asynchronous Support
-![async support](/assets/image/2011-12-21-201112231455.PNG)
+![async support](../assets/image/2011-12-21-201112231455.PNG)
   
 ```
 - web.xml  

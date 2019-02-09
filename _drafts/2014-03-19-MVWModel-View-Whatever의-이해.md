@@ -19,7 +19,7 @@ MVW란, 기존의 Presentation Pattern들 중 MVx에 해당하는 패턴을 포�
 ## MVC vs MVP vs MVVM
 MVC에서 파생된 MVP/MVVM 패턴은 관심사의 분리(Separation of Concerns)를 통한 Model, View 사이의 coupling을 줄이고 기능 단위의 cohesion을 높이기 위한 관점으로 MVC와 목표하는 바가 같다. 이 목적을 위해 각 패턴은 View와 Model 사이의 상호 작용을 위한 component를 Controller/Presenter/ViewModel이라는 이름으로 표현하고 있다.
 
-![MVC vs MVP vs MVVM](/assets/image/2014-03-19-image_4.png)
+![MVC vs MVP vs MVVM](../assets/image/2014-03-19-image_4.png)
 - MVC vs MVP vs MVVM
 
 ### MVP Pattern
@@ -32,7 +32,7 @@ MVP 패턴은 View와 Model간의 coupling을 완화하기 위해 일련의 work
 
 | MVC | MVVM |
 |-|-|
-| ![MVC](/assets/image/2014-03-19-mvcweb2.jpg) | ![MVP](/assets/image/2014-03-19-mvpsequence.jpg) |
+| ![MVC](../assets/image/2014-03-19-mvcweb2.jpg) | ![MVP](../assets/image/2014-03-19-mvpsequence.jpg) |
 
 - Sequence Diagram: MVC (Model 2) vs MVP
 
@@ -43,7 +43,7 @@ MVVM 패턴은 Microsoft WPF(Windows Presentation Framework)에서 대표적으�
 
 (* MVVM 패턴은 MVB(Model-View-Binder) 패턴으로 호칭되기도 한다.) 
 
-![MVP](/assets/image/2014-03-19-mvvm.png)
+![MVP](../assets/image/2014-03-19-mvvm.png)
 - MVVM Class Diagram
 
 ## References

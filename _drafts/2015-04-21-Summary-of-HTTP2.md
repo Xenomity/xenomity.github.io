@@ -45,7 +45,7 @@ tags: [http]
 
 
 ## HTTP/2 Design & Advantages
-![HTTP/2 Design](/assets/image/http_2_design.png)
+![HTTP/2 Design](../assets/image/http_2_design.png)
 - 그림 1. HTTP/2 Layout (이미지 출처: Google)
 
 ### One TCP Connection

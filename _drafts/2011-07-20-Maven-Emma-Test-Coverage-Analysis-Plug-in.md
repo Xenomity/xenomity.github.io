@@ -57,15 +57,15 @@ Emma는 TestCase를 품질지표로 설정하기 위한 Test Coverage Reporting 
 ## 2. Hudson CI 통합
 Hudson 2.1 기준에서 Emma 결과를 보기 위해서는 먼저 Jenkins Emma Plug-in이 설치되어 있어야 한다.  
 
-![step 1](/assets/image/2011-07-20-201108202028.jpg)
+![step 1](../assets/image/2011-07-20-201108202028.jpg)
   
 정상적으로 빌드가 완료되면 좌측메뉴에 'Coverage Trend'라는 메뉴가 생성되며, Code Coverage Trend 그래프를 볼 수 있다.  
 
-![step 2](/assets/image/2011-07-20-201108202101.jpg)
+![step 2](../assets/image/2011-07-20-201108202101.jpg)
 
-![step 3](/assets/image/2011-07-20-201108202102.jpg)
+![step 3](../assets/image/2011-07-20-201108202102.jpg)
 
-![step 4](/assets/image/2011-07-20-201108202103.jpg)
+![step 4](../assets/image/2011-07-20-201108202103.jpg)
   
 
   

@@ -4,7 +4,7 @@ tags: osgi
 date: 2011-04-07T15:15:33+09:00
 ---
 
-![bundle life-cycle](/assets/image/2011-04-07-201104071503.png)
+![bundle life-cycle](../assets/image/2011-04-07-201104071503.png)
   
 | Status | Description |
 |--------|-------------|

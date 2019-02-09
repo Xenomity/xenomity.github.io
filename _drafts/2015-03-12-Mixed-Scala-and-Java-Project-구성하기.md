@@ -84,7 +84,7 @@ Maven POM에 스칼라 라이브러리 의존성을 추가한다. 현재 일자 
 
 ### 3. Test by JUnit 4
 다음과 같은 위치에 각각 샘플 코드를 작성했다고 가정한다. `src/test/scala` 패키지의 `FooTest.scala` 파일은 `src/main/java` 패키지의 `Foo.java` 클래스를 단위 테스트한다.
-![Maven Project Structure](/assets/image/mixed-scala-java-project-structure.jpg)
+![Maven Project Structure](../assets/image/mixed-scala-java-project-structure.jpg)
 - 그림 1. Maven Project Structure
 
 아래 예는 Spring-based 환경에서 `SpringJUnit4ClassRunner`를 통한 JUnit 샘플이다. 임의의 Maven Goal을 실행해보면, Test Goal에서 정상적으로 실행됨을 확인할 수 있다.

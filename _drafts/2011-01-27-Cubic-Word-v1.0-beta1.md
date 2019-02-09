@@ -20,18 +20,18 @@ add: Option 메뉴/화면
 add: 국제화(영어/한글)
   
 
-![cw_1](/assets/image/2011-01-27-201101270220.jpg)
+![cw_1](../assets/image/2011-01-27-201101270220.jpg)
   
-![cw_2](/assets/image/2011-01-27-201101271630.jpg)
+![cw_2](../assets/image/2011-01-27-201101271630.jpg)
   
-![cw_3](/assets/image/2011-01-27-201101271631.jpg)
+![cw_3](../assets/image/2011-01-27-201101271631.jpg)
   
-![cw_4](/assets/image/2011-01-27-201101271632.jpg)
+![cw_4](../assets/image/2011-01-27-201101271632.jpg)
   
-![cw_5](/assets/image/2011-01-27-201101060930.jpg)
+![cw_5](../assets/image/2011-01-27-201101060930.jpg)
   
-![cw_6](/assets/image/2011-01-27-201101060931.jpg)
+![cw_6](../assets/image/2011-01-27-201101060931.jpg)
   
-![cw_7](/assets/image/2011-01-27-201101060935.jpg)
+![cw_7](../assets/image/2011-01-27-201101060935.jpg)
   
-![cw_8](/assets/image/2011-01-27-201012131621.jpg)
+![cw_8](../assets/image/2011-01-27-201012131621.jpg)

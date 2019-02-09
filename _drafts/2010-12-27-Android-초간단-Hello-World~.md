@@ -13,7 +13,7 @@ Android 개발환경 구축 선작업이 되어있지 않은 경우, [Android �
 #### **1. Android Project 생성.**
 New =\> Project =\> Android =\> Android Project  
 
-![Step 1](/assets/image/2010-12-27-201011231243.jpg)
+![Step 1](../assets/image/2010-12-27-201011231243.jpg)
    1) Project Name : 프로젝트명  
    2) Application Name : 어플리케이션명
    3) Package Names : 식별되는 Package명
@@ -23,7 +23,7 @@ New =\> Project =\> Android =\> Android Project
 
 #### **2. Sample Code 작성.**
 
-![Step 2](/assets/image/2010-12-27-201011231247.jpg)
+![Step 2](../assets/image/2010-12-27-201011231247.jpg)
   
 
 정상적으로 프로젝트가 생성되면 위와 같은 구조가 만들어진다.
@@ -55,7 +55,7 @@ public class HelloWorld extends Activity {
 #### **3. 실행**
 Run As =\> Android Application  
 
-![Step 3](/assets/image/2010-12-27-201011231250.jpg)
+![Step 3](../assets/image/2010-12-27-201011231250.jpg)
 
 정상적으로 실행된 모습  
   

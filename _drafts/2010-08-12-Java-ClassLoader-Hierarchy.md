@@ -4,7 +4,7 @@ tags: [java]
 date: 2010-08-12T10:17:00+09:00
 ---
 
-![Java Class Loader](/assets/image/java-class-loader.jpg)
+![Java Class Loader](../assets/image/java-class-loader.jpg)
 
 '클래스 로더'란 바이트 코드를 메모리에 동적으로 적재하는 객체를 의미하며, 자바에서는 위와 같은 3단계의 기본 클래스 로더들이 상하 관계를 형성하고 있다. 일반적으로 J2EE 벤더들은 독자적인 hot-deploy 매커니즘을 다루고 있으며 이에 따라 적절한 '사용자 정의 클래스 로더'를 구현하고 있다. 이 말의 의미는 클래스 로더는 얼마든지 변경 가능한 특징을 가지고 있다는 것이다. 다음은 위 그림을 토대로 한 각 클래스 로더의 역할 및 책임을 나열한다.
 

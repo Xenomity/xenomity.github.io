@@ -7,7 +7,7 @@ tags: [java, jvm]
 # JVM 메모리 구조
 JVM은 OS 위에서 하나의 프로세스로 동작한다. 자바 애플리케이션이 실행되면 JVM은 OS로부터 실행에 필요한 자원을 할당받고 JVM이 필요로 하는 메모리 영역을 용도에 따라 분리하여 관리하게 된다. 이 메모리를 **Runtime Data Areas**라고 하는데, JVM은 런타임 시점에 `Class Loader`를 통해 필요한 클래스들의 정보를 분석하고 각 메모리 영역별로 적재한다. 아래 그림은 **Runtime Data Areas**를 도식화한 것이다.
 
-![JVM Memory Structure](/assets/image/jvm_memory_structure.gif)
+![JVM Memory Structure](../assets/image/jvm_memory_structure.gif)
 
 -그림 1. JVM Memory. (출처: Sun)-
 

@@ -15,5 +15,5 @@ wsdl2java.bat -o {Output Path} -uri {WSDL Address}
   
 실제 Output Path를 확인해보면, 해당 패키지와 클래스가 생성된 것을 확인할 수 있다.  
 
-![axis-stub](/assets/image/2011-01-29-201103091626.jpg)
+![axis-stub](../assets/image/2011-01-29-201103091626.jpg)
   

@@ -12,13 +12,13 @@ published: 2013-06-24T14:05:06+09:00
 
 * Eclipse 3.4 Ganymede 이상 버전에서 사용 가능.
 
-![ibs-cg](/assets/image/ibs-cg-01.png)
+![ibs-cg](../assets/image/ibs-cg-01.png)
 
-![ibs-cg](/assets/image/ibs-cg-02.png)
+![ibs-cg](../assets/image/ibs-cg-02.png)
 
-![ibs-cg](/assets/image/ibs-cg-03.png)
+![ibs-cg](../assets/image/ibs-cg-03.png)
 
-![ibs-cg](/assets/image/ibs-cg-04.png)
+![ibs-cg](../assets/image/ibs-cg-04.png)
 
 ps. 당분간 주말이 없겠군..;;
 
