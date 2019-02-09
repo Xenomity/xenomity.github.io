@@ -27,7 +27,7 @@ OpenSource로는 Eclipse Equinox, Apache Felix, Knopflerfish 등이 있으며, �
 Bundle은 Module이라고도 하며, OSGi Framework는 API의 가시성, Bundle간의 의존성, Bundle의 버전 등을 정의하고 Life-cycle을 관리한다.   
 Runtime 시점에 OSGi Framework는 Bundle의 상태를 동적으로 변화시킬 수 있다.  
   
-자세한 내용은 [이전 포스팅](http://blog.xenomity.com/OSGi-Bundle-Life-cycle) 참고.  
+자세한 내용은 [이전 포스팅](https://blog.xenomity.com/OSGi-Bundle-Life-cycle) 참고.  
 
 
 ## 5. OSGi Service

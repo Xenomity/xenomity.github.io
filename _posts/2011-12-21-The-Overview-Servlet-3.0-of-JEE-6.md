@@ -9,7 +9,7 @@ Servlet 3.0 (JSR-315) API는 개발 편의성의 증대라는 목표로 Annotati
 아래부터는 Servlet 3.0 Specification Final Release Document의 내용을 참고하여 간략히 정리해 보았다.
 
 ## 1. Annotations
-### 1.1. @WebServlet**  
+### 1.1. @WebServlet
 ```java
 @WebServlet(”/test”)
 public class TestServlet extends HttpServlet {
