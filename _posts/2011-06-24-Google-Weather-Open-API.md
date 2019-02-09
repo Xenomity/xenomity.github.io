@@ -7,8 +7,9 @@ published: 2011-06-24T04:30:00+09:00
 Google에서 제공하는 날씨 정보 API로 4일간의 일기예보 및 해당 날씨의 이쁜(?) 아이콘까지 제공한다.  
 현재까지 Weather API는 라이센스 키의 인증없이 공개적인 사용이 가능하다. :)
 
-http://www.google.co.kr/ig/api?weather=<u>{도시명</u><u>}<br>
-</u>
+```
+http://www.google.co.kr/ig/api?weather={도시명}
+```
   
 예) HTTP v1.1 http://www.google.co.kr/ig/api?weather=seoul  
 ```xml
