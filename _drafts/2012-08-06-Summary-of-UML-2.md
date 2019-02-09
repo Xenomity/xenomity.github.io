@@ -5,7 +5,7 @@ date: 2012-08-06T18:33:00+09:00
 ---
 
 ## 1. Overview
-UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 소프트웨어를 설계하고 표현하는 것을 시각적으로 도와주기 위한 GML(Graphical Modeling Language)의 일종으로, 도메인의 추상적/피상적인 부분을 포함하여 교류 관계를 도식화하는 범용적인 '표준 객체 모델링 언어'이다. OMG(Object Management Group)에서 관리되는 개방 표준이며, 현재일자 기준 최신 명세 버전은 2.4.1이다.
+UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 소프트웨어를 설계하고 표현하는 것을 시각적으로 도와주기 위한 GML(Graphical Modeling Language)의 일종으로, 도메인의 추상적/피상적인 부분을 포함하여 교류 관계를 도식화하는 범용적인 '**표준 객체 모델링 언어**'이다. OMG(Object Management Group)에서 관리되는 개방 표준이며, 현재일자 기준 최신 명세 버전은 2.4.1이다.
 
 
 ## 2. UML Diagrams
