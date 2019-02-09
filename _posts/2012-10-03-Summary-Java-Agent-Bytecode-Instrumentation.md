@@ -65,11 +65,12 @@ Created-By: Xenomity
 
 '예 4'에서 보듯이 `Premain-Class`, `Boot-Class-Path`, `Can-Redefine-Classes`는 Agent 전용 속성으로 각 의미하는 바를 아래 표에 나타내었다.
 
-| Property | Value |
-|----------|-------|
-| **Premain-Class** | `premain` 메서드가 존재하는 에이전트 클래스 명시. |
-| **Boot-Class-Path** | Bootstrap ClassLoader로 로딩될 에이전트가 사용하는 외부 라이브러리를 명시. (만약 Bootstrap ClassLoader에 의해 로딩되는 자바 표준 패키지(_rt.jar_)의 바이트 코드 재정의를 허용한다면, 클래스 로더의 수행 순서에 따른 가시성 원칙에 따라 에이전트 패키지지 또한 이곳에 명시되어야 한다.) |
-| **Can-Redefine-Classes** | 실행시점에 바이트 코드의 재정의 허용 여부 명시. |
+Property | Value
+---------|------
+**Premain-Class** | `premain` 메서드가 존재하는 에이전트 클래스 명시.
+**Boot-Class-Path** | Bootstrap ClassLoader로 로딩될 에이전트가 사용하는 외부 라이브러리를 명시. (만약 Bootstrap ClassLoader에 의해 로딩되는 자바 표준 패키지(_rt.jar_)의 바이트 코드 재정의를 허용한다면, 클래스 로더의 수행 순서에 따른 가시성 원칙에 따라 에이전트 패키지지 또한 이곳에 명시되어야 한다.)
+**Can-Redefine-Classes** | 실행시점에 바이트 코드의 재정의 허용 여부 명시.
+
 - 표 1. MANIFEST Properties
 
 ## Run & Test
