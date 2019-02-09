@@ -59,14 +59,14 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 
 #### Dependency
 - 두 객체 사이의 의존성을 명시한다.
-- keywords: <<call>>, <<create>>, <<derive>>, <<instantiate>>, <<permit>>, <<realize>>, <<refine>>, <<substitute>>, <<trace>>, <<use>>, etc...
+- keywords: `<<call>>`, `<<create>>`, `<<derive>>`, `<<instantiate>>`, `<<permit>>`, `<<realize>>`, `<<refine>>`, `<<substitute>>`, `<<trace>>`, `<<use>>`, etc...
 
 ![class diagram 4](/assets/image/2012-08-06-class diagram 4.png)
 
   - 그림 2.1.3. Dependency 예
 
 #### Interface
-- <<interface>> keyword 또는 ![ball_and_socket_notation](/assets/image/2012-08-06-ball_and_socket_notation.png) 표기법을 통해 단순화된 표현 가능.
+- `<<interface>>` keyword 또는 ![ball_and_socket_notation](/assets/image/2012-08-06-ball_and_socket_notation.png) 표기법을 통해 단순화된 표현 가능.
 
 #### Abstract Class
 - {abstract} label.
@@ -120,7 +120,7 @@ UML(Unified Modeling Language: [www.uml.org](http://www.uml.org/))은 시스템 
 - **Execution Environment** : OS, JVM 등과 같은 소프트웨어를 실행하는 launcher (or loader).
 - **Artifact** : 소프트웨어의 물리적인 형태(e.g. exe, jar, dll, etc...).
 
-Artifact는 문서 아이콘 또는 '<<artifact>>' 키워드로 표시할 수 있으며, node에 포함되는 개념이다. 그리고 Node와 Artifact는 태그(brace `{...}`)를 통해 부가 정보를 기술할 수 있다.
+Artifact는 문서 아이콘 또는 `<<artifact>>` 키워드로 표시할 수 있으며, node에 포함되는 개념이다. 그리고 Node와 Artifact는 태그(brace `{...}`)를 통해 부가 정보를 기술할 수 있다.
   
 ![deployment diagram](/assets/image/2012-08-06-deployment diagram 1.png)
 
@@ -137,7 +137,7 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 시스템의 행동 상태를 표현한다.
 
 - **Transition** : 한 상태에서 다른 상태로는 이동을 나타낸다.
-- **Label** : 각 Transition이 만족하는 조건을 나타내며, `{trigger-signature} [guard] / {activity}`로 기술한다. (trigger-signature: 상태 변화 유발 이벤트, guard: transition 만족 조건, activity: transition 과정에서 수행되는 행동)
+- **Label** : 각 Transition이 만족하는 조건을 나타내며, `{trigger-signature} [guard] / {activity}`로 기술한다. (_trigger-signature: 상태 변화 유발 이벤트, guard: transition 만족 조건, activity: transition 과정에서 수행되는 행동_)
 
 ![state machine diagram](/assets/image/2012-08-06-state machine diagram 1.png)
 
@@ -147,8 +147,8 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 순차 로직, 업무 절차, 워크 플로우를 기술하고 표현한다. Activity는 다음과 같은 feature가 존재한다.
 
 - **Initial Node** : 시작점.
-- **Fork** : 하나의 시작점에서 여러 개의 동시 흐름으로 분리되는 지점. (e.g. Parallel Programming....)
-- **Join** : 동시 흐름이 다시 하나로 모이는 지점(e.g. 병렬 처리의 동기화 지점). Join에 대한 조건이 필요하거나 명시해야 할 필요가 있다면, `{joinSpec = ~boolean 식~ }` join specification(e.g. **_{joinSpec = 1000won \>= price}_** )을 Join notation에 기술한다.
+- **Fork** : 하나의 시작점에서 여러 개의 동시 흐름으로 분리되는 지점. (_e.g., Parallel Programming...._)
+- **Join** : 동시 흐름이 다시 하나로 모이는 지점(e.g. 병렬 처리의 동기화 지점). Join에 대한 조건이 필요하거나 명시해야 할 필요가 있다면, `{joinSpec = ~boolean 식~ }` join specification(_e.g., **{joinSpec = 1000won \>= price}**_)을 Join notation에 기술한다.
 - **Action** : 행동, 행위.
 - **Decision** : 조건 분기.
 - **Merge** : Decision에 의한 조건 행동의 끝 지점.
@@ -206,7 +206,7 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 
 ### 2.10. Component Diagrams
 컴포넌트간의 연관 관계를 표현한다.
-- 컴포넌트 표기법: ![component diagram](/assets/image/2012-08-06-component diagram 1.png) or '<<component>>' keyword.
+- 컴포넌트 표기법: ![component diagram](/assets/image/2012-08-06-component diagram 1.png) or `<<component>>` keyword.
 - 인터페이스 연결 관계 표기법: ![component diagram](/assets/image/2012-08-06-ball_and_socket_notation.png).
 
 ![component diagram](/assets/image/2012-08-06-component diagram 3.png)
