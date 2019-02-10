@@ -110,11 +110,11 @@ author:
   avatar           : "/assets/images/xenomity.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Xenomity P-slinc'"
   location         : # "Somewhere"
-  email            :
+  email            : "4z.xenomity@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:4z.xenomity@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -123,7 +123,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/xenomity"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
@@ -293,9 +293,3 @@ defaults:
       comments: true
       share: true
       related: true
-
-# Multilanguage
-languages: ['ko', 'en']
-default_lang: 'ko'
-exclude_from_localization: ['javascript', 'images', 'css']
-parallel_localization: false
