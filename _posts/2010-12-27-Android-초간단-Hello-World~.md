@@ -4,14 +4,14 @@ tags: [android, eclipse]
 date: 2010-12-27T15:58:28+09:00
 ---
 
-\* 본 내용은 JDK 6, Eclipse 3.6, Android SDK Tools (rev.7) 기준으로 작성함.  
+* 본 내용은 JDK 6, Eclipse 3.6, Android SDK Tools (rev.7) 기준으로 작성함.  
   
-Android 개발환경 구축 선작업이 되어있지 않은 경우, [Android 개발환경 구축](http://blog.xenomity.com/Android-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95) 포스트 참고.  
+Android 개발환경 구축 선작업이 되어있지 않은 경우, [Android 개발환경 구축](https://blog.xenomity.com/Android-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95) 포스트 참고.  
   
   
 
-#### **1. Android Project 생성.**
-New =\> Project =\> Android =\> Android Project  
+## 1. Android Project 생성
+New => Project => Android => Android Project  
 
 ![Step 1](../assets/images/2010-12-27-201011231243.jpg)
    1) Project Name : 프로젝트명  
@@ -21,14 +21,14 @@ New =\> Project =\> Android =\> Android Project
    5) Min SDK Version : 최소 실행 가능한 SDK revision 번호 (ex. android 2.2 == revision 8)  
   
 
-#### **2. Sample Code 작성.**
+## 2. Sample Code 작성
 
 ![Step 2](../assets/images/2010-12-27-201011231247.jpg)
   
 
 정상적으로 프로젝트가 생성되면 위와 같은 구조가 만들어진다.
 
-test.helloworld.HelloWorld.java를 수정해보면,  
+`test.helloworld.HelloWorld.java`를 수정해보면,  
 
 ```java
 package test.helloworld;
@@ -52,8 +52,8 @@ public class HelloWorld extends Activity {
 ```
 
 
-#### **3. 실행**
-Run As =\> Android Application  
+## 3. 실행
+Run As => Android Application  
 
 ![Step 3](../assets/images/2010-12-27-201011231250.jpg)
 

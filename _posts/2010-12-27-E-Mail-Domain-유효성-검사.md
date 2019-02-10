@@ -11,7 +11,7 @@ date: 2010-12-27T16:30:14+09:00
 귀차니즘으로(-0-), 해당 메일 도메인만 nslookup을 통해 유효성 검증을 하는 간단한 코드를 작성해 봤다.   
   
 nslookup mx record 조회로 mail exchanger를 통하는지 여부로 검사하는 방식.  
-**\> nslookup -type=MX {domain명}**
+**> nslookup -type=MX {domain명}**
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;

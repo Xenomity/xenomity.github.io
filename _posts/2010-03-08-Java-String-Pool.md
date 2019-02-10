@@ -1,7 +1,7 @@
 ---
 title: "Java String Pool"
 tags: [java]
-date: 2010-03-08T17:07:00+09:00
+date: 2010-03-08T17:05:00+09:00
 ---
 
 Java는 8가지 Primitive Type을 제외하고는 전부 Object Type이다. 그러나, 자주 사용하는 문자열의 사용 편의성을 위해, 문법차원에서의 방법도 제공한다.
