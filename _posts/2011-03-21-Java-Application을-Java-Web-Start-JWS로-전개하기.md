@@ -12,7 +12,7 @@ Eclipse Platform의 `JarInJar` ClassLoader를 이용하면 JRE 구 버전에서�
   
 예) Export -> Java -> Runnable Jar File  
 
-![export jar](../assets/image/2011-03-21-201103211748.jpg)
+![export jar](../assets/images/2011-03-21-201103211748.jpg)
   
 - Launch Configuration  
 Main method가 존재하는 실행 가능한 클래스와 해당 프로젝트 선택.  
@@ -153,8 +153,8 @@ nativelib href="lib/windows/corelibs.jar" />
 ...
 ```
 
-![Java Web Start Splash 화면](../assets/image/2011-03-21-201103211947.jpg)
+![Java Web Start Splash 화면](../assets/images/2011-03-21-201103211947.jpg)
 
-![브라우저를 통해 전개된 Application의 예](../assets/image/2011-03-21-201103211953.jpg)
+![브라우저를 통해 전개된 Application의 예](../assets/images/2011-03-21-201103211953.jpg)
   
 

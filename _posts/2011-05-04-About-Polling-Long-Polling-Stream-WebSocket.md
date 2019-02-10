@@ -16,7 +16,7 @@ Long-Polling은 서버의 자원 변경을 감지하기 위한 목적으로 많�
 
 ## Streaming
 Long-Polling 방식과 흐름은 비슷하지만 서버는 이벤트가 발생할때마다 응답을 완료하지 않고 부분 데이터(*chunk data, stream*)로 클라이언트에게 전송한다. 이렇게 하면 클라이언트는 재 연결을 시도할 필요가 없어지므로 Long-Polling 방식에 비해 좀 더 효율적이다.
-![Polling, Long-Polling, Streaming](../assets/image/polling_long-polling_streaming.gif)
+![Polling, Long-Polling, Streaming](../assets/images/polling_long-polling_streaming.gif)
 그림 1. Polling vs Long-Polling vs Streaming (이미지 출처:  http://blogs.sun.com/theaquarium/entry/slideshow_example_using_comet_dojo)
 
 ## WebSocket

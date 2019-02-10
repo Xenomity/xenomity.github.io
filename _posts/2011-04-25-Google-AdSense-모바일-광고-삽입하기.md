@@ -44,7 +44,7 @@ public class TestActivity extends Activity {
 }
 ```
   
-![adsense](../assets/image/2011-04-25-201104251055.jpg)
+![adsense](../assets/images/2011-04-25-201104251055.jpg)
 
 -AdSense 테스트 결과-  
 

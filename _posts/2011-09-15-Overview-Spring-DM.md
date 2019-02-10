@@ -54,7 +54,7 @@ Spring Framework의 모든 추상적 기능을 그대로 사용할 수 있음.
  
 
 ## 9. Spring OSGi Model
-![spring osgi model](../assets/image/2011-09-15-201109151738.jpg)
+![spring osgi model](../assets/images/2011-09-15-201109151738.jpg)
 
 - gerd-wuetherich.de에서 발췌
   
@@ -80,7 +80,7 @@ Spring Bean들은 OSGi의 Service로 내보낼 수 있다.
 WAR를 Bundle화하여 OSGi Framework으로 Bundle Install.  
 WAR Bundle 시작시 Web Extender를 통해 Web Container에 Web Application 설치.  
 
-![bundle install](../assets/image/2011-09-15-201109161011.jpg)
+![bundle install](../assets/images/2011-09-15-201109161011.jpg)
 
 - gerd-wuetherich.de에서 발췌
   

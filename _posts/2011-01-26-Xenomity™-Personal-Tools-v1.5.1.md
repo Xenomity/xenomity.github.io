@@ -14,28 +14,28 @@ Eclipse RCP 한창 열공할때 만들어본 프로그램.
 
 스크린샷들~
 
-![xpt_1](../assets/image/xpt-splash.jpg)
+![xpt_1](../assets/images/xpt-splash.jpg)
 
-![xpt_2](../assets/image/xpt-201101262028.jpg)
+![xpt_2](../assets/images/xpt-201101262028.jpg)
 
-![xpt_3](../assets/image/xpt-201101262029.jpg)
+![xpt_3](../assets/images/xpt-201101262029.jpg)
 
-![xpt_4](../assets/image/xpt-201101262033.jpg)
+![xpt_4](../assets/images/xpt-201101262033.jpg)
 
-![xpt_5](../assets/image/1573B3484D183B75258E69.jpg)
+![xpt_5](../assets/images/1573B3484D183B75258E69.jpg)
 
-![xpt_6](../assets/image/1673B3484D183B7526670A.jpg)
+![xpt_6](../assets/images/1673B3484D183B7526670A.jpg)
 
-![xpt_7](../assets/image/1873B3484D183B7627579E.jpg)
+![xpt_7](../assets/images/1873B3484D183B7627579E.jpg)
 
-![xpt_8](../assets/image/1973B3484D183B76282967.jpg)
+![xpt_8](../assets/images/1973B3484D183B76282967.jpg)
 
-![xpt_9](../assets/image/2073B3484D183B7629C392.jpg)
+![xpt_9](../assets/images/2073B3484D183B7629C392.jpg)
 
-![xpt_10](../assets/image/1973B3484D183B772AD663.jpg)
+![xpt_10](../assets/images/1973B3484D183B772AD663.jpg)
 
-![xpt_11](../assets/image/2073B3484D183B772B5964.jpg)
+![xpt_11](../assets/images/2073B3484D183B772B5964.jpg)
 
-![xpt_12](../assets/image/1273B3484D183B782C3C58.jpg)
+![xpt_12](../assets/images/1273B3484D183B782C3C58.jpg)
 
-![xpt_13](../assets/image/xpt-201101262034.jpg)
+![xpt_13](../assets/images/xpt-201101262034.jpg)

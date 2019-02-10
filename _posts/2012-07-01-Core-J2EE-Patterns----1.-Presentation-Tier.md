@@ -22,11 +22,11 @@ Core J2EE Design Patterns Catalog는 [이전 포스팅](http://blog.xenomity.com
 클라이언트의 요청과 응답에 대한 전후 처리를 FilterChain에 의해 sequential하게 처리할 수 있으며, 다양한 설정 방법들을 통해 Filter는 plug-in처럼 동작할 수 있다. 따라서, 요청을 처리하는 핸들러와 느슨한 연결이 가능해지고 Filter logic의 재사용성이 높아진다. 보통 Front Controller의 앞단에 위치하여, 검증, 인증, 권한 확인, 데이터 조작 등의 다양한 필터 역할을 수행한다. 또한, 각 Filter는 success 여부를 통해 다음 필터로 요청을 넘길지, 반려할지를 FilterChain에 의해 결정하게 할 수 있다.
 
 Java EE Spec의 Standard Filter나 Spring Framework의 Interceptor가 이 패턴으로 설계되어 있다.
-![IFMainClass](../assets/image/2012-07-01-IFMainClass.gif)
+![IFMainClass](../assets/images/2012-07-01-IFMainClass.gif)
 
 - Class Diagram
 
-![IFMainSeq](../assets/image/2012-07-01-IFMainSeq.gif)
+![IFMainSeq](../assets/images/2012-07-01-IFMainSeq.gif)
 
 - Sequence Diagram
 
@@ -38,11 +38,11 @@ Java EE Spec의 Standard Filter나 Spring Framework의 Interceptor가 이 패턴
 일반적으로 Context Object 타입으로 Map이나 POJO 형식의 Value Object를 사용한다.
 
 (* Spring MVC Controller의 가변적인 Arguments 중, 일부는 Context Object 패턴이 사용된다)
-![COMainClass](../assets/image/2012-07-01-COMainClass.gif)
+![COMainClass](../assets/images/2012-07-01-COMainClass.gif)
 
 - Class Diagram
 
-![COMainSeq](../assets/image/2012-07-01-COMainSeq.gif)
+![COMainSeq](../assets/images/2012-07-01-COMainSeq.gif)
 
 - Sequence Diagram
 
@@ -58,11 +58,11 @@ Java EE 환경에서는 일반적으로 Servlet이나 Filter로 개발되며, Sp
 
 (* Model 2 시절에는 종종 JSP로 Front Controller를 디자인하는 케이스도 있었다..)
 
-![FCMainClass](../assets/image/2012-07-01-FCMainClass.gif)
+![FCMainClass](../assets/images/2012-07-01-FCMainClass.gif)
 
 - Class Diagram
 
-![FCMainSeq](../assets/image/2012-07-01-FCMainSeq.gif)
+![FCMainSeq](../assets/images/2012-07-01-FCMainSeq.gif)
 
 - Sequence Diagram
 
@@ -76,11 +76,11 @@ Java EE 환경에서는 일반적으로 Servlet이나 Filter로 개발되며, Sp
 
 Application Controller는 Front Controller에서 커맨드 핸들러 전략에 의해 결정되어지므로, 보통 단독으로는 사용하지 않는다. (Client에서 AC를 결정하는 코드가 생길 위험이 있기에...)
 
-![ACMainClass](../assets/image/2012-07-01-ACMainClass.gif)
+![ACMainClass](../assets/images/2012-07-01-ACMainClass.gif)
 
 - Class Diagram
 
-![ACMainSeq](../assets/image/2012-07-01-ACMainSeq.gif)
+![ACMainSeq](../assets/images/2012-07-01-ACMainSeq.gif)
 
 - Sequence Diagram
 
@@ -94,11 +94,11 @@ View Helper는 Java EE Spec의 Custom Tags나 JavaBeans가 대표적인 예로, 
 
 Helper의 타겟은 프리젠테이션 모델 또는 Business Delegate가 될 수 있으며, View와 각 타겟 사이에서 adapter 역할을 수행하게 된다.
 
-![VHMainClass](../assets/image/2012-07-01-VHMainClass.gif)
+![VHMainClass](../assets/images/2012-07-01-VHMainClass.gif)
 
 - Class Diagram
 
-![VHMainSeq](../assets/image/2012-07-01-VHMainSeq.gif)
+![VHMainSeq](../assets/images/2012-07-01-VHMainSeq.gif)
 
 - Sequence Diagram
 
@@ -110,11 +110,11 @@ Template layout을 정의할 때 대표적으로 사용된다. 여러 View에서
 
 (* 대표적인 Composite View로 디자인된 UI framework로는 Apache Tiles가 있음)
 
-![CVMainClass](../assets/image/2012-07-01-CVMainClass.gif)
+![CVMainClass](../assets/images/2012-07-01-CVMainClass.gif)
 
 - Class Diagram
 
-![CVMainSeq](../assets/image/2012-07-01-CVMainSeq.gif)
+![CVMainSeq](../assets/images/2012-07-01-CVMainSeq.gif)
 
 - Sequence Diagram
 
@@ -128,11 +128,11 @@ Template layout을 정의할 때 대표적으로 사용된다. 여러 View에서
 
 일반적인 UI framework에서 많이 볼 수 있는 thin-presentation 형식을 띈다.
 
-![DVMainClass](../assets/image/2012-07-01-DVMainClass.gif)
+![DVMainClass](../assets/images/2012-07-01-DVMainClass.gif)
 
 - Class Diagram
 
-![DVMainSeq](../assets/image/2012-07-01-DVMainSeq.gif)
+![DVMainSeq](../assets/images/2012-07-01-DVMainSeq.gif)
 
 - Sequence Diagram
 
@@ -145,11 +145,11 @@ Template layout을 정의할 때 대표적으로 사용된다. 여러 View에서
 (* Dispatcher View 패턴과의 차이는 Business Delegate 시점의 차이. Service To Worker는 Controller에서 비지니스 서비스로 위임하여 얻은 결과를 request attribute로 View dispatching하여 데이터를 시각화하는 흐름)
 (* MVC 패턴의 뼈대 구조)
 
-![S2WMainHelperClass](../assets/image/2012-07-01-S2WMainHelperClass.gif)
+![S2WMainHelperClass](../assets/images/2012-07-01-S2WMainHelperClass.gif)
 
 - Class Diagram
 
-![S2WMainSeq](../assets/image/2012-07-01-S2WMainSeq.gif)
+![S2WMainSeq](../assets/images/2012-07-01-S2WMainSeq.gif)
 
 - Sequence Diagram
 

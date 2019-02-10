@@ -15,7 +15,7 @@ ZooKeeper는 분산환경의 상호 조정에 필요한 다양한 서비스를 �
 ### 2.1. ZNodes
 ZooKeeper는 znode라는 계층적인 노드 구조(Tree Structure)의 형태로 데이터를 유지하며, 각각의 znode는 데이터를 저장하고 ACL을 포함한다.
 
-![znode](../assets/image/2012-02-20-201202201201.jpg)
+![znode](../assets/images/2012-02-20-201202201201.jpg)
 
 데이터 접근은 원자적이며(Success or Fail), WRITE 연산은 데이터 추가 및 가공이 불가하며 오로지 'replace' 단위로 동작한다. 마찬가지로, READ 연산도 znode 데이터의 일부 필요한 부분이 아닌 전체만 받아올 수 있다.   
   
@@ -56,7 +56,7 @@ READ 연산인 exists, getChildren, getData에 Watch가 설정되고, WRITE 연�
 만약 서버가 타임아웃 시간동안 클라이언트로부터 응답을 받지 못하면, 세션에 관계된 모든 Ephemeral Nodes가 제거되고 세션은 종료된다.  
 클라이언트는 백그라운드에서 특정 주기로 ping을 요청하여 서버와의 세션을 유지한다.
 
-![zk sessions](../assets/image/2012-02-20-201202201151.jpg)
+![zk sessions](../assets/images/2012-02-20-201202201151.jpg)
 
 ## 4. Failover
 클라이언트에 의해 자동으로 일어나며, 장애가 일어난 서버로부터 세션 및 세션에 연관된 znode의 정보도 모두 새로이 연결된 서버로 동기화된다.  

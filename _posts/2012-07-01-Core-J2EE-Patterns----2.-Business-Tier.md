@@ -11,11 +11,11 @@ date: 2012-07-01T18:51:00+09:00
 
 실제 비지니스 서비스의 proxy 역할을 하며, 서비스 lookup을 위해 Service Locator를 사용한다.
 
-![BDMainClass](../assets/image/2012-07-01-BDMainClass.gif)
+![BDMainClass](../assets/images/2012-07-01-BDMainClass.gif)
 
 - Class Diagram
 
-![BDMainSeq](../assets/image/2012-07-01-BDMainSeq.gif)
+![BDMainSeq](../assets/images/2012-07-01-BDMainSeq.gif)
 
 - Sequence Diagram
 
@@ -28,11 +28,11 @@ date: 2012-07-01T18:51:00+09:00
 (* Business Delegate는 비지니스 처리를 위임하기 위해 Service Locator를 사용한다. 역할은 비슷해 보일 수 있지만, Service Locator는 접근 자원에 대한 connection, 캐싱 및 은닉화를, Business Delegate는 호출할 비지니스 서비스에 대한 캐싱 및 세부 구현을 숨기므로, 기술 의존 요소와 비지니스 위임에 대한 역할 구분이 명확하다)
 (* 다양한 Web Service에 대한 접근자로 Service Locator 패턴을 많이 사용함)
 
-![SLMainClass](../assets/image/2012-07-01-SLMainClass.gif)
+![SLMainClass](../assets/images/2012-07-01-SLMainClass.gif)
 
 - Class Diagram
 
-![SLMainSeq](../assets/image/2012-07-01-SLMainSeq.gif)
+![SLMainSeq](../assets/images/2012-07-01-SLMainSeq.gif)
 
 - Sequence Diagram
 
@@ -44,11 +44,11 @@ GoF의 Facade 패턴과 동일한 디자인이지만, EJB 환경에 특화된 �
 
 (* Spring Framework의 비지니스 계층에서 Service Facade + Business Object 전략이 많이 사용됨. 관련 내용은 이전 포스팅 참고.
 
-![SFMainClass](../assets/image/2012-07-01-SFMainClass.gif)
+![SFMainClass](../assets/images/2012-07-01-SFMainClass.gif)
 
 - Class Diagram
 
-![BDMainClass](../assets/image/2012-07-01-SFMainSeq.gif)
+![BDMainClass](../assets/images/2012-07-01-SFMainSeq.gif)
 
 - Sequence Diagram
 
@@ -60,11 +60,11 @@ GoF의 Facade 패턴과 동일한 디자인이지만, EJB 환경에 특화된 �
 
 (* 잘 설계된 Service Facade와 Business Object라면, Application Service는 추가적인 레이어로 참여하므로 장점보다 단점이 더 클 수도 있음.) 
 
-![ASMainClass](../assets/image/2012-07-01-ASMainClass.gif)
+![ASMainClass](../assets/images/2012-07-01-ASMainClass.gif)
 
 - Class Diagram
 
-![ASMainSeq](../assets/image/2012-07-01-ASMainSeq.gif)
+![ASMainSeq](../assets/images/2012-07-01-ASMainSeq.gif)
 
 - Sequence Diagram
 
@@ -76,11 +76,11 @@ GoF의 Facade 패턴과 동일한 디자인이지만, EJB 환경에 특화된 �
 
 Business Object는 환경에 따라 POJO, Session Bean, Entity Bean 등으로 구현될 수 있다.
 
-![BOMainClass](../assets/image/2012-07-01-BOMainClass.gif)
+![BOMainClass](../assets/images/2012-07-01-BOMainClass.gif)
 
 - Class Diagram
 
-![BOMainSeq](../assets/image/2012-07-01-BOMainSeq.gif)
+![BOMainSeq](../assets/images/2012-07-01-BOMainSeq.gif)
 
 - Sequence Diagram
 
@@ -92,11 +92,11 @@ Business Object는 환경에 따라 POJO, Session Bean, Entity Bean 등으로 �
 
 (* 초창기 EJB의 성능 이슈를 어느정도 해결해 줄 수 있었던 패턴)
 
-![CEMainClass](../assets/image/2012-07-01-CEMainClass.gif)
+![CEMainClass](../assets/images/2012-07-01-CEMainClass.gif)
 
 - Class Diagram
 
-![CEMainSeq](../assets/image/2012-07-01-CEMainSeq.gif)
+![CEMainSeq](../assets/images/2012-07-01-CEMainSeq.gif)
 
 - Sequence Diagram
 
@@ -112,11 +112,11 @@ getter/setter로 구성되는 data wrapper 모델.
 
 (* Custom hash-map(key별로 type-safe)도 Transfer Object의 하나의 대안일 수 있지만, 성능적 우위나 오퍼레이션의 직관성은 TO가 더 낫다) 
 
-![TOMainClass](../assets/image/2012-07-01-TOMainClass.gif)
+![TOMainClass](../assets/images/2012-07-01-TOMainClass.gif)
 
 - Class Diagram
 
-![TOMainSeq](../assets/image/2012-07-01-TOMainSeq.gif)
+![TOMainSeq](../assets/images/2012-07-01-TOMainSeq.gif)
 
 - Sequence Diagram
 
@@ -128,11 +128,11 @@ TOA는 다양한 비지니스 서비스를 호출하고 결과 모델(Transfer O
 
 (* 단일 JVM 환경이라면, 구지 server-side에서 데이터를 조합하여 응답하는 TOA 디자인보다는 클라이언트 입장에서 필요한 비지니스 서비스를 순차 호출하고 결과셋을 조합하여 사용하는 편이 더 나아보인다... 비지니스 서비스는 최소 단위를 유지할 수 있어야 하며, API는 유연하고 투명성이 좋아야 함) 
 
-![TOAClass](../assets/image/2012-07-01-TOAClass.gif)
+![TOAClass](../assets/images/2012-07-01-TOAClass.gif)
 
 - Class Diagram
 
-![TOASeq](../assets/image/2012-07-01-TOASeq.gif)
+![TOASeq](../assets/images/2012-07-01-TOASeq.gif)
 
 - Sequence Diagram
 
@@ -142,11 +142,11 @@ TOA는 다양한 비지니스 서비스를 호출하고 결과 모델(Transfer O
 
 클라이언트는 이터레이션 방식으로 데이터를 획득할 수 있으며, 필요 데이터만 응답받게 되므로 네트워크 트래픽을 감소시킬 수 있다. 보통, 캐싱 전략을 함께 사용한다.
 
-![VLHMainClass](../assets/image/2012-07-01-VLHMainClass.gif)
+![VLHMainClass](../assets/images/2012-07-01-VLHMainClass.gif)
 
 - Class Diagram
 
-![VLHMainSeq](../assets/image/2012-07-01-VLHMainSeq.gif)
+![VLHMainSeq](../assets/images/2012-07-01-VLHMainSeq.gif)
 
 - Sequence Diagram
 

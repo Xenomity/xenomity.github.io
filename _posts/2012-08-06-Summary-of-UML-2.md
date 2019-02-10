@@ -39,7 +39,7 @@ Property는 Attribute과 Association으로 표현할 수 있다.
 
 Class Diagram 1 | Class Diagram 2
 ----------------|----------------
-![class diagram 1](../assets/image/2012-08-06-class_diagram_1.png) | ![class diagram 2](../assets/image/2012-08-06-class_diagram_2.png)
+![class diagram 1](../assets/images/2012-08-06-class_diagram_1.png) | ![class diagram 2](../assets/images/2012-08-06-class_diagram_2.png)
 
   - 그림 2.1.1. Attribute, Association으로 표현한 Class Diagram 예
   
@@ -59,7 +59,7 @@ Property에 할당될 수 있는 객체의 개수를 범위로 표현한다.
 #### Note
 Diagram Comment.
 
-![class diagram 3](../assets/image/2012-08-06-class_diagram_3.png)
+![class diagram 3](../assets/images/2012-08-06-class_diagram_3.png)
 
   - 그림 2.1.2. Note의 예
   
@@ -68,24 +68,24 @@ Diagram Comment.
 두 객체 사이의 의존성을 명시한다.
 - keywords: `<<call>>`, `<<create>>`, `<<derive>>`, `<<instantiate>>`, `<<permit>>`, `<<realize>>`, `<<refine>>`, `<<substitute>>`, `<<trace>>`, `<<use>>`, etc...
 
-![class diagram 4](../assets/image/2012-08-06-class_diagram_4.png)
+![class diagram 4](../assets/images/2012-08-06-class_diagram_4.png)
 
   - 그림 2.1.3. Dependency 예
   
   
 #### Interface
-`<<interface>>` keyword 또는 ![ball_and_socket_notation](../assets/image/2012-08-06-ball_and_socket_notation.png) 표기법을 통해 단순화된 표현 가능.
+`<<interface>>` keyword 또는 ![ball_and_socket_notation](../assets/images/2012-08-06-ball_and_socket_notation.png) 표기법을 통해 단순화된 표현 가능.
   
   
 #### Abstract Class
 {abstract} label.
 
-![class diagram 7](../assets/image/2012-08-06-class_diagram_7.png)
+![class diagram 7](../assets/images/2012-08-06-class_diagram_7.png)
 
   - 그림 2.1.4. Interface and Abstract Class 예
   
   
-![class diagram 8](../assets/image/2012-08-06-class_diagram_8.png)
+![class diagram 8](../assets/images/2012-08-06-class_diagram_8.png)
 
   - 그림 2.1.5. Ball-and-Socket 표기법을 통한 Interface 간략화 예
   
@@ -96,17 +96,17 @@ Diagram Comment.
 #### Parameterized Class (Generic)
 - Template Parameter and __{type}<{parameterized class variable}::{parameterized class type}>__ bound element.
 
-![class diagram 6](../assets/image/2012-08-06-class_diagram_6.png)
+![class diagram 6](../assets/images/2012-08-06-class_diagram_6.png)
 
   - 그림 2.1.6. Generic and Bound Element 예
   
   
 ### 2.2. Sequence Diagrams
 한 가지 시나리오에 대한 행동을 순차적으로 묘사한다.
-- Synchronous Message: ![sync_arrow](../assets/image/2012-08-06-sync_arrow.png)
-- Asynchronous Message: ![async_arrow](../assets/image/2012-08-06-async_arrow.png)
+- Synchronous Message: ![sync_arrow](../assets/images/2012-08-06-sync_arrow.png)
+- Asynchronous Message: ![async_arrow](../assets/images/2012-08-06-async_arrow.png)
 
-![sequence diagram 1](../assets/image/2012-08-06-sequence_diagram_1.png)
+![sequence diagram 1](../assets/images/2012-08-06-sequence_diagram_1.png)
 
   - 그림 2.2.1. Sequence Diagram 예
   
@@ -114,7 +114,7 @@ Diagram Comment.
 #### Interaction Frame
 - 반복 또는 조건문을 나타내기 위한 표기법. (_e.g. alt, opt, par, loop, region, neg, ref, sd, etc..._)
 
-![sequence diagram 2](../assets/image/2012-08-06-sequence_diagram_2.png)
+![sequence diagram 2](../assets/images/2012-08-06-sequence_diagram_2.png)
 
   - 그림 2.2.2. Interaction Frame을 사용한 Sequence Diagram 예
   
@@ -126,7 +126,7 @@ Diagram Comment.
 
 Package Diagram 1 | Package Diagram 2
 ------------------|------------------
-![package diagram 1](../assets/image/2012-08-06-package_diagram_1.png) | ![package diagram 2](../assets/image/2012-08-06-package_diagram_2.png)
+![package diagram 1](../assets/images/2012-08-06-package_diagram_1.png) | ![package diagram 2](../assets/images/2012-08-06-package_diagram_2.png)
 
   - 그림 2.3. Package Diagram 예
   
@@ -140,7 +140,7 @@ Package Diagram 1 | Package Diagram 2
 
 Artifact는 문서 아이콘 또는 `<<artifact>>` 키워드로 표시할 수 있으며, node에 포함되는 개념이다. 그리고 Node와 Artifact는 태그(brace `{...}`)를 통해 부가 정보를 기술할 수 있다.
   
-![deployment diagram](../assets/image/2012-08-06-deployment_diagram_1.png)
+![deployment diagram](../assets/images/2012-08-06-deployment_diagram_1.png)
 
   - 그림 2.4. Deployment Diagram 예
   
@@ -148,7 +148,7 @@ Artifact는 문서 아이콘 또는 `<<artifact>>` 키워드로 표시할 수 �
 ### 2.5. Use Case Diagrams
 Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 따라 상당히 복잡해질 수 있다.
 
-![use case diagram](../assets/image/2012-08-06-use_case_diagram_1.png)
+![use case diagram](../assets/images/2012-08-06-use_case_diagram_1.png)
 
   - 그림 2.5. Use Case Diagram 예
   
@@ -159,7 +159,7 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 - **Transition** : 한 상태에서 다른 상태로는 이동을 나타낸다.
 - **Label** : 각 Transition이 만족하는 조건을 나타내며, `{trigger-signature} [guard] / {activity}`로 기술한다. (_trigger-signature: 상태 변화 유발 이벤트, guard: transition 만족 조건, activity: transition 과정에서 수행되는 행동_)
 
-![state machine diagram](../assets/image/2012-08-06-state_machine_diagram_1.png)
+![state machine diagram](../assets/images/2012-08-06-state_machine_diagram_1.png)
 
   - 그림 2.6. State Machine Diagram 예
   
@@ -179,12 +179,12 @@ Use Case간의 연관 관계를 표현하기 위한 Diagram. Use Case 수준에 
 
 Activity Diagram 1 | Activity Diagram 2
 -------------------|-------------------
-![activity diagram 1](../assets/image/2012-08-06-activity_diagram_1.png) | ![activity diagram 2](../assets/image/2012-08-06-activity_diagram_2.png)
+![activity diagram 1](../assets/images/2012-08-06-activity_diagram_1.png) | ![activity diagram 2](../assets/images/2012-08-06-activity_diagram_2.png)
 
   - 그림 2.7.1. Activity Diagram과 Partitioning-Activity Diagram 예
   
   
-![activity diagram 5](../assets/image/2012-08-06-activity_diagram_5.png)
+![activity diagram 5](../assets/images/2012-08-06-activity_diagram_5.png)
 
   - 그림 2.7.2. Flow/Edge를 표현하는 네 가지 방법
   
@@ -193,7 +193,7 @@ Activity Diagram 1 | Activity Diagram 2
 
 Activity Diagram 3 | Activity Diagram 4
 -------------------|-------------------
-![activity diagram 3](../assets/image/2012-08-06-activity_diagram_3.png) | ![activity diagram 4](../assets/image/2012-08-06-activity_diagram_4.png)
+![activity diagram 3](../assets/images/2012-08-06-activity_diagram_3.png) | ![activity diagram 4](../assets/images/2012-08-06-activity_diagram_4.png)
 
   - 그림 2.7.3. Signal-Activity Diagram 예
   
@@ -201,7 +201,7 @@ Activity Diagram 3 | Activity Diagram 4
 - **Pin** : Action에 input-parameters 정보가 필요할 경우 표시.
 - **Transformation** : pre-action의 출력과 post-action의 입력이 일치하지 않는 경우, transformation expression 표기.
 
-![activity diagram 6](../assets/image/2012-08-06-activity_diagram_6.png)
+![activity diagram 6](../assets/images/2012-08-06-activity_diagram_6.png)
 
   - 그림 2.7.4. Pin과 Transformation 예
   
@@ -210,13 +210,13 @@ Activity Diagram 3 | Activity Diagram 4
 
 Activity Diagram 7 | Activity Diagram 8
 -------------------|-------------------
-![activity diagram 7](../assets/image/2012-08-06-activity_diagram_7.png) | ![activity diagram 8](../assets/image/2012-08-06-activity_diagram_8.png)
+![activity diagram 7](../assets/images/2012-08-06-activity_diagram_7.png) | ![activity diagram 8](../assets/images/2012-08-06-activity_diagram_8.png)
 
   - 그림 2.7.5. Expansion Region과 줄여서 표현한 예
   
   
 - **Flow Final** : 특정한 Flow를 종료하기 위한 표기 방법.
-![activity diagram 9](../assets/image/2012-08-06-activity_diagram_9.png)
+![activity diagram 9](../assets/images/2012-08-06-activity_diagram_9.png)
 
   - 그림 2.7.6. Flow Final 예
   
@@ -224,7 +224,7 @@ Activity Diagram 7 | Activity Diagram 8
 ### 2.8. Communication Diagrams
 참여 요소들에 대한 연결 흐름을 강조하여 표현한다. 보통 순차적인 번호를 부여하여 메세지를 표기한다.
 
-![communication diagram](../assets/image/2012-08-06-communication_diagram_1.png)
+![communication diagram](../assets/images/2012-08-06-communication_diagram_1.png)
 
   - 그림 2.8. Communication Diagram 예
   
@@ -234,17 +234,17 @@ Activity Diagram 7 | Activity Diagram 8
 
 Composite Structure Diagram 1 | Composite Structure Diagram 2
 ------------------------------|------------------------------
-![composite structure diagram](../assets/image/2012-08-06-composite_structure_diagram_1.png) | ![composite structure diagram](../assets/image/2012-08-06-composite_structure_diagram_2.png)
+![composite structure diagram](../assets/images/2012-08-06-composite_structure_diagram_1.png) | ![composite structure diagram](../assets/images/2012-08-06-composite_structure_diagram_2.png)
 
   - 그림 2.9. Composite Structure Diagram 예
   
   
 ### 2.10. Component Diagrams
 컴포넌트간의 연관 관계를 표현한다.
-- 컴포넌트 표기법: ![component diagram](../assets/image/2012-08-06-component_diagram_1.png) or `<<component>>` keyword.
-- 인터페이스 연결 관계 표기법: ![component diagram](../assets/image/2012-08-06-ball_and_socket_notation.png).
+- 컴포넌트 표기법: ![component diagram](../assets/images/2012-08-06-component_diagram_1.png) or `<<component>>` keyword.
+- 인터페이스 연결 관계 표기법: ![component diagram](../assets/images/2012-08-06-ball_and_socket_notation.png).
 
-![component diagram](../assets/image/2012-08-06-component_diagram_3.png)
+![component diagram](../assets/images/2012-08-06-component_diagram_3.png)
 
   - 그림 2.10. Component Diagram 예
   
@@ -252,7 +252,7 @@ Composite Structure Diagram 1 | Composite Structure Diagram 2
 ### 2.11. Interaction Overview Diagrams
 단순히 Activity 다이어그램과 Sequence 다이어그램을 접목시킨 것으로서, 표현이 어지러워 실제 많이 사용되지는 않는다.
 
-![interaction overview diagram](../assets/image/2012-08-06-interaction_overview_diagram.png)
+![interaction overview diagram](../assets/images/2012-08-06-interaction_overview_diagram.png)
 
   - 그림 2.11. Interaction Overview Diagram 예
   
@@ -262,7 +262,7 @@ Composite Structure Diagram 1 | Composite Structure Diagram 2
 
 Timing Diagram 1 | Timing Diagram 2
 -----------------|-----------------
-![timing diagram 1](../assets/image/2012-08-06-timing_diagram_1.png) | ![timing diagram 2](../assets/image/2012-08-06-timing_diagram_2.png)
+![timing diagram 1](../assets/images/2012-08-06-timing_diagram_1.png) | ![timing diagram 2](../assets/images/2012-08-06-timing_diagram_2.png)
 
   - 그림 2.12. Timing Diagram 예
   

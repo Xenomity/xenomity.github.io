@@ -17,7 +17,7 @@ Sentinel은 이미 동작하고 있는 Redis 서버군의 설정(Master/Slave �
 
 다음은 간략한 센티널 구성의 예이다.
 
-![Redis Sentinel](../assets/image/redis_sentinel.jpg)
+![Redis Sentinel](../assets/images/redis_sentinel.jpg)
 
 Redis Server와 Sentinel Server는 각 2대씩 구성되어 있다고 가정한다. 여기서 각 Sentinel 서버는 각각의 Redis instance를 모니터링하며, Redis master server 장애 감지시, 다른 Redis slave server 중 우선순위가 높은 서버를 Master server로 승격시키고 failover를 수행한다.
 

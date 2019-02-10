@@ -22,13 +22,13 @@ Eclipse IAM (Q4E Plug-in)
 #### **1. Target Platform을 위한 project를 하나 생성한다.**
   New -\> Plug-in Project  
 
-![Step 1](../assets/image/2010-12-27-201011231335.jpg)
+![Step 1](../assets/images/2010-12-27-201011231335.jpg)
   
 Target Platform =\> an OSGi framework =\> Equinox 
 
 Next  
 
-![Step 2](../assets/image/2010-12-27-201011231337.jpg)
+![Step 2](../assets/images/2010-12-27-201011231337.jpg)
   
 
 Target Platform을 위한 Project이므로, OSGi Bundle Activator가 불필요하다. 
@@ -37,7 +37,7 @@ Target Platform을 위한 Project이므로, OSGi Bundle Activator가 불필요�
 
 Finish  
 
-![Step 3](../assets/image/2010-12-27-201011231340.jpg)
+![Step 3](../assets/images/2010-12-27-201011231340.jpg)
   
 
 #### **2. 생성된 프로젝트에 'target' directory 생성.**
@@ -53,14 +53,14 @@ Finish
 
 * * *
 
-![Step 4](../assets/image/2010-12-27-201011231358.jpg)
+![Step 4](../assets/images/2010-12-27-201011231358.jpg)
   
 
 #### **4. Maven Project로 변환.**
 
 Project 선택 후, 우클릭 =\> Maven 2 =\> Use Maven Dependency Management  
 
-![Step 5](../assets/image/2010-12-27-201011231416.jpg)
+![Step 5](../assets/images/2010-12-27-201011231416.jpg)
 
 Maven Project로 변환된 프로젝트 구조
   
@@ -69,7 +69,7 @@ Maven Project로 변환된 프로젝트 구조
 
 Project 선택 후, 우클릭 =\> Maven 2 =\> Locally Install Artifact  
 
-![Step 6](../assets/image/2010-12-27-201011231418.jpg)
+![Step 6](../assets/images/2010-12-27-201011231418.jpg)
 
 정상적으로 target directory로 install된 libraries  
   
@@ -77,20 +77,20 @@ Project 선택 후, 우클릭 =\> Maven 2 =\> Locally Install Artifact
 #### **6. Target Definition**
 Project 선택 후, 우클릭 =\> New =\> Other =\> Plug-in Development =\> Target Definition  
 
-![Step 7](../assets/image/2010-12-27-201011231420.jpg)
+![Step 7](../assets/images/2010-12-27-201011231420.jpg)
   
 springDM.target이라는 파일이 target directory에 생성되며, 편집창이 자동으로 열리게 된다.  
 
-![Step 8](../assets/image/2010-12-27-201011231422.jpg)
+![Step 8](../assets/images/2010-12-27-201011231422.jpg)
   
 Add =\> Directory =\> Next  
 
-![Step 9](../assets/image/2010-12-27-201011231423.jpg)
+![Step 9](../assets/images/2010-12-27-201011231423.jpg)
 
 Browse =\> 현재 프로젝트의 target 전체경로를 선택
   
 
-![Step 10](../assets/image/2010-12-27-201011231426.jpg)
+![Step 10](../assets/images/2010-12-27-201011231426.jpg)
 
 정상적으로 bundle이 추가된 화면
   
@@ -98,7 +98,7 @@ Browse =\> 현재 프로젝트의 target 전체경로를 선택
 #### **7. Target Platform 설정.**
 마지막으로 저장(Save)을 하고, Windows 메뉴 =\> Preference =\> Plug-in Development =\> Target Platform을 선택한다.  
 
-![Step 11](../assets/image/2010-12-27-201011231427.jpg)
+![Step 11](../assets/images/2010-12-27-201011231427.jpg)
 
 위에서 생성한 product를 선택하고 Apply(적용)
 

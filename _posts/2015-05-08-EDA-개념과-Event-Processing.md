@@ -24,7 +24,7 @@ EDA의 특징은 다음과 같다.
 ## EDA Design
 EDA의 핵심 요소는 Event Generator와 Event Channel, Event Processing Engine이다. 이벤트는 Event Generator에 의해 생성되고 이벤트는 Event Channel을 통해 발행되며, Event Processing Engine에 의해 소비된다. 이벤트의 발행과 소비는 일반적인 MOM(_Message-oriented middleware_)의 특징(Pub/Sub based non-bloking)을 그대로 차용하고 있다.
 
-![EDA](../assets/image/eda.png)  
+![EDA](../assets/images/eda.png)  
 
 - 그림 1. EDA Event Channel
 

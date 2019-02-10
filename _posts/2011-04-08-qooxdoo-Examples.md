@@ -18,21 +18,21 @@ Eclipse RAP의 RWT는 qooxdoo 기반이며, 실제 샘플을 보아도 유사한
   
 아래는 qooxdoo를 이용해 개발된 몇가지 샘플들~
 
-![qooxdoo sample](../assets/image/2011-04-08-201104081600.jpg)
+![qooxdoo sample](../assets/images/2011-04-08-201104081600.jpg)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081601.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081601.png)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081603.jpg)
+![qooxdoo sample](../assets/images/2011-04-08-201104081603.jpg)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081604.jpg)
+![qooxdoo sample](../assets/images/2011-04-08-201104081604.jpg)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081605.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081605.png)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081606.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081606.png)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081607.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081607.png)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081608.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081608.png)
   
-![qooxdoo sample](../assets/image/2011-04-08-201104081609.png)
+![qooxdoo sample](../assets/images/2011-04-08-201104081609.png)
   
