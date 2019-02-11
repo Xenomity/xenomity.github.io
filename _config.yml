@@ -293,3 +293,8 @@ defaults:
       comments: true
       share: true
       related: true
+
+
+# Google Adsense
+google_adsense:
+  publisher_id: "ca-pub-2101746752004522"
