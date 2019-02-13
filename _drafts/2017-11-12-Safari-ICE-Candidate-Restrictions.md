@@ -31,4 +31,4 @@ if (isSafari) {
 
 ## References
 - Safari 11 Developer Previews: https://webkit.org/blog/7763/a-closer-look-into-webrtc/
-- ICE: See https://blog.xenomity.com/ice_interactive_connectivity_protocol
+- ICE: https://blog.xenomity.com/ice_interactive_connectivity_protocol
