@@ -21,8 +21,9 @@ a=rtpmap:0 PCMU/8000
 ```
 
 표 1. RTP Profile (출처: Wikipedia)
+
 |Payload type (PT)|Name|Type|No. of channels|Clock rate (Hz)[note 1]|Frame size (ms)|Default packet size (ms)|Description|References|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|---|---|---|---|---|---|---|---|---|
 |0|PCMU|audio|1|8000|any|20|ITU-T G.711 PCM µ-Law audio 64 kbit/s|RFC 3551|
 |1|reserved (previously FS-1016 CELP)|audio|1|8000|||reserved, previously FS-1016 CELP audio 4.8 kbit/s|RFC 3551, previously RFC 1890|
 |2|reserved (previously G721 or G726-32)|audio|1|8000|||reserved, previously ITU-T G.721 ADPCM audio 32 kbit/s or ITU-T G.726 audio 32 kbit/s|RFC 3551, previously RFC 1890|
