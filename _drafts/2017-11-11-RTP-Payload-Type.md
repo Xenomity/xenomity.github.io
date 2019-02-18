@@ -6,7 +6,7 @@ date: 2017-11-11 01:00:00
 
 SDP 전문에서 협상 가능한 미디어 코덱에 대한 식별자로 RTP Payload Type 값을 사용한다. IANA 표준 규약은 고정 미디어 프로파일(0~95번), 동적 미디어 프로파일(96~127번)으로 분류하여 정의하고 있으며, 후자의 경우 중복되지 않는 미디어 프로파일 번호를 할당하고 협상할 수 있어야 한다.
 
-e.g., SDP
+*e.g., SDP*
 ```
 // opus/48000/2 -> rtp payload type 111, dynamic range
 a=rtpmap:111 opus/48000/2
@@ -20,7 +20,7 @@ a=rtpmap:9 G722/8000
 a=rtpmap:0 PCMU/8000
 ```
 
-표 1. RTP Profile
+표 1. RTP Profile (출처: Wikipedia)
 |Payload type (PT)|Name|Type|No. of channels|Clock rate (Hz)[note 1]|Frame size (ms)|Default packet size (ms)|Description|References|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |
 |0|PCMU|audio|1|8000|any|20|ITU-T G.711 PCM µ-Law audio 64 kbit/s|RFC 3551|
