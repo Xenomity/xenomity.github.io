@@ -30,6 +30,6 @@ WebRTC는 기본적으로 P2P 프로토콜로서, 대규모의 미디어 방송 
 
 
 ## Conclusion
-서비스 목표와 비용 등 유즈케이스에 적합한 설계가 필요하다. 대게 소규모 음성/영상 통화는 P2P, 중급 규모 이상의 단방향 방송(e.g., e-Learning, Broadcasting, etc…)이나 화상 회의와 같은 목적의 서비스는 SFU, 대규모 음성 대화(e.g., voice mixing)나 실시간 관제 시스템(e.g., grid video transcoding)과 같은 목적의 서비스는 MCU를 우선 염두하여 설계한다.
+서비스 목표와 비용 등 유즈케이스에 적합한 설계가 필요하다. 대게 소규모 음성/영상 통화는 P2P, 중급 규모 이상의 단방향 방송(*e.g., e-Learning, Broadcasting, etc…*)이나 화상 회의와 같은 목적의 서비스는 SFU, 대규모 음성 대화(*e.g., voice mixing*)나 실시간 관제 시스템(*e.g., grid video transcoding*)과 같은 목적의 서비스는 MCU를 우선 염두하여 설계한다.
 
 참고로, MCU는 낡은 기술이고 서버 운용 비용이 매우 높으므로, WebRTC와 같은 실-시간성 보장이 중요한 서비스의 경우 그 장점을 상쇄시켜 버린다. MCU 사용은 최대한 배제하고 다른 프로토콜 적용을 고려해 볼 필요가 있다.

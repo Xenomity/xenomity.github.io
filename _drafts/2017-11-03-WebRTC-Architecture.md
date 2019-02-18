@@ -74,11 +74,11 @@ date: 2017-11-03 03:00:00
 	- (from JavaScript Session Establishment Protocol, JSEP)
 	  - Offer/Answer Model.
 	- Content: Media meta-data, codec, resolution, bandwidth, etc…
-	- See https://blog.xenomity.com/sdp-session-description-protocol
+	- See https://blog.xenomity.com/SDP-Session-Description-Protocol
 - ICE Framework.
   - Finding Candidate.
 	- Priority: UDP -> HTTP(TCP) -> HTTPS -> TURN.
-	- See https://blog.xenomity.com/ice-interactive-connectivity-protocol
+	- See https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol
 	- Workflow
     
     ![ICE Workflow](../assets/images/ice-sequence.png)
