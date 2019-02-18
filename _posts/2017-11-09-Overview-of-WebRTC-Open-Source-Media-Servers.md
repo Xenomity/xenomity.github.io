@@ -5,6 +5,7 @@ date: 2017-11-09 01:00:00
 ---
 
 WebRTC 미들웨어로 검토할만한 오픈 소스 미디어 서버들에 대하여 간략하게 정리하였다. SFU와 MCU에 대한 내용은 [이전 블로그](https://blog.xenomity.com/P2P-vs-SFU-vs-MCU) 참고.
+
 (* 비교 컬럼 기준은 본인이 필요한 feature로 분류.)
 
 OSS	| License | SFU | MCU | Multistream | Video Codec | Datachannel | Simulcast | Opus DTX | VP9 SVC | Trickle ICE | IPv6
