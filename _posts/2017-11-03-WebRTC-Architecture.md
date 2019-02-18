@@ -78,7 +78,7 @@ date: 2017-11-03 03:00:00
 - ICE Framework.
   - Finding Candidate.
 	- Priority: UDP -> HTTP(TCP) -> HTTPS -> TURN.
-	- See [https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol](https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol)
+	- See [https://blog.xenomity.com/ICE-Interactive-Connectivity-Establishment](https://blog.xenomity.com/ICE-Interactive-Connectivity-Establishment)
 	- Workflow
     
     ![ICE Workflow](../assets/images/ice-sequence.png)
