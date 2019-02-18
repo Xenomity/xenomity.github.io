@@ -70,6 +70,11 @@ date: 2017-11-03 03:00:00
 - Signaling
   - P2P 최초 연결을 위한 종단 간 탐색과 통신 및 시그널 메시지 교환을 위한 중계 서버.
   - WebRTC 비-명세로, 시그널링 채널 전문과 프로토콜을 상황에 맞게 정의하여 개발한다.
+- SDP Exchange.
+	- (from JavaScript Session Establishment Protocol, JSEP)
+	  - Offer/Answer Model.
+	- Content: Media meta-data, codec, resolution, bandwidth, etc…
+	- See https://blog.xenomity.com/sdp-session-description-protocol
 - ICE Framework.
   - Finding Candidate.
 	- Priority: UDP -> HTTP(TCP) -> HTTPS -> TURN.
@@ -77,12 +82,6 @@ date: 2017-11-03 03:00:00
 	- Workflow
     
     ![ICE Workflow](../assets/images/ice-sequence.png)
-
-- Session Description Protocol, SDP.
-	- (from JavaScript Session Establishment Protocol, JSEP)
-	  - Offer/Answer Model.
-	- Content: Media meta-data, codec, resolution, bandwidth, etc…
-	- See https://blog.xenomity.com/sdp-session-description-protocol
 
 
 ### RTCDataChannel
