@@ -24,7 +24,7 @@ date: 2017-11-03 03:00:00
   - 헤더에 코덱 정보 포함 – 유동성 있는 Video, Audio 품질 전송 가능.
 - Real Time Control Protocol, RTCP.
   - RTP 데이터의 전송 상태 감시, 세션 관련 정보 전송 (상태 점검을 위한 Protocol) – Flow Control.
-  - Report Packet : 보낸 패킷, 손실된 패킷, 패킷 수신 간격 변화.
+  - Report Packet: 보낸 패킷, 손실된 패킷, 패킷 수신 간격 변화.
   - Bi-direction.
 - Datagram Transport Layer Security, DTLS.
   - TLS를 UDP에 적용할 수 있는 보안 프로토콜.
@@ -34,6 +34,7 @@ date: 2017-11-03 03:00:00
 - Using by Session Description Protocol, SDP.
 - Session Traversal Utilities for NAT, STUN.
   - RFC 5389에 의거, 피어 발견을 위한 네트워크 프로토콜.
+  - (*) Google Public STUN Server: `stun.l.google.com:19302`
 - Traversal Using Relays around NAT, TURN.
   - 종단 간 P2P 연결이 실패할 경우, 공용망에 위치한 서버를 통해 패킷을 중계.
   
@@ -66,40 +67,27 @@ date: 2017-11-03 03:00:00
 	
 ### RTCPeerConnection
 - Stream audio and video between users.
-- Implementations
-  - Chrome: `webkitRTCPeerConnection`
-  - Firefox: `mozRTCPeerConnection`
 - Signaling
-  - WebRTC 비-명세.
-  - Roles.
-    - Session control messages.
-	- Network configuration.
-	- Media capabilities.
-  - Plus Servers
-	- 사용자 탐색과 통신.
-	- Signaling.
-	- NAT/Firewall 탐색. (*i.e., STUN, TURN*)
-	- P2P 실패를 대비한 중계 서버. (*i.e., TURN, Relay*)
+  - P2P 최초 연결을 위한 종단 간 탐색과 통신 및 시그널 메시지 교환을 위한 중계 서버.
+  - WebRTC 비-명세로, 시그널링 채널 전문과 프로토콜을 상황에 맞게 정의하여 개발한다.
 - ICE Framework.
   - Finding Candidate.
-	- UDP -> HTTP(TCP) -> HTTPS -> TURN.
-	- See https://blog.xenomity.com/ice_interactive_connectivity_protocol
+	- Priority: UDP -> HTTP(TCP) -> HTTPS -> TURN.
+	- See https://blog.xenomity.com/ice-interactive-connectivity-protocol
 	- Workflow
     
     ![ICE Workflow](../assets/images/ice-sequence.png)
-  - Session Description Protocol, SDP.
+
+- Session Description Protocol, SDP.
 	- (from JavaScript Session Establishment Protocol, JSEP)
-	  - Offer.
-	  - Answer.
-	- Media meta-data, codec, resolution, bandwidth, etc…
-	- See https://blog.xenomity.com/sdp_session_description_protocol
-- Sequence.
-  - Offer <-> Signal Server <-> Answer 간 통신. (Connection, SDP 송/수신, Candidate)
-  - (*) Google Public STUN Server: 'stun.l.google.com:19302'
+	  - Offer/Answer Model.
+	- Content: Media meta-data, codec, resolution, bandwidth, etc…
+	- See https://blog.xenomity.com/sdp-session-description-protocol
+
 
 ### RTCDataChannel
 - Streaming data between users.
-  - i.e., text, file, binary, anybody…
+  - *i.e., text, file, binary, anybody…*
 - Features.
   - RTCPeerConnection 세션 설정의 레버리징.
   - 우선순위가 있는 여러 개의 동시 채널.
