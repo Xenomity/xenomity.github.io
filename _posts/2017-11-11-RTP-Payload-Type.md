@@ -115,4 +115,4 @@ a=rtpmap:0 PCMU/8000
 
 
 ## References
-- RTP Profile: https://en.wikipedia.org/wiki/RTP_audio_video_profile
+- [Wikipedia RTP Profile](https://en.wikipedia.org/wiki/RTP_audio_video_profile)

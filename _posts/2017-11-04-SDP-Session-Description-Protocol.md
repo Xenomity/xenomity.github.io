@@ -6,7 +6,7 @@ date: 2017-11-04 01:00:00
 
 종단 간 상호 미디어 규약 협의를 위하여 WebRTC는 세션 기술 프로토콜(Session Description Protocol, SDP) 협상 모델을 사용한다. SDP 전문은 각 클라이언트가 교환할 상세 미디어 프로토콜 규약과 옵션을 포함하며, 한 피어에서 제안(Offer)하고 다른 피어에서 응답(Answer)하는 형태의 협상 프로세스를 시도한다. 상호 교환 가능한 규약으로 SDP 협상이 완료되면, WebRTC 구현체는 ICE 후보 교환, peer connection handshaking과 같은 이후 단계를 수행하게 된다.
 
-- See https://tools.ietf.org/html/rfc4566
+- See [RFC-4566](https://tools.ietf.org/html/rfc4566)
 
 
 ### SDP Generation Code
@@ -115,7 +115,7 @@ a=sctpmap:5000 webrtc-datachannel 1024
 ```
 
 ## SDP Global Lines
-### `v=0`
+#### `v=0`
 SDP Protocol Version. Default 0.
 
 #### `o=Kim 6137031273746274589 2 IN IP4 127.0.0.1`
@@ -155,7 +155,7 @@ m=application 9 DTLS/SCTP 5000
 미디어 스트림에 관한 속성과 정보들을 정의하는 미디어 라인을 의미.
 - Format
   `m=${미디어 타입 (audio | video | application)} ${포트 번호} ${프로토콜} ...${RTP payload type 순서}`
-- Ref: https://blog.xenomity.com/RTP-Payload-Type
+- Ref: [https://blog.xenomity.com/RTP-Payload-Type](https://blog.xenomity.com/RTP-Payload-Type)
 
 피어 간의 협상 과정에서 우선되는 프로파일 번호를 순서대로 시험한다. 예를 들어 111번에 해당하는 코덱이 상호간에 가능한지 확인하고 가능하지 않다면 103번으로 다시 협상한다.
 미디어라인은 복수개로 선언 가능하며, 하위에는 해당 미디어에 대한 협상 내용만 정의한다. 즉, 순서가 중요하다.
@@ -245,6 +245,6 @@ SDP Offer/Answer Signaling
 
 
 ## References
-- [RFC 4566] SDP: Session Description Protocol: https://tools.ietf.org/html/rfc4566
-- RTP Payload Types: https://en.wikipedia.org/wiki/RTP_audio_video_profile
-- SDP Anatomy: https://webrtchacks.com/sdp-anatomy/
+- [RFC 4566: SDP: Session Description Protocol](https://tools.ietf.org/html/rfc4566)
+- [RTP Payload Types](https://en.wikipedia.org/wiki/RTP_audio_video_profile)
+- [SDP Anatomy](https://webrtchacks.com/sdp-anatomy/)

@@ -21,4 +21,4 @@ Low latency를 보장하기 위하여 네트워크 상황에 따라 가변적인
 
 
 ## References
-- WebRTC Official Site: https://webrtc.org/
+- WebRTC Official Site: [https://webrtc.org/](https://webrtc.org/)

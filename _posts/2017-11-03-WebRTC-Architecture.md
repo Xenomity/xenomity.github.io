@@ -74,11 +74,11 @@ date: 2017-11-03 03:00:00
 	- (from JavaScript Session Establishment Protocol, JSEP)
 	  - Offer/Answer Model.
 	- Content: Media meta-data, codec, resolution, bandwidth, etc…
-	- See https://blog.xenomity.com/SDP-Session-Description-Protocol
+	- See [https://blog.xenomity.com/SDP-Session-Description-Protocol](https://blog.xenomity.com/SDP-Session-Description-Protocol)
 - ICE Framework.
   - Finding Candidate.
 	- Priority: UDP -> HTTP(TCP) -> HTTPS -> TURN.
-	- See https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol
+	- See [https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol](https://blog.xenomity.com/ICE-Interactive-Connectivity-Protocol)
 	- Workflow
     
     ![ICE Workflow](../assets/images/ice-sequence.png)
@@ -101,25 +101,25 @@ date: 2017-11-03 03:00:00
 
 
 # References
-- [RFC 7742] WebRTC Video Processing and Codec Requirements: https://tools.ietf.org/html/rfc7742
-- [RFC 3550] RTP: Real-Time Protocol: https://tools.ietf.org/html/rfc3550
-- [RFC 6184] RTP Payload Format for H264: https://tools.ietf.org/html/rfc6184
-- SDP for WebRTC: https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-11
-- [RFC 4566] SDP: Session Description Protocol: https://tools.ietf.org/html/rfc4566
-- [RFC 8445] ICE: Interactive Connectivity Establishment: https://tools.ietf.org/html/rfc8445
-- [RFC 5245] ICE for SDP: https://tools.ietf.org/html/rfc5245
-- Getting Started: https://webrtc.org/start
-- Code Samples: https://github.com/webrtc/samples
-- WebRTC Samples: https://webrtc.github.io/samples
+- [RFC 7742: WebRTC Video Processing and Codec Requirements](https://tools.ietf.org/html/rfc7742)
+- [RFC 3550: RTP: Real-Time Protocol](https://tools.ietf.org/html/rfc3550)
+- [RFC 6184: RTP Payload Format for H264](https://tools.ietf.org/html/rfc6184)
+- [SDP for WebRTC](https://tools.ietf.org/html/draft-ietf-rtcweb-sdp-11)
+- [RFC 4566: SDP: Session Description Protocol](https://tools.ietf.org/html/rfc4566)
+- [RFC 8445: ICE: Interactive Connectivity Establishment](https://tools.ietf.org/html/rfc8445)
+- [RFC 5245: ICE for SDP](https://tools.ietf.org/html/rfc5245)
+- [WebRTC Getting Started](https://webrtc.org/start)
+- [Code Samples](https://github.com/webrtc/samples)
+- [WebRTC Samples](https://webrtc.github.io/samples)
 - HTML5Lock Tutorial: 
-  - https://www.html5rocks.com/ko/tutorials/webrtc/basics
-  - https://www.html5rocks.com/ko/tutorials/webrtc/infrastructure
-  - https://www.html5rocks.com/ko/tutorials/webrtc/datachannels
-- Capturing Audio & Video in HTML5: https://www.html5rocks.com/ko/tutorials/getusermedia/intro
-- Codelabs: https://codelabs.developers.google.com/codelabs/webrtc-web
-- HTML5 WebSocket: https://dzone.com/refcardz/html5-websocket
+  - [Basic](https://www.html5rocks.com/ko/tutorials/webrtc/basics)
+  - [Infrastructure](https://www.html5rocks.com/ko/tutorials/webrtc/infrastructure)
+  - [Datachannels](https://www.html5rocks.com/ko/tutorials/webrtc/datachannels)
+- [Capturing Audio & Video in HTML5](https://www.html5rocks.com/ko/tutorials/getusermedia/intro)
+- [Codelabs](https://codelabs.developers.google.com/codelabs/webrtc-web)
+- [HTML5 WebSocket](https://dzone.com/refcardz/html5-websocket)
 - WebRTC OpenSource Signaling Servers:
-  - https://github.com/webRTC-io/webRTC.io
-  - https://github.com/priologic/easyrtc
-  - https://github.com/andyet/signalmaster
-- Mozilla Tutorial: https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API/Signaling_and_video_calling
+  - [https://github.com/webRTC-io/webRTC.io](https://github.com/webRTC-io/webRTC.io)
+  - [https://github.com/priologic/easyrtc](https://github.com/priologic/easyrtc)
+  - [https://github.com/andyet/signalmaster](https://github.com/andyet/signalmaster)
+- [Mozilla Tutorial](https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API/Signaling_and_video_calling)

@@ -33,4 +33,4 @@ date: 2017-11-10 01:00:00
 
 
 ## References
-- VP9 SVC: https://webrtchacks.com/chrome-vp9-svc/
+- [VP9 SVC](https://webrtchacks.com/chrome-vp9-svc/)

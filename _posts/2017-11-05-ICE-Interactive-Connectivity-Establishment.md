@@ -65,6 +65,6 @@ ICE 에이전트는 연결 가능한 모든 정보를 수집하고, 최적화된
 
 
 ## References
-- SDP: Session Description Protocol: https://blog.xenomity.com/SDP-Session-Description-Protocol
-- RFC 5245: https://tools.ietf.org/html/rfc5245
-- Mozilla Tutorial: https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API/Signaling_and_video_calling
+- [SDP: Session Description Protocol](https://blog.xenomity.com/SDP-Session-Description-Protocol)
+- [RFC 5245](https://tools.ietf.org/html/rfc5245)
+- [Mozilla Tutorial](https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API/Signaling_and_video_calling)

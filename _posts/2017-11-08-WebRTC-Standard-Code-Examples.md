@@ -6,7 +6,7 @@ date: 2017-11-08 01:00:00
 
 ## Prerequisite
 JavaScript(ES6) /w adapter.js
-  - webrtc-adapter: https://github.com/webrtchacks/adapter
+  - [webrtc-adapter](https://github.com/webrtchacks/adapter)
 
 ## Sender
 ```javascript
