@@ -240,6 +240,6 @@ SDP Offer/Answer Signaling
 
 
 ## References
-  - [RFC 4566] SDP: Session Description Protocol: https://tools.ietf.org/html/rfc4566
-  - RTP Payload Types: https://en.wikipedia.org/wiki/RTP_audio_video_profile
-  - SDP Anatomy: https://webrtchacks.com/sdp-anatomy/
+- [RFC 4566] SDP: Session Description Protocol: https://tools.ietf.org/html/rfc4566
+- RTP Payload Types: https://en.wikipedia.org/wiki/RTP_audio_video_profile
+- SDP Anatomy: https://webrtchacks.com/sdp-anatomy/
