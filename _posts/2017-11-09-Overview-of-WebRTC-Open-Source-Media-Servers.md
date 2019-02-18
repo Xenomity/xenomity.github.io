@@ -18,7 +18,7 @@ Medooze | MIT | O | X | O | VP9 | X | X | X | O | X | X
 Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O | X
 
 ## Janus
-- Official Site: https://janus.conf.meetecho.com/
+- Official Site: [https://janus.conf.meetecho.com/](https://janus.conf.meetecho.com/)
 - Server
   - C.
   - Interface
@@ -29,7 +29,7 @@ Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O
 - GPL v3
 
 ## Kurento
-- Official Site: https://www.kurento.org/
+- Official Site: [https://www.kurento.org/](https://www.kurento.org/)
 - Server
   - C++.
   - Interface
@@ -40,7 +40,7 @@ Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O
 - Apache v2
 
 ## Mediasoup
-- Official Site: https://mediasoup.org/
+- Official Site: [https://mediasoup.org/](https://mediasoup.org/)
 - Server
   - C.
   - Interface
@@ -51,7 +51,7 @@ Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O
 - MIT
 
 ## Licode
-- Official Site: http://lynckia.com/licode
+- Official Site: [http://lynckia.com/licode](http://lynckia.com/licode)
 - Server
   - C++.
   - Interface
@@ -63,7 +63,7 @@ Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O
 	
 
 ## Jitsi
-- Official Site: https://jitsi.org/
+- Official Site: [https://jitsi.org/](https://jitsi.org/)
 - Server
   - Java.
   - Interface
@@ -75,4 +75,4 @@ Jitsi | Apache2 | O | audio mixing only | O | VP8, VP9, H264 | O | O | X | X | O
 
 
 ## References
-- P2P vs SFU vs MCU: https://blog.xenomity.com/P2P-vs-SFU-vs-MCU
+- [P2P vs SFU vs MCU](https://blog.xenomity.com/P2P-vs-SFU-vs-MCU)
