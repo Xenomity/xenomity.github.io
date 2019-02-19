@@ -1,5 +1,5 @@
 ---
-title: "WebRTC Standard Code Exaples"
+title: "WebRTC Standard Code Examples"
 tags: [webrtc]
 date: 2017-11-08 01:00:00
 ---
