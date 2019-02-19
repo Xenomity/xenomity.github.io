@@ -109,7 +109,7 @@ author:
   name             : "Xenomity"
   avatar           : "/assets/images/xenomity.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Xenomity P-slinc'"
-  location         : "Somewhere"
+  location         : # "Somewhere"
   email            : "4z.xenomity@gmail.com"
   links:
     - label: "Email"
