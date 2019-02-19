@@ -1,5 +1,5 @@
 ---
-title: "WebRTC Simulcast Smaples"
+title: "WebRTC Simulcast Samples"
 tags: [webrtc]
 date: 2017-11-06 01:00:00
 ---
